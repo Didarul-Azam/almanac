@@ -5,6 +5,8 @@ almanac.egg-info/SOURCES.txt
 almanac.egg-info/dependency_links.txt
 almanac.egg-info/top_level.txt
 almanac/analysis/__init__.py
+almanac/analysis/calculate_returns.py
+almanac/analysis/calculate_stats.py
 almanac/config/__init__.py
 almanac/config/configs.py
 almanac/data/__init__.py
