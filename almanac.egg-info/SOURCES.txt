@@ -12,4 +12,3 @@ almanac/deployment/__init__.py
 almanac/strategy/__init__.py
 almanac/utils/__init__.py
 almanac/utils/utils.py
-almanac/utils/utils1.py
