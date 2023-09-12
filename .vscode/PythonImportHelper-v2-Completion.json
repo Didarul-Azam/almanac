@@ -1,5 +1,157 @@
 [
     {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_DATE_FORMAT",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "Frequency",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "NATURAL",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "YEAR",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "MONTH",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "WEEK",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "BUSINESS_DAYS_IN_YEAR",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "WEEKS_PER_YEAR",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "MONTHS_PER_YEAR",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "SECONDS_PER_YEAR",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "PERIODS_PER_YEAR",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "norm",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "norm",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "norm",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
         "label": "pandas",
         "kind": 6,
         "isExtraImport": true,
@@ -15,6 +167,490 @@
         "importPath": "numpy",
         "description": "numpy",
         "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "almanac",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "almanac",
+        "description": "almanac",
+        "detail": "almanac",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "find_packages",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_DATE_FORMAT",
+        "kind": 5,
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "peekOfCode": "DEFAULT_DATE_FORMAT = \"%Y-%m-%d\"\nFrequency = Enum(\"Frequency\", \"Natural Year Month Week BDay\")\nNATURAL = Frequency.Natural\nYEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60",
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "Frequency",
+        "kind": 5,
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "peekOfCode": "Frequency = Enum(\"Frequency\", \"Natural Year Month Week BDay\")\nNATURAL = Frequency.Natural\nYEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "NATURAL",
+        "kind": 5,
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "peekOfCode": "NATURAL = Frequency.Natural\nYEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "YEAR",
+        "kind": 5,
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "peekOfCode": "YEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "MONTH",
+        "kind": 5,
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "peekOfCode": "MONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "WEEK",
+        "kind": 5,
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "peekOfCode": "WEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "BUSINESS_DAYS_IN_YEAR",
+        "kind": 5,
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "peekOfCode": "BUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "WEEKS_PER_YEAR",
+        "kind": 5,
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "peekOfCode": "WEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "MONTHS_PER_YEAR",
+        "kind": 5,
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "peekOfCode": "MONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "SECONDS_PER_YEAR",
+        "kind": 5,
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "peekOfCode": "SECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "PERIODS_PER_YEAR",
+        "kind": 5,
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "peekOfCode": "PERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "periods_per_year",
+        "kind": 2,
+        "importPath": "almanac.utils.utils",
+        "description": "almanac.utils.utils",
+        "peekOfCode": "def periods_per_year(at_frequency: Frequency):\n    if at_frequency == NATURAL:\n        return BUSINESS_DAYS_IN_YEAR\n    else:\n        return PERIODS_PER_YEAR[at_frequency]\ndef years_in_data(some_data: pd.Series) -> float:\n    datediff = some_data.index[-1] - some_data.index[0]\n    seconds_in_data = datediff.total_seconds()\n    return seconds_in_data / SECONDS_PER_YEAR\ndef sum_at_frequency(perc_return: pd.Series,",
+        "detail": "almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "years_in_data",
+        "kind": 2,
+        "importPath": "almanac.utils.utils",
+        "description": "almanac.utils.utils",
+        "peekOfCode": "def years_in_data(some_data: pd.Series) -> float:\n    datediff = some_data.index[-1] - some_data.index[0]\n    seconds_in_data = datediff.total_seconds()\n    return seconds_in_data / SECONDS_PER_YEAR\ndef sum_at_frequency(perc_return: pd.Series,\n                     at_frequency: Frequency = NATURAL) -> pd.Series:\n    if at_frequency == NATURAL:\n        return perc_return\n    at_frequency_str_dict = {\n        YEAR: \"Y\",",
+        "detail": "almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "sum_at_frequency",
+        "kind": 2,
+        "importPath": "almanac.utils.utils",
+        "description": "almanac.utils.utils",
+        "peekOfCode": "def sum_at_frequency(perc_return: pd.Series,\n                     at_frequency: Frequency = NATURAL) -> pd.Series:\n    if at_frequency == NATURAL:\n        return perc_return\n    at_frequency_str_dict = {\n        YEAR: \"Y\",\n        WEEK: \"7D\",\n        MONTH: \"1M\"}\n    at_frequency_str = at_frequency_str_dict[at_frequency]\n    perc_return_at_freq = perc_return.resample(at_frequency_str).sum()",
+        "detail": "almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "ann_mean_given_frequency",
+        "kind": 2,
+        "importPath": "almanac.utils.utils",
+        "description": "almanac.utils.utils",
+        "peekOfCode": "def ann_mean_given_frequency(perc_return_at_freq: pd.Series,\n                             at_frequency: Frequency) -> float:\n    mean_at_frequency = perc_return_at_freq.mean()\n    periods_per_year_for_frequency = periods_per_year(at_frequency)\n    annualised_mean = mean_at_frequency * periods_per_year_for_frequency\n    return annualised_mean\ndef ann_std_given_frequency(perc_return_at_freq: pd.Series,\n                            at_frequency: Frequency) -> float:\n    std_at_frequency = perc_return_at_freq.std()\n    periods_per_year_for_frequency = periods_per_year(at_frequency)",
+        "detail": "almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "ann_std_given_frequency",
+        "kind": 2,
+        "importPath": "almanac.utils.utils",
+        "description": "almanac.utils.utils",
+        "peekOfCode": "def ann_std_given_frequency(perc_return_at_freq: pd.Series,\n                            at_frequency: Frequency) -> float:\n    std_at_frequency = perc_return_at_freq.std()\n    periods_per_year_for_frequency = periods_per_year(at_frequency)\n    annualised_std = std_at_frequency * (periods_per_year_for_frequency**.5)\n    return annualised_std\ndef demeaned_remove_zeros(x):\n    x[x == 0] = np.nan\n    return x - x.mean()",
+        "detail": "almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "demeaned_remove_zeros",
+        "kind": 2,
+        "importPath": "almanac.utils.utils",
+        "description": "almanac.utils.utils",
+        "peekOfCode": "def demeaned_remove_zeros(x):\n    x[x == 0] = np.nan\n    return x - x.mean()",
+        "detail": "almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_DATE_FORMAT",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.configs",
+        "description": "build.lib.almanac.config.configs",
+        "peekOfCode": "DEFAULT_DATE_FORMAT = \"%Y-%m-%d\"\nFrequency = Enum(\"Frequency\", \"Natural Year Month Week BDay\")\nNATURAL = Frequency.Natural\nYEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60",
+        "detail": "build.lib.almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "Frequency",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.configs",
+        "description": "build.lib.almanac.config.configs",
+        "peekOfCode": "Frequency = Enum(\"Frequency\", \"Natural Year Month Week BDay\")\nNATURAL = Frequency.Natural\nYEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "build.lib.almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "NATURAL",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.configs",
+        "description": "build.lib.almanac.config.configs",
+        "peekOfCode": "NATURAL = Frequency.Natural\nYEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "build.lib.almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "YEAR",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.configs",
+        "description": "build.lib.almanac.config.configs",
+        "peekOfCode": "YEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "build.lib.almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "MONTH",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.configs",
+        "description": "build.lib.almanac.config.configs",
+        "peekOfCode": "MONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "build.lib.almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "WEEK",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.configs",
+        "description": "build.lib.almanac.config.configs",
+        "peekOfCode": "WEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "build.lib.almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "BUSINESS_DAYS_IN_YEAR",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.configs",
+        "description": "build.lib.almanac.config.configs",
+        "peekOfCode": "BUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "build.lib.almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "WEEKS_PER_YEAR",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.configs",
+        "description": "build.lib.almanac.config.configs",
+        "peekOfCode": "WEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "build.lib.almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "MONTHS_PER_YEAR",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.configs",
+        "description": "build.lib.almanac.config.configs",
+        "peekOfCode": "MONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "build.lib.almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "SECONDS_PER_YEAR",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.configs",
+        "description": "build.lib.almanac.config.configs",
+        "peekOfCode": "SECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "build.lib.almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "PERIODS_PER_YEAR",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.configs",
+        "description": "build.lib.almanac.config.configs",
+        "peekOfCode": "PERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "detail": "build.lib.almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "periods_per_year",
+        "kind": 2,
+        "importPath": "build.lib.almanac.utils.utils",
+        "description": "build.lib.almanac.utils.utils",
+        "peekOfCode": "def periods_per_year(at_frequency: Frequency):\n    if at_frequency == NATURAL:\n        return BUSINESS_DAYS_IN_YEAR\n    else:\n        return PERIODS_PER_YEAR[at_frequency]\ndef years_in_data(some_data: pd.Series) -> float:\n    datediff = some_data.index[-1] - some_data.index[0]\n    seconds_in_data = datediff.total_seconds()\n    return seconds_in_data / SECONDS_PER_YEAR\ndef sum_at_frequency(perc_return: pd.Series,",
+        "detail": "build.lib.almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "years_in_data",
+        "kind": 2,
+        "importPath": "build.lib.almanac.utils.utils",
+        "description": "build.lib.almanac.utils.utils",
+        "peekOfCode": "def years_in_data(some_data: pd.Series) -> float:\n    datediff = some_data.index[-1] - some_data.index[0]\n    seconds_in_data = datediff.total_seconds()\n    return seconds_in_data / SECONDS_PER_YEAR\ndef sum_at_frequency(perc_return: pd.Series,\n                     at_frequency: Frequency = NATURAL) -> pd.Series:\n    if at_frequency == NATURAL:\n        return perc_return\n    at_frequency_str_dict = {\n        YEAR: \"Y\",",
+        "detail": "build.lib.almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "sum_at_frequency",
+        "kind": 2,
+        "importPath": "build.lib.almanac.utils.utils",
+        "description": "build.lib.almanac.utils.utils",
+        "peekOfCode": "def sum_at_frequency(perc_return: pd.Series,\n                     at_frequency: Frequency = NATURAL) -> pd.Series:\n    if at_frequency == NATURAL:\n        return perc_return\n    at_frequency_str_dict = {\n        YEAR: \"Y\",\n        WEEK: \"7D\",\n        MONTH: \"1M\"}\n    at_frequency_str = at_frequency_str_dict[at_frequency]\n    perc_return_at_freq = perc_return.resample(at_frequency_str).sum()",
+        "detail": "build.lib.almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "ann_mean_given_frequency",
+        "kind": 2,
+        "importPath": "build.lib.almanac.utils.utils",
+        "description": "build.lib.almanac.utils.utils",
+        "peekOfCode": "def ann_mean_given_frequency(perc_return_at_freq: pd.Series,\n                             at_frequency: Frequency) -> float:\n    mean_at_frequency = perc_return_at_freq.mean()\n    periods_per_year_for_frequency = periods_per_year(at_frequency)\n    annualised_mean = mean_at_frequency * periods_per_year_for_frequency\n    return annualised_mean\ndef ann_std_given_frequency(perc_return_at_freq: pd.Series,\n                            at_frequency: Frequency) -> float:\n    std_at_frequency = perc_return_at_freq.std()\n    periods_per_year_for_frequency = periods_per_year(at_frequency)",
+        "detail": "build.lib.almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "ann_std_given_frequency",
+        "kind": 2,
+        "importPath": "build.lib.almanac.utils.utils",
+        "description": "build.lib.almanac.utils.utils",
+        "peekOfCode": "def ann_std_given_frequency(perc_return_at_freq: pd.Series,\n                            at_frequency: Frequency) -> float:\n    std_at_frequency = perc_return_at_freq.std()\n    periods_per_year_for_frequency = periods_per_year(at_frequency)\n    annualised_std = std_at_frequency * (periods_per_year_for_frequency**.5)\n    return annualised_std\ndef demeaned_remove_zeros(x):\n    x[x == 0] = np.nan\n    return x - x.mean()",
+        "detail": "build.lib.almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "demeaned_remove_zeros",
+        "kind": 2,
+        "importPath": "build.lib.almanac.utils.utils",
+        "description": "build.lib.almanac.utils.utils",
+        "peekOfCode": "def demeaned_remove_zeros(x):\n    x[x == 0] = np.nan\n    return x - x.mean()",
+        "detail": "build.lib.almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "periods_per_year",
+        "kind": 2,
+        "importPath": "build.lib.almanac.utils.utils1",
+        "description": "build.lib.almanac.utils.utils1",
+        "peekOfCode": "def periods_per_year(at_frequency: Frequency):\n    if at_frequency == NATURAL:\n        return BUSINESS_DAYS_IN_YEAR\n    else:\n        return PERIODS_PER_YEAR[at_frequency]\ndef years_in_data(some_data: pd.Series) -> float:\n    datediff = some_data.index[-1] - some_data.index[0]\n    seconds_in_data = datediff.total_seconds()\n    return seconds_in_data / SECONDS_PER_YEAR\ndef sum_at_frequency(perc_return: pd.Series,",
+        "detail": "build.lib.almanac.utils.utils1",
+        "documentation": {}
+    },
+    {
+        "label": "years_in_data",
+        "kind": 2,
+        "importPath": "build.lib.almanac.utils.utils1",
+        "description": "build.lib.almanac.utils.utils1",
+        "peekOfCode": "def years_in_data(some_data: pd.Series) -> float:\n    datediff = some_data.index[-1] - some_data.index[0]\n    seconds_in_data = datediff.total_seconds()\n    return seconds_in_data / SECONDS_PER_YEAR\ndef sum_at_frequency(perc_return: pd.Series,\n                     at_frequency: Frequency = NATURAL) -> pd.Series:\n    if at_frequency == NATURAL:\n        return perc_return\n    at_frequency_str_dict = {\n        YEAR: \"Y\",",
+        "detail": "build.lib.almanac.utils.utils1",
+        "documentation": {}
+    },
+    {
+        "label": "sum_at_frequency",
+        "kind": 2,
+        "importPath": "build.lib.almanac.utils.utils1",
+        "description": "build.lib.almanac.utils.utils1",
+        "peekOfCode": "def sum_at_frequency(perc_return: pd.Series,\n                     at_frequency: Frequency = NATURAL) -> pd.Series:\n    if at_frequency == NATURAL:\n        return perc_return\n    at_frequency_str_dict = {\n        YEAR: \"Y\",\n        WEEK: \"7D\",\n        MONTH: \"1M\"}\n    at_frequency_str = at_frequency_str_dict[at_frequency]\n    perc_return_at_freq = perc_return.resample(at_frequency_str).sum()",
+        "detail": "build.lib.almanac.utils.utils1",
+        "documentation": {}
+    },
+    {
+        "label": "ann_mean_given_frequency",
+        "kind": 2,
+        "importPath": "build.lib.almanac.utils.utils1",
+        "description": "build.lib.almanac.utils.utils1",
+        "peekOfCode": "def ann_mean_given_frequency(perc_return_at_freq: pd.Series,\n                             at_frequency: Frequency) -> float:\n    mean_at_frequency = perc_return_at_freq.mean()\n    periods_per_year_for_frequency = periods_per_year(at_frequency)\n    annualised_mean = mean_at_frequency * periods_per_year_for_frequency\n    return annualised_mean\ndef ann_std_given_frequency(perc_return_at_freq: pd.Series,\n                            at_frequency: Frequency) -> float:\n    std_at_frequency = perc_return_at_freq.std()\n    periods_per_year_for_frequency = periods_per_year(at_frequency)",
+        "detail": "build.lib.almanac.utils.utils1",
+        "documentation": {}
+    },
+    {
+        "label": "ann_std_given_frequency",
+        "kind": 2,
+        "importPath": "build.lib.almanac.utils.utils1",
+        "description": "build.lib.almanac.utils.utils1",
+        "peekOfCode": "def ann_std_given_frequency(perc_return_at_freq: pd.Series,\n                            at_frequency: Frequency) -> float:\n    std_at_frequency = perc_return_at_freq.std()\n    periods_per_year_for_frequency = periods_per_year(at_frequency)\n    annualised_std = std_at_frequency * (periods_per_year_for_frequency**.5)\n    return annualised_std\ndef demeaned_remove_zeros(x):\n    x[x == 0] = np.nan\n    return x - x.mean()",
+        "detail": "build.lib.almanac.utils.utils1",
+        "documentation": {}
+    },
+    {
+        "label": "demeaned_remove_zeros",
+        "kind": 2,
+        "importPath": "build.lib.almanac.utils.utils1",
+        "description": "build.lib.almanac.utils.utils1",
+        "peekOfCode": "def demeaned_remove_zeros(x):\n    x[x == 0] = np.nan\n    return x - x.mean()",
+        "detail": "build.lib.almanac.utils.utils1",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_DATE_FORMAT",
+        "kind": 5,
+        "importPath": "build.lib.almanac.utils.utils1",
+        "description": "build.lib.almanac.utils.utils1",
+        "peekOfCode": "DEFAULT_DATE_FORMAT = \"%Y-%m-%d\"\nFrequency = Enum(\n    \"Frequency\",\n    \"Natural Year Month Week BDay\",\n)\nNATURAL = Frequency.Natural\nYEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256",
+        "detail": "build.lib.almanac.utils.utils1",
+        "documentation": {}
+    },
+    {
+        "label": "Frequency",
+        "kind": 5,
+        "importPath": "build.lib.almanac.utils.utils1",
+        "description": "build.lib.almanac.utils.utils1",
+        "peekOfCode": "Frequency = Enum(\n    \"Frequency\",\n    \"Natural Year Month Week BDay\",\n)\nNATURAL = Frequency.Natural\nYEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25",
+        "detail": "build.lib.almanac.utils.utils1",
+        "documentation": {}
+    },
+    {
+        "label": "NATURAL",
+        "kind": 5,
+        "importPath": "build.lib.almanac.utils.utils1",
+        "description": "build.lib.almanac.utils.utils1",
+        "peekOfCode": "NATURAL = Frequency.Natural\nYEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {\n    MONTH: MONTHS_PER_YEAR,",
+        "detail": "build.lib.almanac.utils.utils1",
+        "documentation": {}
+    },
+    {
+        "label": "YEAR",
+        "kind": 5,
+        "importPath": "build.lib.almanac.utils.utils1",
+        "description": "build.lib.almanac.utils.utils1",
+        "peekOfCode": "YEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {\n    MONTH: MONTHS_PER_YEAR,\n    WEEK: WEEKS_PER_YEAR,",
+        "detail": "build.lib.almanac.utils.utils1",
+        "documentation": {}
+    },
+    {
+        "label": "MONTH",
+        "kind": 5,
+        "importPath": "build.lib.almanac.utils.utils1",
+        "description": "build.lib.almanac.utils.utils1",
+        "peekOfCode": "MONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {\n    MONTH: MONTHS_PER_YEAR,\n    WEEK: WEEKS_PER_YEAR,\n    YEAR: 1",
+        "detail": "build.lib.almanac.utils.utils1",
+        "documentation": {}
+    },
+    {
+        "label": "WEEK",
+        "kind": 5,
+        "importPath": "build.lib.almanac.utils.utils1",
+        "description": "build.lib.almanac.utils.utils1",
+        "peekOfCode": "WEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {\n    MONTH: MONTHS_PER_YEAR,\n    WEEK: WEEKS_PER_YEAR,\n    YEAR: 1\n}",
+        "detail": "build.lib.almanac.utils.utils1",
+        "documentation": {}
+    },
+    {
+        "label": "BUSINESS_DAYS_IN_YEAR",
+        "kind": 5,
+        "importPath": "build.lib.almanac.utils.utils1",
+        "description": "build.lib.almanac.utils.utils1",
+        "peekOfCode": "BUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {\n    MONTH: MONTHS_PER_YEAR,\n    WEEK: WEEKS_PER_YEAR,\n    YEAR: 1\n}\ndef periods_per_year(at_frequency: Frequency):",
+        "detail": "build.lib.almanac.utils.utils1",
+        "documentation": {}
+    },
+    {
+        "label": "WEEKS_PER_YEAR",
+        "kind": 5,
+        "importPath": "build.lib.almanac.utils.utils1",
+        "description": "build.lib.almanac.utils.utils1",
+        "peekOfCode": "WEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {\n    MONTH: MONTHS_PER_YEAR,\n    WEEK: WEEKS_PER_YEAR,\n    YEAR: 1\n}\ndef periods_per_year(at_frequency: Frequency):\n    if at_frequency == NATURAL:",
+        "detail": "build.lib.almanac.utils.utils1",
+        "documentation": {}
+    },
+    {
+        "label": "MONTHS_PER_YEAR",
+        "kind": 5,
+        "importPath": "build.lib.almanac.utils.utils1",
+        "description": "build.lib.almanac.utils.utils1",
+        "peekOfCode": "MONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {\n    MONTH: MONTHS_PER_YEAR,\n    WEEK: WEEKS_PER_YEAR,\n    YEAR: 1\n}\ndef periods_per_year(at_frequency: Frequency):\n    if at_frequency == NATURAL:\n        return BUSINESS_DAYS_IN_YEAR",
+        "detail": "build.lib.almanac.utils.utils1",
+        "documentation": {}
+    },
+    {
+        "label": "SECONDS_PER_YEAR",
+        "kind": 5,
+        "importPath": "build.lib.almanac.utils.utils1",
+        "description": "build.lib.almanac.utils.utils1",
+        "peekOfCode": "SECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {\n    MONTH: MONTHS_PER_YEAR,\n    WEEK: WEEKS_PER_YEAR,\n    YEAR: 1\n}\ndef periods_per_year(at_frequency: Frequency):\n    if at_frequency == NATURAL:\n        return BUSINESS_DAYS_IN_YEAR\n    else:",
+        "detail": "build.lib.almanac.utils.utils1",
+        "documentation": {}
+    },
+    {
+        "label": "PERIODS_PER_YEAR",
+        "kind": 5,
+        "importPath": "build.lib.almanac.utils.utils1",
+        "description": "build.lib.almanac.utils.utils1",
+        "peekOfCode": "PERIODS_PER_YEAR = {\n    MONTH: MONTHS_PER_YEAR,\n    WEEK: WEEKS_PER_YEAR,\n    YEAR: 1\n}\ndef periods_per_year(at_frequency: Frequency):\n    if at_frequency == NATURAL:\n        return BUSINESS_DAYS_IN_YEAR\n    else:\n        return PERIODS_PER_YEAR[at_frequency]",
+        "detail": "build.lib.almanac.utils.utils1",
         "documentation": {}
     }
 ]

@@ -1,9 +1,33 @@
-from almanac.config.configs import (DEFAULT_DATE_FORMAT, Frequency, NATURAL, YEAR, MONTH, WEEK, BUSINESS_DAYS_IN_YEAR, WEEKS_PER_YEAR, MONTHS_PER_YEAR, SECONDS_PER_YEAR, PERIODS_PER_YEAR
-                                    )
-from scipy.stats import norm
-import pandas as pd
-import numpy as np
 from enum import Enum
+import numpy as np
+import pandas as pd
+from scipy.stats import norm
+
+
+DEFAULT_DATE_FORMAT = "%Y-%m-%d"
+Frequency = Enum(
+    "Frequency",
+    "Natural Year Month Week BDay",
+)
+
+NATURAL = Frequency.Natural
+YEAR = Frequency.Year
+MONTH = Frequency.Month
+WEEK = Frequency.Week
+
+
+BUSINESS_DAYS_IN_YEAR = 256
+WEEKS_PER_YEAR = 52.25
+MONTHS_PER_YEAR = 12
+SECONDS_PER_YEAR = 365.25 * 24 * 60 * 60
+
+
+PERIODS_PER_YEAR = {
+    MONTH: MONTHS_PER_YEAR,
+    WEEK: WEEKS_PER_YEAR,
+    YEAR: 1
+
+}
 
 
 def periods_per_year(at_frequency: Frequency):

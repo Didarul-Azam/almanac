@@ -1,9 +1,10 @@
-from almanac.config.configs import (DEFAULT_DATE_FORMAT, Frequency, NATURAL, YEAR, MONTH, WEEK, BUSINESS_DAYS_IN_YEAR, WEEKS_PER_YEAR, MONTHS_PER_YEAR, SECONDS_PER_YEAR, PERIODS_PER_YEAR
-                                    )
+from ..config.configs import *
 from scipy.stats import norm
 import pandas as pd
 import numpy as np
 from enum import Enum
+# import sys
+# sys.path.append('../../../almanac/')
 
 
 def periods_per_year(at_frequency: Frequency):

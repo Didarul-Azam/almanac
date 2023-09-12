@@ -1,2 +1,2 @@
-#print
-#this is a setup file
+from setuptools import setup, find_packages
+setup(name='almanac', packages=find_packages())
