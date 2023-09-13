@@ -106,7 +106,7 @@
         "documentation": {}
     },
     {
-        "label": "NATURAL",
+        "label": "*",
         "importPath": "almanac.config.configs",
         "description": "almanac.config.configs",
         "isExtraImport": true,
@@ -114,47 +114,7 @@
         "documentation": {}
     },
     {
-        "label": "NORMAL_DISTR_RATIO",
-        "importPath": "almanac.config.configs",
-        "description": "almanac.config.configs",
-        "isExtraImport": true,
-        "detail": "almanac.config.configs",
-        "documentation": {}
-    },
-    {
-        "label": "QUANT_PERCENTILE_EXTREME",
-        "importPath": "almanac.config.configs",
-        "description": "almanac.config.configs",
-        "isExtraImport": true,
-        "detail": "almanac.config.configs",
-        "documentation": {}
-    },
-    {
-        "label": "QUANT_PERCENTILE_STD",
-        "importPath": "almanac.config.configs",
-        "description": "almanac.config.configs",
-        "isExtraImport": true,
-        "detail": "almanac.config.configs",
-        "documentation": {}
-    },
-    {
-        "label": "YEAR",
-        "importPath": "almanac.config.configs",
-        "description": "almanac.config.configs",
-        "isExtraImport": true,
-        "detail": "almanac.config.configs",
-        "documentation": {}
-    },
-    {
-        "label": "WEEK",
-        "importPath": "almanac.config.configs",
-        "description": "almanac.config.configs",
-        "isExtraImport": true,
-        "detail": "almanac.config.configs",
-        "documentation": {}
-    },
-    {
-        "label": "MONTH",
+        "label": "BUSINESS_DAYS_IN_YEAR",
         "importPath": "almanac.config.configs",
         "description": "almanac.config.configs",
         "isExtraImport": true,
@@ -250,7 +210,7 @@
         "documentation": {}
     },
     {
-        "label": "NATURAL",
+        "label": "*",
         "importPath": "almanac.config.configs",
         "description": "almanac.config.configs",
         "isExtraImport": true,
@@ -258,47 +218,7 @@
         "documentation": {}
     },
     {
-        "label": "NORMAL_DISTR_RATIO",
-        "importPath": "almanac.config.configs",
-        "description": "almanac.config.configs",
-        "isExtraImport": true,
-        "detail": "almanac.config.configs",
-        "documentation": {}
-    },
-    {
-        "label": "QUANT_PERCENTILE_EXTREME",
-        "importPath": "almanac.config.configs",
-        "description": "almanac.config.configs",
-        "isExtraImport": true,
-        "detail": "almanac.config.configs",
-        "documentation": {}
-    },
-    {
-        "label": "QUANT_PERCENTILE_STD",
-        "importPath": "almanac.config.configs",
-        "description": "almanac.config.configs",
-        "isExtraImport": true,
-        "detail": "almanac.config.configs",
-        "documentation": {}
-    },
-    {
-        "label": "YEAR",
-        "importPath": "almanac.config.configs",
-        "description": "almanac.config.configs",
-        "isExtraImport": true,
-        "detail": "almanac.config.configs",
-        "documentation": {}
-    },
-    {
-        "label": "WEEK",
-        "importPath": "almanac.config.configs",
-        "description": "almanac.config.configs",
-        "isExtraImport": true,
-        "detail": "almanac.config.configs",
-        "documentation": {}
-    },
-    {
-        "label": "MONTH",
+        "label": "BUSINESS_DAYS_IN_YEAR",
         "importPath": "almanac.config.configs",
         "description": "almanac.config.configs",
         "isExtraImport": true,
@@ -450,6 +370,38 @@
         "documentation": {}
     },
     {
+        "label": "Read_csv",
+        "importPath": "almanac.data.data",
+        "description": "almanac.data.data",
+        "isExtraImport": true,
+        "detail": "almanac.data.data",
+        "documentation": {}
+    },
+    {
+        "label": "Read_csv",
+        "importPath": "almanac.data.data",
+        "description": "almanac.data.data",
+        "isExtraImport": true,
+        "detail": "almanac.data.data",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
         "label": "calculate_perc_returns",
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
@@ -482,6 +434,22 @@
         "documentation": {}
     },
     {
+        "label": "Stats",
+        "importPath": "almanac.analysis.calculate_stats",
+        "description": "almanac.analysis.calculate_stats",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_stats",
+        "documentation": {}
+    },
+    {
+        "label": "Stats",
+        "importPath": "almanac.analysis.calculate_stats",
+        "description": "almanac.analysis.calculate_stats",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_stats",
+        "documentation": {}
+    },
+    {
         "label": "Union",
         "importPath": "typing",
         "description": "typing",
@@ -495,6 +463,54 @@
         "description": "typing",
         "isExtraImport": true,
         "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_series_given_fixed_risk",
+        "importPath": "almanac.analysis.position_sereies_fixed_risk",
+        "description": "almanac.analysis.position_sereies_fixed_risk",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.position_sereies_fixed_risk",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_series_given_fixed_risk",
+        "importPath": "almanac.analysis.position_sereies_fixed_risk",
+        "description": "almanac.analysis.position_sereies_fixed_risk",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.position_sereies_fixed_risk",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_standard_deviation_for_risk_targeting",
+        "importPath": "almanac.analysis.std_for_risk",
+        "description": "almanac.analysis.std_for_risk",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.std_for_risk",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_standard_deviation_for_risk_targeting",
+        "importPath": "almanac.analysis.std_for_risk",
+        "description": "almanac.analysis.std_for_risk",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.std_for_risk",
         "documentation": {}
     },
     {
@@ -532,21 +548,30 @@
         "documentation": {}
     },
     {
-        "label": "calculate_variable_standard_deviation_for_risk_targeting",
-        "kind": 2,
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_variable_standard_deviation_for_risk_targeting(\n    adjusted_price: pd.Series,\n    current_price: pd.Series,\n    use_perc_returns: bool = True,\n    annualise_stdev: bool = True,\n) -> pd.Series:\n    if use_perc_returns:\n        daily_returns = calculate_percentage_returns(\n            adjusted_price=adjusted_price, current_price=current_price\n        )",
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
         "label": "Stats",
         "kind": 6,
         "importPath": "almanac.analysis.calculate_stats",
         "description": "almanac.analysis.calculate_stats",
         "peekOfCode": "class Stats():\n    def __init__(self,perc_return, at_frequency = NATURAL) -> None:\n        self.perc_return = perc_return\n        self.at_frequency = at_frequency\n    def _sum_at_frequency(self):\n        if self.at_frequency == NATURAL:\n            return self.perc_return\n        at_frequency_str_dict = {YEAR: \"Y\", WEEK: \"7D\", MONTH: \"1M\"}\n        at_frequency_str = at_frequency_str_dict[self.at_frequency]\n        perc_return_at_freq = self.perc_return.resample(at_frequency_str).sum()",
         "detail": "almanac.analysis.calculate_stats",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_series_given_fixed_risk",
+        "kind": 2,
+        "importPath": "almanac.analysis.position_sereies_fixed_risk",
+        "description": "almanac.analysis.position_sereies_fixed_risk",
+        "peekOfCode": "def calculate_position_series_given_fixed_risk(capital: float,\n                                               risk_target_tau: float,\n                                               current_price: pd.Series,\n                                               fx: pd.Series,\n                                               multiplier: float,\n                                               instrument_risk_ann_perc: float) -> pd.Series:\n    #N = (Capital × τ) ÷ (Multiplier × Price × FX × σ %)\n    position_in_contracts =  capital * risk_target_tau / (multiplier * current_price * fx * instrument_risk_ann_perc)\n    return position_in_contracts",
+        "detail": "almanac.analysis.position_sereies_fixed_risk",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_standard_deviation_for_risk_targeting",
+        "kind": 2,
+        "importPath": "almanac.analysis.std_for_risk",
+        "description": "almanac.analysis.std_for_risk",
+        "peekOfCode": "def calculate_standard_deviation_for_risk_targeting(adjusted_price: pd.Series,\n                                                    current_price: pd.Series):\n    daily_price_changes = adjusted_price.diff()\n    percentage_changes = daily_price_changes / current_price.shift(1)\n    ## Can do the whole series or recent history\n    recent_daily_std = percentage_changes.tail(30).std()\n    return recent_daily_std*(BUSINESS_DAYS_IN_YEAR**.5)",
+        "detail": "almanac.analysis.std_for_risk",
         "documentation": {}
     },
     {
@@ -694,6 +719,15 @@
         "documentation": {}
     },
     {
+        "label": "Strategy2",
+        "kind": 6,
+        "importPath": "almanac.strategy.strategy2",
+        "description": "almanac.strategy.strategy2",
+        "peekOfCode": "class Strategy2:\n    def __init__(self, data_path: str, multiplier: int, risk_target: Union[int, float], capital: int):\n        self.data_path = data_path\n        self.multiplier = multiplier\n        self.risk_target = risk_target\n        self.capital = capital\n        self.data = self.get_data()\n        self.adjusted_price = self.data.adjusted\n        self.current_price = self.data.underlying\n        self.fx_series = pd.Series(1, index=self.data.index)",
+        "detail": "almanac.strategy.strategy2",
+        "documentation": {}
+    },
+    {
         "label": "periods_per_year",
         "kind": 2,
         "importPath": "almanac.utils.utils",
@@ -757,21 +791,30 @@
         "documentation": {}
     },
     {
-        "label": "calculate_variable_standard_deviation_for_risk_targeting",
-        "kind": 2,
-        "importPath": "build.lib.almanac.analysis.calculate_returns",
-        "description": "build.lib.almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_variable_standard_deviation_for_risk_targeting(\n    adjusted_price: pd.Series,\n    current_price: pd.Series,\n    use_perc_returns: bool = True,\n    annualise_stdev: bool = True,\n) -> pd.Series:\n    if use_perc_returns:\n        daily_returns = calculate_percentage_returns(\n            adjusted_price=adjusted_price, current_price=current_price\n        )",
-        "detail": "build.lib.almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
         "label": "Stats",
         "kind": 6,
         "importPath": "build.lib.almanac.analysis.calculate_stats",
         "description": "build.lib.almanac.analysis.calculate_stats",
         "peekOfCode": "class Stats():\n    def __init__(self,perc_return, at_frequency = NATURAL) -> None:\n        self.perc_return = perc_return\n        self.at_frequency = at_frequency\n    def _sum_at_frequency(self):\n        if self.at_frequency == NATURAL:\n            return self.perc_return\n        at_frequency_str_dict = {YEAR: \"Y\", WEEK: \"7D\", MONTH: \"1M\"}\n        at_frequency_str = at_frequency_str_dict[self.at_frequency]\n        perc_return_at_freq = self.perc_return.resample(at_frequency_str).sum()",
         "detail": "build.lib.almanac.analysis.calculate_stats",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_series_given_fixed_risk",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.position_sereies_fixed_risk",
+        "description": "build.lib.almanac.analysis.position_sereies_fixed_risk",
+        "peekOfCode": "def calculate_position_series_given_fixed_risk(capital: float,\n                                               risk_target_tau: float,\n                                               current_price: pd.Series,\n                                               fx: pd.Series,\n                                               multiplier: float,\n                                               instrument_risk_ann_perc: float) -> pd.Series:\n    #N = (Capital × τ) ÷ (Multiplier × Price × FX × σ %)\n    position_in_contracts =  capital * risk_target_tau / (multiplier * current_price * fx * instrument_risk_ann_perc)\n    return position_in_contracts",
+        "detail": "build.lib.almanac.analysis.position_sereies_fixed_risk",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_standard_deviation_for_risk_targeting",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.std_for_risk",
+        "description": "build.lib.almanac.analysis.std_for_risk",
+        "peekOfCode": "def calculate_standard_deviation_for_risk_targeting(adjusted_price: pd.Series,\n                                                    current_price: pd.Series):\n    daily_price_changes = adjusted_price.diff()\n    percentage_changes = daily_price_changes / current_price.shift(1)\n    ## Can do the whole series or recent history\n    recent_daily_std = percentage_changes.tail(30).std()\n    return recent_daily_std*(BUSINESS_DAYS_IN_YEAR**.5)",
+        "detail": "build.lib.almanac.analysis.std_for_risk",
         "documentation": {}
     },
     {
@@ -916,6 +959,15 @@
         "description": "build.lib.almanac.strategy.strategy1",
         "peekOfCode": "class Strategy1:\n    def __init__(self, data_path: str, multiplier: int, risk_target: Union[int, float], capital: int):\n        self.data_path = data_path\n        self.multiplier = multiplier\n        self.risk_target = risk_target\n        self.capital = capital\n        self.data = self.get_data()\n        self.adjusted_price = self.data.adjusted\n        self.current_price = self.data.underlying\n        self.fx_series = pd.Series(1, index=self.data.index)",
         "detail": "build.lib.almanac.strategy.strategy1",
+        "documentation": {}
+    },
+    {
+        "label": "Strategy2",
+        "kind": 6,
+        "importPath": "build.lib.almanac.strategy.strategy2",
+        "description": "build.lib.almanac.strategy.strategy2",
+        "peekOfCode": "class Strategy2:\n    def __init__(self, data_path: str, multiplier: int, risk_target: Union[int, float], capital: int):\n        self.data_path = data_path\n        self.multiplier = multiplier\n        self.risk_target = risk_target\n        self.capital = capital\n        self.data = self.get_data()\n        self.adjusted_price = self.data.adjusted\n        self.current_price = self.data.underlying\n        self.fx_series = pd.Series(1, index=self.data.index)",
+        "detail": "build.lib.almanac.strategy.strategy2",
         "documentation": {}
     },
     {
