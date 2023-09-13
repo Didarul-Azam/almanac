@@ -13,6 +13,8 @@ almanac/analysis/position_sereies_variable_risk.py
 almanac/analysis/std_for_risk.py
 almanac/config/__init__.py
 almanac/config/configs.py
+almanac/config/fx_dict.py
+almanac/config/instruments.py
 almanac/data/__init__.py
 almanac/data/data.py
 almanac/deployment/__init__.py
@@ -22,5 +24,6 @@ almanac/strategy/strategy2.py
 almanac/strategy/strategy3.py
 almanac/strategy/strategy4_handcrafting.py
 almanac/utils/__init__.py
+almanac/utils/fx_series.py
 almanac/utils/standardDeviation.py
 almanac/utils/utils.py
