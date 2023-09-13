@@ -114,7 +114,23 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
         "label": "BUSINESS_DAYS_IN_YEAR",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "*",
         "importPath": "almanac.config.configs",
         "description": "almanac.config.configs",
         "isExtraImport": true,
@@ -218,7 +234,23 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
         "label": "BUSINESS_DAYS_IN_YEAR",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "*",
         "importPath": "almanac.config.configs",
         "description": "almanac.config.configs",
         "isExtraImport": true,
@@ -378,47 +410,63 @@
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "Read_csv",
+        "importPath": "almanac.data.data",
+        "description": "almanac.data.data",
         "isExtraImport": true,
-        "detail": "enum",
+        "detail": "almanac.data.data",
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "Read_csv",
+        "importPath": "almanac.data.data",
+        "description": "almanac.data.data",
         "isExtraImport": true,
-        "detail": "enum",
+        "detail": "almanac.data.data",
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "standardDeviation",
+        "importPath": "almanac.utils.standardDeviation",
+        "description": "almanac.utils.standardDeviation",
         "isExtraImport": true,
-        "detail": "enum",
+        "detail": "almanac.utils.standardDeviation",
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "standardDeviation",
+        "importPath": "almanac.utils.standardDeviation",
+        "description": "almanac.utils.standardDeviation",
         "isExtraImport": true,
-        "detail": "enum",
+        "detail": "almanac.utils.standardDeviation",
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "standardDeviation",
+        "importPath": "almanac.utils.standardDeviation",
+        "description": "almanac.utils.standardDeviation",
         "isExtraImport": true,
-        "detail": "enum",
+        "detail": "almanac.utils.standardDeviation",
         "documentation": {}
     },
     {
-        "label": "calculate_perc_returns",
+        "label": "standardDeviation",
+        "importPath": "almanac.utils.standardDeviation",
+        "description": "almanac.utils.standardDeviation",
+        "isExtraImport": true,
+        "detail": "almanac.utils.standardDeviation",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_percentage_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_daily_returns",
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
         "isExtraImport": true,
@@ -447,6 +495,118 @@
         "description": "almanac.analysis.calculate_returns",
         "isExtraImport": true,
         "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_percentage_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_daily_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_percentage_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_daily_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_percentage_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_daily_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
         "documentation": {}
     },
     {
@@ -479,6 +639,38 @@
         "description": "almanac.analysis.calculate_stats",
         "isExtraImport": true,
         "detail": "almanac.analysis.calculate_stats",
+        "documentation": {}
+    },
+    {
+        "label": "Stats",
+        "importPath": "almanac.analysis.calculate_stats",
+        "description": "almanac.analysis.calculate_stats",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_stats",
+        "documentation": {}
+    },
+    {
+        "label": "Stats",
+        "importPath": "almanac.analysis.calculate_stats",
+        "description": "almanac.analysis.calculate_stats",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_stats",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
         "documentation": {}
     },
     {
@@ -530,6 +722,22 @@
         "documentation": {}
     },
     {
+        "label": "calculate_position_series_given_fixed_risk",
+        "importPath": "almanac.analysis.position_sereies_fixed_risk",
+        "description": "almanac.analysis.position_sereies_fixed_risk",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.position_sereies_fixed_risk",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_series_given_fixed_risk",
+        "importPath": "almanac.analysis.position_sereies_fixed_risk",
+        "description": "almanac.analysis.position_sereies_fixed_risk",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.position_sereies_fixed_risk",
+        "documentation": {}
+    },
+    {
         "label": "calculate_standard_deviation_for_risk_targeting",
         "importPath": "almanac.analysis.std_for_risk",
         "description": "almanac.analysis.std_for_risk",
@@ -543,6 +751,54 @@
         "description": "almanac.analysis.std_for_risk",
         "isExtraImport": true,
         "detail": "almanac.analysis.std_for_risk",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_variable_standard_deviation_for_risk_targeting",
+        "importPath": "almanac.analysis.std_for_risk",
+        "description": "almanac.analysis.std_for_risk",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.std_for_risk",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_standard_deviation_for_risk_targeting",
+        "importPath": "almanac.analysis.std_for_risk",
+        "description": "almanac.analysis.std_for_risk",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.std_for_risk",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_standard_deviation_for_risk_targeting",
+        "importPath": "almanac.analysis.std_for_risk",
+        "description": "almanac.analysis.std_for_risk",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.std_for_risk",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_variable_standard_deviation_for_risk_targeting",
+        "importPath": "almanac.analysis.std_for_risk",
+        "description": "almanac.analysis.std_for_risk",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.std_for_risk",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_series_given_variable_risk",
+        "importPath": "almanac.analysis.position_sereies_variable_risk",
+        "description": "almanac.analysis.position_sereies_variable_risk",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.position_sereies_variable_risk",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_series_given_variable_risk",
+        "importPath": "almanac.analysis.position_sereies_variable_risk",
+        "description": "almanac.analysis.position_sereies_variable_risk",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.position_sereies_variable_risk",
         "documentation": {}
     },
     {
@@ -559,6 +815,22 @@
         "description": "almanac.analysis.handcrafting",
         "isExtraImport": true,
         "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "copy",
+        "importPath": "copy",
+        "description": "copy",
+        "isExtraImport": true,
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "copy",
+        "importPath": "copy",
+        "description": "copy",
+        "isExtraImport": true,
+        "detail": "copy",
         "documentation": {}
     },
     {
@@ -592,6 +864,24 @@
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
         "peekOfCode": "def calculate_perc_returns(\n    position_contracts_held: pd.Series,\n    adjusted_price: pd.Series,\n    fx_series: pd.Series,\n    multiplier: float,\n    capital_required: pd.Series,\n) -> pd.Series:\n    return_price_points = (\n        adjusted_price - adjusted_price.shift(1)\n    ) * position_contracts_held.shift(1)",
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_percentage_returns",
+        "kind": 2,
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "peekOfCode": "def calculate_percentage_returns(\n    adjusted_price: pd.Series, current_price: pd.Series\n) -> pd.Series:\n    daily_price_changes = calculate_daily_returns(adjusted_price)\n    percentage_changes = daily_price_changes / current_price.shift(1)\n    return percentage_changes\ndef calculate_daily_returns(adjusted_price: pd.Series) -> pd.Series:\n    return adjusted_price.diff()",
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_daily_returns",
+        "kind": 2,
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "peekOfCode": "def calculate_daily_returns(adjusted_price: pd.Series) -> pd.Series:\n    return adjusted_price.diff()",
         "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -776,11 +1066,29 @@
         "documentation": {}
     },
     {
+        "label": "calculate_position_series_given_variable_risk",
+        "kind": 2,
+        "importPath": "almanac.analysis.position_sereies_variable_risk",
+        "description": "almanac.analysis.position_sereies_variable_risk",
+        "peekOfCode": "def calculate_position_series_given_variable_risk(\n    capital: float,\n    risk_target_tau: float,\n    fx: pd.Series,\n    multiplier: float,\n    instrument_risk: standardDeviation,\n) -> pd.Series:\n    # N = (Capital × τ) ÷ (Multiplier × Price × FX × σ %)\n    ## resolves to N = (Capital × τ) ÷ (Multiplier × FX × daily stdev price terms × 16)\n    ## for simplicity we use the daily risk in price terms, even if we calculated annualised % returns",
+        "detail": "almanac.analysis.position_sereies_variable_risk",
+        "documentation": {}
+    },
+    {
         "label": "calculate_standard_deviation_for_risk_targeting",
         "kind": 2,
         "importPath": "almanac.analysis.std_for_risk",
         "description": "almanac.analysis.std_for_risk",
-        "peekOfCode": "def calculate_standard_deviation_for_risk_targeting(adjusted_price: pd.Series,\n                                                    current_price: pd.Series):\n    daily_price_changes = adjusted_price.diff()\n    percentage_changes = daily_price_changes / current_price.shift(1)\n    ## Can do the whole series or recent history\n    recent_daily_std = percentage_changes.tail(30).std()\n    return recent_daily_std*(BUSINESS_DAYS_IN_YEAR**.5)",
+        "peekOfCode": "def calculate_standard_deviation_for_risk_targeting(adjusted_price: pd.Series,\n                                                    current_price: pd.Series):\n    daily_price_changes = adjusted_price.diff()\n    percentage_changes = daily_price_changes / current_price.shift(1)\n    ## Can do the whole series or recent history\n    recent_daily_std = percentage_changes.tail(30).std()\n    return recent_daily_std*(BUSINESS_DAYS_IN_YEAR**.5)\ndef calculate_variable_standard_deviation_for_risk_targeting(\n    adjusted_price: pd.Series,\n    current_price: pd.Series,",
+        "detail": "almanac.analysis.std_for_risk",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_variable_standard_deviation_for_risk_targeting",
+        "kind": 2,
+        "importPath": "almanac.analysis.std_for_risk",
+        "description": "almanac.analysis.std_for_risk",
+        "peekOfCode": "def calculate_variable_standard_deviation_for_risk_targeting(\n    adjusted_price: pd.Series,\n    current_price: pd.Series,\n    use_perc_returns: bool = True,\n    annualise_stdev: bool = True,\n) -> pd.Series:\n    if use_perc_returns:\n        daily_returns = calculate_percentage_returns(\n            adjusted_price=adjusted_price, current_price=current_price\n        )",
         "detail": "almanac.analysis.std_for_risk",
         "documentation": {}
     },
@@ -938,6 +1246,15 @@
         "documentation": {}
     },
     {
+        "label": "Strategy3",
+        "kind": 6,
+        "importPath": "almanac.strategy.strategy3",
+        "description": "almanac.strategy.strategy3",
+        "peekOfCode": "class Strategy3:\n    def __init__(self, data_path: str, multiplier: int, risk_target: Union[int, float], capital: int):\n        self.data_path = data_path\n        self.multiplier = multiplier\n        self.risk_target = risk_target\n        self.capital = capital\n        self.data = self.get_data()\n        self.adjusted_price = self.data.adjusted\n        self.current_price = self.data.underlying\n        self.fx_series = pd.Series(1, index=self.data.index)",
+        "detail": "almanac.strategy.strategy3",
+        "documentation": {}
+    },
+    {
         "label": "portfolio_returns",
         "kind": 5,
         "importPath": "almanac.strategy.strategy4_handcrafting",
@@ -953,6 +1270,15 @@
         "description": "almanac.strategy.strategy4_handcrafting",
         "peekOfCode": "portfolio_weights = handcrafting_algo(portfolio_returns)\nprint(portfolio_weights)",
         "detail": "almanac.strategy.strategy4_handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "standardDeviation",
+        "kind": 6,
+        "importPath": "almanac.utils.standardDeviation",
+        "description": "almanac.utils.standardDeviation",
+        "peekOfCode": "class standardDeviation(pd.Series):\n    ## class that can be eithier % or price based standard deviation estimate\n    def __init__(\n        self,\n        adjusted_price: pd.Series,\n        current_price: pd.Series,\n        use_perc_returns: bool = True,\n        annualise_stdev: bool = True,\n    ):\n        stdev = calculate_variable_standard_deviation_for_risk_targeting(",
+        "detail": "almanac.utils.standardDeviation",
         "documentation": {}
     },
     {
@@ -1015,6 +1341,24 @@
         "importPath": "build.lib.almanac.analysis.calculate_returns",
         "description": "build.lib.almanac.analysis.calculate_returns",
         "peekOfCode": "def calculate_perc_returns(\n    position_contracts_held: pd.Series,\n    adjusted_price: pd.Series,\n    fx_series: pd.Series,\n    multiplier: float,\n    capital_required: pd.Series,\n) -> pd.Series:\n    return_price_points = (\n        adjusted_price - adjusted_price.shift(1)\n    ) * position_contracts_held.shift(1)",
+        "detail": "build.lib.almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_percentage_returns",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.calculate_returns",
+        "description": "build.lib.almanac.analysis.calculate_returns",
+        "peekOfCode": "def calculate_percentage_returns(\n    adjusted_price: pd.Series, current_price: pd.Series\n) -> pd.Series:\n    daily_price_changes = calculate_daily_returns(adjusted_price)\n    percentage_changes = daily_price_changes / current_price.shift(1)\n    return percentage_changes\ndef calculate_daily_returns(adjusted_price: pd.Series) -> pd.Series:\n    return adjusted_price.diff()",
+        "detail": "build.lib.almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_daily_returns",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.calculate_returns",
+        "description": "build.lib.almanac.analysis.calculate_returns",
+        "peekOfCode": "def calculate_daily_returns(adjusted_price: pd.Series) -> pd.Series:\n    return adjusted_price.diff()",
         "detail": "build.lib.almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -1199,11 +1543,29 @@
         "documentation": {}
     },
     {
+        "label": "calculate_position_series_given_variable_risk",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.position_sereies_variable_risk",
+        "description": "build.lib.almanac.analysis.position_sereies_variable_risk",
+        "peekOfCode": "def calculate_position_series_given_variable_risk(\n    capital: float,\n    risk_target_tau: float,\n    fx: pd.Series,\n    multiplier: float,\n    instrument_risk: standardDeviation,\n) -> pd.Series:\n    # N = (Capital × τ) ÷ (Multiplier × Price × FX × σ %)\n    ## resolves to N = (Capital × τ) ÷ (Multiplier × FX × daily stdev price terms × 16)\n    ## for simplicity we use the daily risk in price terms, even if we calculated annualised % returns",
+        "detail": "build.lib.almanac.analysis.position_sereies_variable_risk",
+        "documentation": {}
+    },
+    {
         "label": "calculate_standard_deviation_for_risk_targeting",
         "kind": 2,
         "importPath": "build.lib.almanac.analysis.std_for_risk",
         "description": "build.lib.almanac.analysis.std_for_risk",
-        "peekOfCode": "def calculate_standard_deviation_for_risk_targeting(adjusted_price: pd.Series,\n                                                    current_price: pd.Series):\n    daily_price_changes = adjusted_price.diff()\n    percentage_changes = daily_price_changes / current_price.shift(1)\n    ## Can do the whole series or recent history\n    recent_daily_std = percentage_changes.tail(30).std()\n    return recent_daily_std*(BUSINESS_DAYS_IN_YEAR**.5)",
+        "peekOfCode": "def calculate_standard_deviation_for_risk_targeting(adjusted_price: pd.Series,\n                                                    current_price: pd.Series):\n    daily_price_changes = adjusted_price.diff()\n    percentage_changes = daily_price_changes / current_price.shift(1)\n    ## Can do the whole series or recent history\n    recent_daily_std = percentage_changes.tail(30).std()\n    return recent_daily_std*(BUSINESS_DAYS_IN_YEAR**.5)\ndef calculate_variable_standard_deviation_for_risk_targeting(\n    adjusted_price: pd.Series,\n    current_price: pd.Series,",
+        "detail": "build.lib.almanac.analysis.std_for_risk",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_variable_standard_deviation_for_risk_targeting",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.std_for_risk",
+        "description": "build.lib.almanac.analysis.std_for_risk",
+        "peekOfCode": "def calculate_variable_standard_deviation_for_risk_targeting(\n    adjusted_price: pd.Series,\n    current_price: pd.Series,\n    use_perc_returns: bool = True,\n    annualise_stdev: bool = True,\n) -> pd.Series:\n    if use_perc_returns:\n        daily_returns = calculate_percentage_returns(\n            adjusted_price=adjusted_price, current_price=current_price\n        )",
         "detail": "build.lib.almanac.analysis.std_for_risk",
         "documentation": {}
     },
@@ -1361,6 +1723,15 @@
         "documentation": {}
     },
     {
+        "label": "Strategy3",
+        "kind": 6,
+        "importPath": "build.lib.almanac.strategy.strategy3",
+        "description": "build.lib.almanac.strategy.strategy3",
+        "peekOfCode": "class Strategy3:\n    def __init__(self, data_path: str, multiplier: int, risk_target: Union[int, float], capital: int):\n        self.data_path = data_path\n        self.multiplier = multiplier\n        self.risk_target = risk_target\n        self.capital = capital\n        self.data = self.get_data()\n        self.adjusted_price = self.data.adjusted\n        self.current_price = self.data.underlying\n        self.fx_series = pd.Series(1, index=self.data.index)",
+        "detail": "build.lib.almanac.strategy.strategy3",
+        "documentation": {}
+    },
+    {
         "label": "portfolio_returns",
         "kind": 5,
         "importPath": "build.lib.almanac.strategy.strategy4_handcrafting",
@@ -1376,6 +1747,15 @@
         "description": "build.lib.almanac.strategy.strategy4_handcrafting",
         "peekOfCode": "portfolio_weights = handcrafting_algo(portfolio_returns)\nprint(portfolio_weights)",
         "detail": "build.lib.almanac.strategy.strategy4_handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "standardDeviation",
+        "kind": 6,
+        "importPath": "build.lib.almanac.utils.standardDeviation",
+        "description": "build.lib.almanac.utils.standardDeviation",
+        "peekOfCode": "class standardDeviation(pd.Series):\n    ## class that can be eithier % or price based standard deviation estimate\n    def __init__(\n        self,\n        adjusted_price: pd.Series,\n        current_price: pd.Series,\n        use_perc_returns: bool = True,\n        annualise_stdev: bool = True,\n    ):\n        stdev = calculate_variable_standard_deviation_for_risk_targeting(",
+        "detail": "build.lib.almanac.utils.standardDeviation",
         "documentation": {}
     },
     {
