@@ -27,3 +27,4 @@ class Read_csv:
 
         return adjusted_prices, current_prices
 
+
