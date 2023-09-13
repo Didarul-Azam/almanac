@@ -38,3 +38,42 @@ def calculate_percentage_returns(
 def calculate_daily_returns(adjusted_price: pd.Series) -> pd.Series:
 
     return adjusted_price.diff()
+
+
+def calculate_perc_returns_for_dict(
+    position_contracts_dict: dict,
+    adjusted_prices: dict,
+    multipliers: dict,
+    fx_series: dict,
+    capital: float,
+) -> dict:
+
+    perc_returns_dict = dict(
+        [
+            (
+                instrument_code,
+                calculate_perc_returns(
+                    position_contracts_held=position_contracts_dict[instrument_code],
+                    adjusted_price=adjusted_prices[instrument_code],
+                    multiplier=multipliers[instrument_code],
+                    fx_series=fx_series[instrument_code],
+                    capital_required=capital,
+                ),
+            )
+            for instrument_code in position_contracts_dict.keys()
+        ]
+    )
+
+    return perc_returns_dict
+
+
+def aggregate_returns(perc_returns_dict: dict) -> pd.Series:
+    both_returns = perc_returns_to_df(perc_returns_dict)
+    agg = both_returns.sum(axis=1)
+    return agg
+
+def perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:
+    both_returns = pd.concat(perc_returns_dict, axis=1)
+    both_returns = both_returns.dropna(how="all")
+
+    return both_returns

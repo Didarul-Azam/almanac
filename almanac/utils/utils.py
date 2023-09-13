@@ -59,3 +59,24 @@ def ann_std_given_frequency(perc_return_at_freq: pd.Series,
 def demeaned_remove_zeros(x):
     x[x == 0] = np.nan
     return x - x.mean()
+
+
+def minimum_capital_for_sub_strategy(
+    multiplier: float,
+    price: float,
+    fx: float,
+    instrument_risk_ann_perc: float,
+    risk_target: float,
+    idm: float,
+    weight: float,
+    contracts: int = 4,
+):
+    # (4 × Multiplier i × Price i, t × FX rate i, t × σ % i, t) ÷ (IDM × Weight i × τ)
+    return (
+        contracts
+        * multiplier
+        * price
+        * fx
+        * instrument_risk_ann_perc
+        / (risk_target * idm * weight)
+    )
