@@ -33,3 +33,32 @@ def calculate_position_series_given_variable_risk(
         * risk_target_tau
         / (multiplier * fx * daily_risk_price_terms * (BUSINESS_DAYS_IN_YEAR ** 0.5))
     )
+    
+    
+def calculate_position_series_given_variable_risk_for_dict(
+    capital: float,
+    risk_target_tau: float,
+    idm: float,
+    weights: dict,
+    fx_series_dict: dict,
+    multipliers: dict,
+    std_dev_dict: dict,
+) -> dict:
+
+    position_series_dict = dict(
+        [
+            (
+                instrument_code,
+                calculate_position_series_given_variable_risk(
+                    capital=capital * idm * weights[instrument_code],
+                    risk_target_tau=risk_target_tau,
+                    multiplier=multipliers[instrument_code],
+                    fx=fx_series_dict[instrument_code],
+                    instrument_risk=std_dev_dict[instrument_code],
+                ),
+            )
+            for instrument_code in std_dev_dict.keys()
+        ]
+    )
+
+    return position_series_dict
