@@ -7,6 +7,8 @@ almanac.egg-info/top_level.txt
 almanac/analysis/__init__.py
 almanac/analysis/calculate_returns.py
 almanac/analysis/calculate_stats.py
+almanac/analysis/position_sereies_fixed_risk.py
+almanac/analysis/std_for_risk.py
 almanac/config/__init__.py
 almanac/config/configs.py
 almanac/data/__init__.py
@@ -14,5 +16,6 @@ almanac/data/data.py
 almanac/deployment/__init__.py
 almanac/strategy/__init__.py
 almanac/strategy/strategy1.py
+almanac/strategy/strategy2.py
 almanac/utils/__init__.py
 almanac/utils/utils.py
