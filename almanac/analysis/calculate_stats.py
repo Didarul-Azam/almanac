@@ -2,7 +2,7 @@ from scipy.stats import norm
 import pandas as pd
 import numpy as np
 from almanac.utils.utils import periods_per_year,demeaned_remove_zeros
-from almanac.config.configs import NATURAL, NORMAL_DISTR_RATIO, QUANT_PERCENTILE_EXTREME, QUANT_PERCENTILE_STD,YEAR,WEEK,MONTH
+from almanac.config.configs import *
 class Stats():
     def __init__(self,perc_return, at_frequency = NATURAL) -> None:
         self.perc_return = perc_return
