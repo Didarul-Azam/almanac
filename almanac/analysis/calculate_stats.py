@@ -16,10 +16,9 @@ class Stats():
         at_frequency_str = at_frequency_str_dict[self.at_frequency]
 
         perc_return_at_freq = self.perc_return.resample(at_frequency_str).sum()
-        #self.
         return perc_return_at_freq
     
-    def perc_return_at_freq(self):
+    def _perc_return_at_freq(self):
         perc_return_at_freq =  self._sum_at_frequency()
         self.perc_return_at_freq = perc_return_at_freq
 
@@ -32,7 +31,7 @@ class Stats():
 
         return annualised_mean
 
-    def ann_mean(self):
+    def _ann_mean(self):
         ann_mean = self._ann_mean_given_frequency()
         self.ann_mean = ann_mean
 
@@ -43,13 +42,13 @@ class Stats():
 
         return annualised_std
     
-    def ann_std(self):
+    def _ann_std(self):
         ann_std = self._ann_std_given_frequency()
         self.ann_std = ann_std
-    def sharpe_ratio(self):
+    def _sharpe_ratio(self):
         sharpe = self.ann_mean/self.ann_std
         self.sharpe = sharpe
-    def skew_at_freq(self):
+    def _skew_at_freq(self):
         skew_at_freq = self.perc_return_at_freq.skew()
         self.skew_at_freq = skew_at_freq
     def _calculate_drawdown(self):
@@ -60,7 +59,7 @@ class Stats():
         ).max()
         return max_cum_perc_return - cum_perc_return
 
-    def drawdowns(self):
+    def _drawdowns(self):
         drawdowns = self._calculate_drawdown()
         self.drawdowns = drawdowns
         self.avg_drawdown = drawdowns.mean()
@@ -77,27 +76,27 @@ class Stats():
             QUANT_PERCENTILE_STD
         )
         return raw_ratio / NORMAL_DISTR_RATIO
-    def quant_ratio_lower(self):
+    def _quant_ratio_lower(self):
         quant_ratio_lower = self._calculate_quant_ratio_lower()
         self.quant_ratio_lower = quant_ratio_lower
-    def quant_ratio_upper(self):
+    def _quant_ratio_upper(self):
         quant_ratio_upper = self._calculate_quant_ratio_upper()
         self.quant_ratio_upper = quant_ratio_upper
 
     def stats(self,show=False):
-        self.perc_return_at_freq()
-        self.ann_mean()
-        self.ann_std()
-        self.sharpe_ratio()
-        self.skew_at_freq()
-        self.drawdowns()
-        self.quant_ratio_lower()
-        self.quant_ratio_upper()
+        self._perc_return_at_freq()
+        self._ann_mean()
+        self._ann_std()
+        self._sharpe_ratio()
+        self._skew_at_freq()
+        self._drawdowns()
+        self._quant_ratio_lower()
+        self._quant_ratio_upper()
         if show:
             return dict(
             ann_mean=self.ann_mean,
             ann_std=self.ann_std,
-            sharpe_ratio=self.sharpe_ratio,
+            sharpe_ratio=self.sharpe,
             skew=self.skew_at_freq,
             avg_drawdown=self.avg_drawdown,
             max_drawdown=self.max_drawdown,
@@ -107,14 +106,4 @@ class Stats():
             
     def show_stats(self):
        return self.stats(show=True)
-    
-
-
-
-
-
-
-
-
-    
     
