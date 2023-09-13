@@ -22,3 +22,19 @@ def calculate_perc_returns(
     perc_return = return_base_currency / capital_required
 
     return perc_return
+
+
+
+def calculate_percentage_returns(
+    adjusted_price: pd.Series, current_price: pd.Series
+) -> pd.Series:
+
+    daily_price_changes = calculate_daily_returns(adjusted_price)
+    percentage_changes = daily_price_changes / current_price.shift(1)
+
+    return percentage_changes
+
+
+def calculate_daily_returns(adjusted_price: pd.Series) -> pd.Series:
+
+    return adjusted_price.diff()
