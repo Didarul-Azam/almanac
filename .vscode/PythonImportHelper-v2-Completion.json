@@ -314,43 +314,19 @@
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "hierarchy",
+        "importPath": "scipy.cluster",
+        "description": "scipy.cluster",
         "isExtraImport": true,
-        "detail": "enum",
+        "detail": "scipy.cluster",
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "hierarchy",
+        "importPath": "scipy.cluster",
+        "description": "scipy.cluster",
         "isExtraImport": true,
-        "detail": "enum",
-        "documentation": {}
-    },
-    {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
-        "isExtraImport": true,
-        "detail": "enum",
-        "documentation": {}
-    },
-    {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
-        "isExtraImport": true,
-        "detail": "enum",
-        "documentation": {}
-    },
-    {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
-        "isExtraImport": true,
-        "detail": "enum",
+        "detail": "scipy.cluster",
         "documentation": {}
     },
     {
@@ -383,6 +359,62 @@
         "description": "almanac.data.data",
         "isExtraImport": true,
         "detail": "almanac.data.data",
+        "documentation": {}
+    },
+    {
+        "label": "Read_csv",
+        "importPath": "almanac.data.data",
+        "description": "almanac.data.data",
+        "isExtraImport": true,
+        "detail": "almanac.data.data",
+        "documentation": {}
+    },
+    {
+        "label": "Read_csv",
+        "importPath": "almanac.data.data",
+        "description": "almanac.data.data",
+        "isExtraImport": true,
+        "detail": "almanac.data.data",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
         "documentation": {}
     },
     {
@@ -511,6 +543,22 @@
         "description": "almanac.analysis.std_for_risk",
         "isExtraImport": true,
         "detail": "almanac.analysis.std_for_risk",
+        "documentation": {}
+    },
+    {
+        "label": "handcrafting_algo",
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "handcrafting_algo",
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.handcrafting",
         "documentation": {}
     },
     {
@@ -554,6 +602,168 @@
         "description": "almanac.analysis.calculate_stats",
         "peekOfCode": "class Stats():\n    def __init__(self,perc_return, at_frequency = NATURAL) -> None:\n        self.perc_return = perc_return\n        self.at_frequency = at_frequency\n    def _sum_at_frequency(self):\n        if self.at_frequency == NATURAL:\n            return self.perc_return\n        at_frequency_str_dict = {YEAR: \"Y\", WEEK: \"7D\", MONTH: \"1M\"}\n        at_frequency_str = at_frequency_str_dict[self.at_frequency]\n        perc_return_at_freq = self.perc_return.resample(at_frequency_str).sum()",
         "detail": "almanac.analysis.calculate_stats",
+        "documentation": {}
+    },
+    {
+        "label": "correlationEstimate",
+        "kind": 6,
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "peekOfCode": "class correlationEstimate(object):\n    def __init__(self, values: pd.DataFrame):\n        columns = values.columns\n        values = values.values\n        self._values = values\n        self._columns = columns\n    def __repr__(self):\n        return str(self.as_pd())\n    def __len__(self):\n        return len(self.columns)",
+        "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "portfolioWeights",
+        "kind": 6,
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "peekOfCode": "class portfolioWeights(dict):\n    @property\n    def weights(self):\n        return list(self.values())\n    @property\n    def assets(self):\n        return list(self.keys())\n    def multiply_by_float(self, multiplier: float):\n        list_of_assets = self.assets\n        list_of_weights = [self[asset] for asset in list_of_assets]",
+        "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "handcraftPortfolio",
+        "kind": 6,
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "peekOfCode": "class handcraftPortfolio(object):\n    def __init__(self, correlation: correlationEstimate):\n        self._correlation = correlation\n    @property\n    def correlation(self) -> correlationEstimate:\n        return self._correlation\n    @property\n    def size(self) -> int:\n        return len(self.correlation)\n    @property",
+        "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "cluster_correlation_matrix",
+        "kind": 2,
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "peekOfCode": "def cluster_correlation_matrix(corr_matrix: correlationEstimate, cluster_size: int = 2):\n    clusters = get_list_of_clusters_for_correlation_matrix(\n        corr_matrix, cluster_size=cluster_size\n    )\n    clusters_as_names = from_cluster_index_to_asset_names(\n        clusters, corr_matrix)\n    if PRINT_TRACE:\n        print(\"Cluster split: %s\" % str(clusters_as_names))\n    return clusters_as_names\ndef get_list_of_clusters_for_correlation_matrix(",
+        "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "get_list_of_clusters_for_correlation_matrix",
+        "kind": 2,
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "peekOfCode": "def get_list_of_clusters_for_correlation_matrix(\n    corr_matrix: np.array, cluster_size: int = 2\n) -> list:\n    corr_as_np = corr_matrix.values\n    try:\n        clusters = get_list_of_clusters_for_correlation_matrix_as_np(\n            corr_as_np, cluster_size=cluster_size\n        )\n    except:\n        clusters = arbitrary_split_of_correlation_matrix(",
+        "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "get_list_of_clusters_for_correlation_matrix_as_np",
+        "kind": 2,
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "peekOfCode": "def get_list_of_clusters_for_correlation_matrix_as_np(\n    corr_as_np: np.array, cluster_size: int = 2\n) -> list:\n    d = sch.distance.pdist(corr_as_np)\n    L = sch.linkage(d, method=\"complete\")\n    cutoff = cutoff_distance_to_guarantee_N_clusters(\n        corr_as_np, L=L, cluster_size=cluster_size\n    )\n    ind = sch.fcluster(L, cutoff, \"distance\")\n    ind = list(ind)",
+        "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "cutoff_distance_to_guarantee_N_clusters",
+        "kind": 2,
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "peekOfCode": "def cutoff_distance_to_guarantee_N_clusters(\n    corr_as_np: np.array, L: np.array, cluster_size: int = 2\n):\n    # assert cluster_size==2\n    N = len(corr_as_np)\n    return L[N - cluster_size][2] - 0.000001\ndef arbitrary_split_of_correlation_matrix(\n    corr_matrix: np.array, cluster_size: int = 2\n) -> list:\n    # split correlation of 3 or more assets",
+        "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "arbitrary_split_of_correlation_matrix",
+        "kind": 2,
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "peekOfCode": "def arbitrary_split_of_correlation_matrix(\n    corr_matrix: np.array, cluster_size: int = 2\n) -> list:\n    # split correlation of 3 or more assets\n    count_assets = len(corr_matrix)\n    return arbitrary_split_for_asset_length(count_assets, cluster_size=cluster_size)\ndef arbitrary_split_for_asset_length(count_assets: int, cluster_size: int = 2) -> list:\n    return [(x % cluster_size) + 1 for x in range(count_assets)]\ndef from_cluster_index_to_asset_names(\n    clusters: list, corr_matrix: correlationEstimate",
+        "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "arbitrary_split_for_asset_length",
+        "kind": 2,
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "peekOfCode": "def arbitrary_split_for_asset_length(count_assets: int, cluster_size: int = 2) -> list:\n    return [(x % cluster_size) + 1 for x in range(count_assets)]\ndef from_cluster_index_to_asset_names(\n    clusters: list, corr_matrix: correlationEstimate\n) -> list:\n    all_clusters = list(set(clusters))\n    asset_names = corr_matrix.columns\n    list_of_asset_clusters = [\n        get_asset_names_for_cluster_index(cluster_id, clusters, asset_names)\n        for cluster_id in all_clusters",
+        "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "from_cluster_index_to_asset_names",
+        "kind": 2,
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "peekOfCode": "def from_cluster_index_to_asset_names(\n    clusters: list, corr_matrix: correlationEstimate\n) -> list:\n    all_clusters = list(set(clusters))\n    asset_names = corr_matrix.columns\n    list_of_asset_clusters = [\n        get_asset_names_for_cluster_index(cluster_id, clusters, asset_names)\n        for cluster_id in all_clusters\n    ]\n    return list_of_asset_clusters",
+        "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "get_asset_names_for_cluster_index",
+        "kind": 2,
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "peekOfCode": "def get_asset_names_for_cluster_index(\n    cluster_id: int, clusters: list, asset_names: list\n):\n    list_of_assets = [\n        asset for asset, cluster in zip(asset_names, clusters) if cluster == cluster_id\n    ]\n    return list_of_assets\nclass portfolioWeights(dict):\n    @property\n    def weights(self):",
+        "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "flatten_list",
+        "kind": 2,
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "peekOfCode": "def flatten_list(some_list):\n    flattened = [item for sublist in some_list for item in sublist]\n    return flattened\ndef one_over_n_weights_given_asset_names(list_of_asset_names: list) -> portfolioWeights:\n    weight = 1.0 / len(list_of_asset_names)\n    return portfolioWeights(\n        [(asset_name, weight) for asset_name in list_of_asset_names]\n    )\nclass handcraftPortfolio(object):\n    def __init__(self, correlation: correlationEstimate):",
+        "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "one_over_n_weights_given_asset_names",
+        "kind": 2,
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "peekOfCode": "def one_over_n_weights_given_asset_names(list_of_asset_names: list) -> portfolioWeights:\n    weight = 1.0 / len(list_of_asset_names)\n    return portfolioWeights(\n        [(asset_name, weight) for asset_name in list_of_asset_names]\n    )\nclass handcraftPortfolio(object):\n    def __init__(self, correlation: correlationEstimate):\n        self._correlation = correlation\n    @property\n    def correlation(self) -> correlationEstimate:",
+        "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "create_sub_portfolios_from_portfolio",
+        "kind": 2,
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "peekOfCode": "def create_sub_portfolios_from_portfolio(handcraft_portfolio: handcraftPortfolio):\n    clusters_as_names = cluster_correlation_matrix(\n        handcraft_portfolio.correlation)\n    sub_portfolios = create_sub_portfolios_given_clusters(\n        clusters_as_names, handcraft_portfolio\n    )\n    return sub_portfolios\ndef create_sub_portfolios_given_clusters(\n    clusters_as_names: list, handcraft_portfolio: handcraftPortfolio\n) -> list:",
+        "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "create_sub_portfolios_given_clusters",
+        "kind": 2,
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "peekOfCode": "def create_sub_portfolios_given_clusters(\n    clusters_as_names: list, handcraft_portfolio: handcraftPortfolio\n) -> list:\n    list_of_sub_portfolios = [\n        handcraft_portfolio.subset(subset_of_asset_names)\n        for subset_of_asset_names in clusters_as_names\n    ]\n    return list_of_sub_portfolios\ndef aggregate_risk_weights_over_sub_portfolios(\n    sub_portfolios: list,",
+        "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "aggregate_risk_weights_over_sub_portfolios",
+        "kind": 2,
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "peekOfCode": "def aggregate_risk_weights_over_sub_portfolios(\n    sub_portfolios: list,\n) -> portfolioWeights:\n    # sub portfolios guaranteed to be 2 long\n    # We allocate half to each\n    asset_count = len(sub_portfolios)\n    # assert asset_count == 2\n    weights_for_each_subportfolio = [1.0 / asset_count] * asset_count\n    risk_weights_by_portfolio = [\n        sub_portfolio.weights() for sub_portfolio in sub_portfolios",
+        "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "handcrafting_algo",
+        "kind": 2,
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "peekOfCode": "def handcrafting_algo(instument_returns):\n    reader = Read_csv(instument_returns)\n    all_returns = reader.pd_readcsv()\n    corr_matrix = correlationEstimate(all_returns.corr())\n    handcraft_portfolio = handcraftPortfolio(corr_matrix)\n    PRINT_TRACE = True\n    portfolio_weights = handcraft_portfolio.weights()\n    return portfolio_weights",
+        "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "PRINT_TRACE",
+        "kind": 5,
+        "importPath": "almanac.analysis.handcrafting",
+        "description": "almanac.analysis.handcrafting",
+        "peekOfCode": "PRINT_TRACE = False\nclass correlationEstimate(object):\n    def __init__(self, values: pd.DataFrame):\n        columns = values.columns\n        values = values.values\n        self._values = values\n        self._columns = columns\n    def __repr__(self):\n        return str(self.as_pd())\n    def __len__(self):",
+        "detail": "almanac.analysis.handcrafting",
         "documentation": {}
     },
     {
@@ -728,6 +938,24 @@
         "documentation": {}
     },
     {
+        "label": "portfolio_returns",
+        "kind": 5,
+        "importPath": "almanac.strategy.strategy4_handcrafting",
+        "description": "almanac.strategy.strategy4_handcrafting",
+        "peekOfCode": "portfolio_returns = 'almanac/sample_data/jumbo_instrument_returns.csv'\nportfolio_weights = handcrafting_algo(portfolio_returns)\nprint(portfolio_weights)",
+        "detail": "almanac.strategy.strategy4_handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "portfolio_weights",
+        "kind": 5,
+        "importPath": "almanac.strategy.strategy4_handcrafting",
+        "description": "almanac.strategy.strategy4_handcrafting",
+        "peekOfCode": "portfolio_weights = handcrafting_algo(portfolio_returns)\nprint(portfolio_weights)",
+        "detail": "almanac.strategy.strategy4_handcrafting",
+        "documentation": {}
+    },
+    {
         "label": "periods_per_year",
         "kind": 2,
         "importPath": "almanac.utils.utils",
@@ -797,6 +1025,168 @@
         "description": "build.lib.almanac.analysis.calculate_stats",
         "peekOfCode": "class Stats():\n    def __init__(self,perc_return, at_frequency = NATURAL) -> None:\n        self.perc_return = perc_return\n        self.at_frequency = at_frequency\n    def _sum_at_frequency(self):\n        if self.at_frequency == NATURAL:\n            return self.perc_return\n        at_frequency_str_dict = {YEAR: \"Y\", WEEK: \"7D\", MONTH: \"1M\"}\n        at_frequency_str = at_frequency_str_dict[self.at_frequency]\n        perc_return_at_freq = self.perc_return.resample(at_frequency_str).sum()",
         "detail": "build.lib.almanac.analysis.calculate_stats",
+        "documentation": {}
+    },
+    {
+        "label": "correlationEstimate",
+        "kind": 6,
+        "importPath": "build.lib.almanac.analysis.handcrafting",
+        "description": "build.lib.almanac.analysis.handcrafting",
+        "peekOfCode": "class correlationEstimate(object):\n    def __init__(self, values: pd.DataFrame):\n        columns = values.columns\n        values = values.values\n        self._values = values\n        self._columns = columns\n    def __repr__(self):\n        return str(self.as_pd())\n    def __len__(self):\n        return len(self.columns)",
+        "detail": "build.lib.almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "portfolioWeights",
+        "kind": 6,
+        "importPath": "build.lib.almanac.analysis.handcrafting",
+        "description": "build.lib.almanac.analysis.handcrafting",
+        "peekOfCode": "class portfolioWeights(dict):\n    @property\n    def weights(self):\n        return list(self.values())\n    @property\n    def assets(self):\n        return list(self.keys())\n    def multiply_by_float(self, multiplier: float):\n        list_of_assets = self.assets\n        list_of_weights = [self[asset] for asset in list_of_assets]",
+        "detail": "build.lib.almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "handcraftPortfolio",
+        "kind": 6,
+        "importPath": "build.lib.almanac.analysis.handcrafting",
+        "description": "build.lib.almanac.analysis.handcrafting",
+        "peekOfCode": "class handcraftPortfolio(object):\n    def __init__(self, correlation: correlationEstimate):\n        self._correlation = correlation\n    @property\n    def correlation(self) -> correlationEstimate:\n        return self._correlation\n    @property\n    def size(self) -> int:\n        return len(self.correlation)\n    @property",
+        "detail": "build.lib.almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "cluster_correlation_matrix",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.handcrafting",
+        "description": "build.lib.almanac.analysis.handcrafting",
+        "peekOfCode": "def cluster_correlation_matrix(corr_matrix: correlationEstimate, cluster_size: int = 2):\n    clusters = get_list_of_clusters_for_correlation_matrix(\n        corr_matrix, cluster_size=cluster_size\n    )\n    clusters_as_names = from_cluster_index_to_asset_names(\n        clusters, corr_matrix)\n    if PRINT_TRACE:\n        print(\"Cluster split: %s\" % str(clusters_as_names))\n    return clusters_as_names\ndef get_list_of_clusters_for_correlation_matrix(",
+        "detail": "build.lib.almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "get_list_of_clusters_for_correlation_matrix",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.handcrafting",
+        "description": "build.lib.almanac.analysis.handcrafting",
+        "peekOfCode": "def get_list_of_clusters_for_correlation_matrix(\n    corr_matrix: np.array, cluster_size: int = 2\n) -> list:\n    corr_as_np = corr_matrix.values\n    try:\n        clusters = get_list_of_clusters_for_correlation_matrix_as_np(\n            corr_as_np, cluster_size=cluster_size\n        )\n    except:\n        clusters = arbitrary_split_of_correlation_matrix(",
+        "detail": "build.lib.almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "get_list_of_clusters_for_correlation_matrix_as_np",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.handcrafting",
+        "description": "build.lib.almanac.analysis.handcrafting",
+        "peekOfCode": "def get_list_of_clusters_for_correlation_matrix_as_np(\n    corr_as_np: np.array, cluster_size: int = 2\n) -> list:\n    d = sch.distance.pdist(corr_as_np)\n    L = sch.linkage(d, method=\"complete\")\n    cutoff = cutoff_distance_to_guarantee_N_clusters(\n        corr_as_np, L=L, cluster_size=cluster_size\n    )\n    ind = sch.fcluster(L, cutoff, \"distance\")\n    ind = list(ind)",
+        "detail": "build.lib.almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "cutoff_distance_to_guarantee_N_clusters",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.handcrafting",
+        "description": "build.lib.almanac.analysis.handcrafting",
+        "peekOfCode": "def cutoff_distance_to_guarantee_N_clusters(\n    corr_as_np: np.array, L: np.array, cluster_size: int = 2\n):\n    # assert cluster_size==2\n    N = len(corr_as_np)\n    return L[N - cluster_size][2] - 0.000001\ndef arbitrary_split_of_correlation_matrix(\n    corr_matrix: np.array, cluster_size: int = 2\n) -> list:\n    # split correlation of 3 or more assets",
+        "detail": "build.lib.almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "arbitrary_split_of_correlation_matrix",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.handcrafting",
+        "description": "build.lib.almanac.analysis.handcrafting",
+        "peekOfCode": "def arbitrary_split_of_correlation_matrix(\n    corr_matrix: np.array, cluster_size: int = 2\n) -> list:\n    # split correlation of 3 or more assets\n    count_assets = len(corr_matrix)\n    return arbitrary_split_for_asset_length(count_assets, cluster_size=cluster_size)\ndef arbitrary_split_for_asset_length(count_assets: int, cluster_size: int = 2) -> list:\n    return [(x % cluster_size) + 1 for x in range(count_assets)]\ndef from_cluster_index_to_asset_names(\n    clusters: list, corr_matrix: correlationEstimate",
+        "detail": "build.lib.almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "arbitrary_split_for_asset_length",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.handcrafting",
+        "description": "build.lib.almanac.analysis.handcrafting",
+        "peekOfCode": "def arbitrary_split_for_asset_length(count_assets: int, cluster_size: int = 2) -> list:\n    return [(x % cluster_size) + 1 for x in range(count_assets)]\ndef from_cluster_index_to_asset_names(\n    clusters: list, corr_matrix: correlationEstimate\n) -> list:\n    all_clusters = list(set(clusters))\n    asset_names = corr_matrix.columns\n    list_of_asset_clusters = [\n        get_asset_names_for_cluster_index(cluster_id, clusters, asset_names)\n        for cluster_id in all_clusters",
+        "detail": "build.lib.almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "from_cluster_index_to_asset_names",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.handcrafting",
+        "description": "build.lib.almanac.analysis.handcrafting",
+        "peekOfCode": "def from_cluster_index_to_asset_names(\n    clusters: list, corr_matrix: correlationEstimate\n) -> list:\n    all_clusters = list(set(clusters))\n    asset_names = corr_matrix.columns\n    list_of_asset_clusters = [\n        get_asset_names_for_cluster_index(cluster_id, clusters, asset_names)\n        for cluster_id in all_clusters\n    ]\n    return list_of_asset_clusters",
+        "detail": "build.lib.almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "get_asset_names_for_cluster_index",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.handcrafting",
+        "description": "build.lib.almanac.analysis.handcrafting",
+        "peekOfCode": "def get_asset_names_for_cluster_index(\n    cluster_id: int, clusters: list, asset_names: list\n):\n    list_of_assets = [\n        asset for asset, cluster in zip(asset_names, clusters) if cluster == cluster_id\n    ]\n    return list_of_assets\nclass portfolioWeights(dict):\n    @property\n    def weights(self):",
+        "detail": "build.lib.almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "flatten_list",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.handcrafting",
+        "description": "build.lib.almanac.analysis.handcrafting",
+        "peekOfCode": "def flatten_list(some_list):\n    flattened = [item for sublist in some_list for item in sublist]\n    return flattened\ndef one_over_n_weights_given_asset_names(list_of_asset_names: list) -> portfolioWeights:\n    weight = 1.0 / len(list_of_asset_names)\n    return portfolioWeights(\n        [(asset_name, weight) for asset_name in list_of_asset_names]\n    )\nclass handcraftPortfolio(object):\n    def __init__(self, correlation: correlationEstimate):",
+        "detail": "build.lib.almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "one_over_n_weights_given_asset_names",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.handcrafting",
+        "description": "build.lib.almanac.analysis.handcrafting",
+        "peekOfCode": "def one_over_n_weights_given_asset_names(list_of_asset_names: list) -> portfolioWeights:\n    weight = 1.0 / len(list_of_asset_names)\n    return portfolioWeights(\n        [(asset_name, weight) for asset_name in list_of_asset_names]\n    )\nclass handcraftPortfolio(object):\n    def __init__(self, correlation: correlationEstimate):\n        self._correlation = correlation\n    @property\n    def correlation(self) -> correlationEstimate:",
+        "detail": "build.lib.almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "create_sub_portfolios_from_portfolio",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.handcrafting",
+        "description": "build.lib.almanac.analysis.handcrafting",
+        "peekOfCode": "def create_sub_portfolios_from_portfolio(handcraft_portfolio: handcraftPortfolio):\n    clusters_as_names = cluster_correlation_matrix(\n        handcraft_portfolio.correlation)\n    sub_portfolios = create_sub_portfolios_given_clusters(\n        clusters_as_names, handcraft_portfolio\n    )\n    return sub_portfolios\ndef create_sub_portfolios_given_clusters(\n    clusters_as_names: list, handcraft_portfolio: handcraftPortfolio\n) -> list:",
+        "detail": "build.lib.almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "create_sub_portfolios_given_clusters",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.handcrafting",
+        "description": "build.lib.almanac.analysis.handcrafting",
+        "peekOfCode": "def create_sub_portfolios_given_clusters(\n    clusters_as_names: list, handcraft_portfolio: handcraftPortfolio\n) -> list:\n    list_of_sub_portfolios = [\n        handcraft_portfolio.subset(subset_of_asset_names)\n        for subset_of_asset_names in clusters_as_names\n    ]\n    return list_of_sub_portfolios\ndef aggregate_risk_weights_over_sub_portfolios(\n    sub_portfolios: list,",
+        "detail": "build.lib.almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "aggregate_risk_weights_over_sub_portfolios",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.handcrafting",
+        "description": "build.lib.almanac.analysis.handcrafting",
+        "peekOfCode": "def aggregate_risk_weights_over_sub_portfolios(\n    sub_portfolios: list,\n) -> portfolioWeights:\n    # sub portfolios guaranteed to be 2 long\n    # We allocate half to each\n    asset_count = len(sub_portfolios)\n    # assert asset_count == 2\n    weights_for_each_subportfolio = [1.0 / asset_count] * asset_count\n    risk_weights_by_portfolio = [\n        sub_portfolio.weights() for sub_portfolio in sub_portfolios",
+        "detail": "build.lib.almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "handcrafting_algo",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.handcrafting",
+        "description": "build.lib.almanac.analysis.handcrafting",
+        "peekOfCode": "def handcrafting_algo(instument_returns):\n    reader = Read_csv(instument_returns)\n    all_returns = reader.pd_readcsv()\n    corr_matrix = correlationEstimate(all_returns.corr())\n    handcraft_portfolio = handcraftPortfolio(corr_matrix)\n    PRINT_TRACE = True\n    portfolio_weights = handcraft_portfolio.weights()\n    return portfolio_weights",
+        "detail": "build.lib.almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "PRINT_TRACE",
+        "kind": 5,
+        "importPath": "build.lib.almanac.analysis.handcrafting",
+        "description": "build.lib.almanac.analysis.handcrafting",
+        "peekOfCode": "PRINT_TRACE = False\nclass correlationEstimate(object):\n    def __init__(self, values: pd.DataFrame):\n        columns = values.columns\n        values = values.values\n        self._values = values\n        self._columns = columns\n    def __repr__(self):\n        return str(self.as_pd())\n    def __len__(self):",
+        "detail": "build.lib.almanac.analysis.handcrafting",
         "documentation": {}
     },
     {
@@ -968,6 +1358,24 @@
         "description": "build.lib.almanac.strategy.strategy2",
         "peekOfCode": "class Strategy2:\n    def __init__(self, data_path: str, multiplier: int, risk_target: Union[int, float], capital: int):\n        self.data_path = data_path\n        self.multiplier = multiplier\n        self.risk_target = risk_target\n        self.capital = capital\n        self.data = self.get_data()\n        self.adjusted_price = self.data.adjusted\n        self.current_price = self.data.underlying\n        self.fx_series = pd.Series(1, index=self.data.index)",
         "detail": "build.lib.almanac.strategy.strategy2",
+        "documentation": {}
+    },
+    {
+        "label": "portfolio_returns",
+        "kind": 5,
+        "importPath": "build.lib.almanac.strategy.strategy4_handcrafting",
+        "description": "build.lib.almanac.strategy.strategy4_handcrafting",
+        "peekOfCode": "portfolio_returns = 'almanac/sample_data/jumbo_instrument_returns.csv'\nportfolio_weights = handcrafting_algo(portfolio_returns)\nprint(portfolio_weights)",
+        "detail": "build.lib.almanac.strategy.strategy4_handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "portfolio_weights",
+        "kind": 5,
+        "importPath": "build.lib.almanac.strategy.strategy4_handcrafting",
+        "description": "build.lib.almanac.strategy.strategy4_handcrafting",
+        "peekOfCode": "portfolio_weights = handcrafting_algo(portfolio_returns)\nprint(portfolio_weights)",
+        "detail": "build.lib.almanac.strategy.strategy4_handcrafting",
         "documentation": {}
     },
     {
