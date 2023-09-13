@@ -10,7 +10,9 @@ almanac/analysis/calculate_stats.py
 almanac/config/__init__.py
 almanac/config/configs.py
 almanac/data/__init__.py
+almanac/data/data.py
 almanac/deployment/__init__.py
 almanac/strategy/__init__.py
+almanac/strategy/strategy1.py
 almanac/utils/__init__.py
 almanac/utils/utils.py
