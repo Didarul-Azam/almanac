@@ -9,6 +9,7 @@ almanac/analysis/calculate_returns.py
 almanac/analysis/calculate_stats.py
 almanac/analysis/handcrafting.py
 almanac/analysis/position_sereies_fixed_risk.py
+almanac/analysis/position_sereies_variable_risk.py
 almanac/analysis/std_for_risk.py
 almanac/config/__init__.py
 almanac/config/configs.py
@@ -18,6 +19,8 @@ almanac/deployment/__init__.py
 almanac/strategy/__init__.py
 almanac/strategy/strategy1.py
 almanac/strategy/strategy2.py
+almanac/strategy/strategy3.py
 almanac/strategy/strategy4_handcrafting.py
 almanac/utils/__init__.py
+almanac/utils/standardDeviation.py
 almanac/utils/utils.py
