@@ -426,6 +426,22 @@
         "documentation": {}
     },
     {
+        "label": "Read_csv",
+        "importPath": "almanac.data.data",
+        "description": "almanac.data.data",
+        "isExtraImport": true,
+        "detail": "almanac.data.data",
+        "documentation": {}
+    },
+    {
+        "label": "Read_csv",
+        "importPath": "almanac.data.data",
+        "description": "almanac.data.data",
+        "isExtraImport": true,
+        "detail": "almanac.data.data",
+        "documentation": {}
+    },
+    {
         "label": "standardDeviation",
         "importPath": "almanac.utils.standardDeviation",
         "description": "almanac.utils.standardDeviation",
@@ -815,6 +831,38 @@
         "description": "almanac.analysis.handcrafting",
         "isExtraImport": true,
         "detail": "almanac.analysis.handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "cost_per_contract_dict",
+        "importPath": "almanac.config.instruments",
+        "description": "almanac.config.instruments",
+        "isExtraImport": true,
+        "detail": "almanac.config.instruments",
+        "documentation": {}
+    },
+    {
+        "label": "multipliers",
+        "importPath": "almanac.config.instruments",
+        "description": "almanac.config.instruments",
+        "isExtraImport": true,
+        "detail": "almanac.config.instruments",
+        "documentation": {}
+    },
+    {
+        "label": "instrument_weights",
+        "importPath": "almanac.config.instruments",
+        "description": "almanac.config.instruments",
+        "isExtraImport": true,
+        "detail": "almanac.config.instruments",
+        "documentation": {}
+    },
+    {
+        "label": "fx_dict",
+        "importPath": "almanac.config.fx_dict",
+        "description": "almanac.config.fx_dict",
+        "isExtraImport": true,
+        "detail": "almanac.config.fx_dict",
         "documentation": {}
     },
     {
@@ -1219,6 +1267,51 @@
         "documentation": {}
     },
     {
+        "label": "fx_dict",
+        "kind": 5,
+        "importPath": "almanac.config.fx_dict",
+        "description": "almanac.config.fx_dict",
+        "peekOfCode": "fx_dict = {\n    \"OAT\": \"eur\",\n    \"SHATZ\": \"eur\",\n    \"BOBL\": \"eur\",\n    \"BUND\": \"eur\",\n    \"BUXL\": \"eur\",\n    \"BTP\": \"eur\",\n    \"BTP3\": \"eur\",\n    \"JGB\": \"jpy\",\n    \"BONO\": \"eur\",",
+        "detail": "almanac.config.fx_dict",
+        "documentation": {}
+    },
+    {
+        "label": "cost_per_contract_dict",
+        "kind": 5,
+        "importPath": "almanac.config.instruments",
+        "description": "almanac.config.instruments",
+        "peekOfCode": "cost_per_contract_dict = {'US2': 6.1, \"US3\": 8.26, 'US5': 5.306, 'US10': 8.8, 'US30': 15.58, 'US20': 17.04, 'US10U': 9.15, 'OAT': 8.81, 'SHATZ': 4.21, 'BOBL': 7.01, 'BUND': 6.55, 'BUXL': 15.56, 'BTP': 7.96, 'BTP3': 7.98, 'JGB': 5837, 'BONO': 59, 'DOW': 0.52, 'NASDAQ_micro': 1.22, 'R1000': 22, 'SP400': 26.57, 'SP500_micro': 1.5, 'AEX': 16.39, 'DAX': 1.98, 'SMI': 12.1, 'DJSTX-SMALL': 2, 'EU-DIV30': 1.97, 'EURO600': 2.07, 'EUROSTX': 7.3, 'EU-AUTO': 13.8, 'EU-BASIC': 25.5, 'EU-HEALTH': 18.70, 'EU-INSURE': 8.23, 'EU-OIL': 9.35, 'EU-TECH': 16.63, 'EU-UTILS': 9.98, 'MSCIASIA': 18.3, 'FTSECHINAA': .5, 'FTSECHINAH': 9.1, 'NIFTY': 0.11, 'NIKKEI': 328, 'NIKKEI400': 432, 'MUMMY': 568, 'TOPIX': 261,\n                          'MSCISING': 7.3, 'VIX': 15.73, 'V2X': 1.36, 'AUD': 2.56, 'CAD': 5.12, 'CHF': 8.4, 'EUR': 6.7, 'GBP': 23.43, 'JPY': 254, 'NOK': 71, 'NZD': 6.47, 'SEK': 57.6, 'GBPJPY': 3456, 'BRE': 0.0022, 'INR': 240, 'MXP': 5.65, 'RUR': 300, 'SGD': 17.68, 'ALUMINIUM': 42.5, 'COPPER': 13.23, 'GOLD_micro': 1.75, 'IRON': 11.63, 'PALLAD': 176.5, 'PLAT': 12.74, 'SILVER': 5.38, 'BITCOIN': 5.15, 'ETHEREUM': 61.94, 'BRENT-LAST': 23.25, 'CRUDE_W_mini': 19.14, 'GASOILINE': 42.75, 'GAS_US_mini': 7.21, 'HEATOIL': 38.61, 'BBCOMM': 11.13, 'CHEESE': 106.68, 'CORN': 896, 'FEEDCOW': 2688, 'LEANHOG': 1377, 'LIVECOW': 1092, 'OAT': 174.3, 'REDWHEAT': 1560, 'RICE': 47.51, 'SOYBEAN': 1639, 'SOYMEAL': 10.7, 'SOYOIL': 1260, 'WHEAT': 1697}\nmultipliers = {\n    \"US2\": 2000,\n    \"US3\": 2000,\n    \"US5\": 1000,\n    \"US10\": 1000,\n    \"USIRS10\": 1000,\n    \"US20\": 1000,\n    \"US30\": 1000,",
+        "detail": "almanac.config.instruments",
+        "documentation": {}
+    },
+    {
+        "label": "multipliers",
+        "kind": 5,
+        "importPath": "almanac.config.instruments",
+        "description": "almanac.config.instruments",
+        "peekOfCode": "multipliers = {\n    \"US2\": 2000,\n    \"US3\": 2000,\n    \"US5\": 1000,\n    \"US10\": 1000,\n    \"USIRS10\": 1000,\n    \"US20\": 1000,\n    \"US30\": 1000,\n    \"USIRS5ERIS\": 1000,\n    \"US10U\": 1000,",
+        "detail": "almanac.config.instruments",
+        "documentation": {}
+    },
+    {
+        "label": "instrument_weights",
+        "kind": 5,
+        "importPath": "almanac.config.instruments",
+        "description": "almanac.config.instruments",
+        "peekOfCode": "instrument_weights = {'FEEDCOW': 0.015625, 'SHATZ': 0.03125, 'AUD': 0.0009765625, 'BONO': 0.015625, 'SP400': 0.0078125, 'NZD': 0.00390625, 'IRON': 0.0009765625, 'CRUDE_W_mini': 0.00390625, 'EURO600': 0.001953125, 'MXP': 0.00390625, 'GBPJPY': 0.0078125, 'BTP': 0.001953125, 'V2X': 0.03125, 'EU-AUTO': 0.001953125, 'ETHEREUM': 0.03125, 'US2': 0.015625, 'TOPIX': 0.03125, 'NASDAQ_micro': 0.015625, 'SMI': 0.015625, 'BRENT-LAST': 0.015625, 'CHEESE': 0.00390625, 'PALLAD': 0.015625, 'NIKKEI': 0.03125, 'SOYMEAL': 0.001953125, 'DJSTX-SMALL': 0.001953125, 'R1000': 0.015625, 'RUR': 0.015625, 'GBP': 0.0009765625, 'EUR': 0.00390625, 'GASOILINE': 0.03125, 'EU-BASIC': 0.00390625, 'EU-INSURE': 0.015625, 'US5': 0.015625, 'US30': 0.015625, 'REDWHEAT': 0.015625, 'BRE': 0.0009765625, 'US20': 0.0078125, 'US10U': 0.015625, 'DAX': 0.001953125, 'SOYOIL': 0.0078125, 'US3': 0.0078125, 'COPPER': 0.0009765625, 'MSCISING': 0.0078125,\n                      'RICE': 0.00390625, 'EU-DIV30': 0.0078125, 'CAD': 0.0078125, 'VIX': 0.0625, 'NIKKEI400': 0.03125, 'DOW': 0.0078125, 'BUND': 0.015625, 'GOLD_micro': 0.00390625, 'MSCIASIA': 0.0078125, 'SEK': 0.001953125, 'SGD': 0.0625, 'BUXL': 0.015625, 'BOBL': 0.015625, 'CORN': 0.0078125, 'EU-OIL': 0.0078125, 'WHEAT': 0.001953125, 'MUMMY': 0.015625, 'HEATOIL': 0.015625, 'EU-UTILS': 0.0078125, 'INR': 0.0078125, 'LIVECOW': 0.015625, 'EU-TECH': 0.001953125, 'BBCOMM': 0.015625, 'AEX': 0.001953125, 'OAT': 0.015625, 'NIFTY': 0.0009765625, 'EUROSTX': 0.0078125, 'FTSECHINAA': 0.0009765625, 'SILVER': 0.0078125, 'BITCOIN': 0.001953125, 'JPY': 0.015625, 'GAS_US_mini': 0.0078125, 'FTSECHINAH': 0.015625, 'SOYBEAN': 0.0078125, 'PLAT': 0.0009765625, 'SP500_micro': 0.0078125, 'NOK': 0.0009765625, 'ALUMINIUM': 0.015625, 'BTP3': 0.0078125, 'CHF': 0.0009765625, 'US10': 0.015625, 'JGB': 0.015625, 'EU-HEALTH': 0.0078125, 'LEANHOG': 0.0078125}\nINSTRUMENT_LIST = list(cost_per_contract_dict.keys())",
+        "detail": "almanac.config.instruments",
+        "documentation": {}
+    },
+    {
+        "label": "INSTRUMENT_LIST",
+        "kind": 5,
+        "importPath": "almanac.config.instruments",
+        "description": "almanac.config.instruments",
+        "peekOfCode": "INSTRUMENT_LIST = list(cost_per_contract_dict.keys())",
+        "detail": "almanac.config.instruments",
+        "documentation": {}
+    },
+    {
         "label": "Read_csv",
         "kind": 6,
         "importPath": "almanac.data.data",
@@ -1270,6 +1363,33 @@
         "description": "almanac.strategy.strategy4_handcrafting",
         "peekOfCode": "portfolio_weights = handcrafting_algo(portfolio_returns)\nprint(portfolio_weights)",
         "detail": "almanac.strategy.strategy4_handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "create_fx_series_given_adjusted_prices_dict",
+        "kind": 2,
+        "importPath": "almanac.utils.fx_series",
+        "description": "almanac.utils.fx_series",
+        "peekOfCode": "def create_fx_series_given_adjusted_prices_dict(adjusted_prices_dict: dict) -> dict:\n    fx_series_dict = dict([(instrument_code,\n                            create_fx_series_given_adjusted_prices(instrument_code, adjusted_prices),)\n                           for instrument_code, adjusted_prices in adjusted_prices_dict.items()])\n    return fx_series_dict\ndef create_fx_series_given_adjusted_prices(instrument_code: str, adjusted_prices: pd.Series) -> pd.Series:\n    currency_for_instrument = fx_dict.get(instrument_code, \"usd\")\n    if currency_for_instrument == \"usd\":\n        return pd.Series(1, index=adjusted_prices.index)\n    fx_prices = get_fx_prices(currency_for_instrument)",
+        "detail": "almanac.utils.fx_series",
+        "documentation": {}
+    },
+    {
+        "label": "create_fx_series_given_adjusted_prices",
+        "kind": 2,
+        "importPath": "almanac.utils.fx_series",
+        "description": "almanac.utils.fx_series",
+        "peekOfCode": "def create_fx_series_given_adjusted_prices(instrument_code: str, adjusted_prices: pd.Series) -> pd.Series:\n    currency_for_instrument = fx_dict.get(instrument_code, \"usd\")\n    if currency_for_instrument == \"usd\":\n        return pd.Series(1, index=adjusted_prices.index)\n    fx_prices = get_fx_prices(currency_for_instrument)\n    fx_prices_aligned = fx_prices.reindex(adjusted_prices.index).ffill()\n    return fx_prices_aligned\ndef get_fx_prices(csv_path: str) -> pd.Series:\n    reader = Read_csv(f\"{csv_path}\")\n    prices_as_df = reader.pd_readcsv()",
+        "detail": "almanac.utils.fx_series",
+        "documentation": {}
+    },
+    {
+        "label": "get_fx_prices",
+        "kind": 2,
+        "importPath": "almanac.utils.fx_series",
+        "description": "almanac.utils.fx_series",
+        "peekOfCode": "def get_fx_prices(csv_path: str) -> pd.Series:\n    reader = Read_csv(f\"{csv_path}\")\n    prices_as_df = reader.pd_readcsv()\n    return prices_as_df.squeeze()",
+        "detail": "almanac.utils.fx_series",
         "documentation": {}
     },
     {
@@ -1696,6 +1816,51 @@
         "documentation": {}
     },
     {
+        "label": "fx_dict",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.fx_dict",
+        "description": "build.lib.almanac.config.fx_dict",
+        "peekOfCode": "fx_dict = {\n    \"OAT\": \"eur\",\n    \"SHATZ\": \"eur\",\n    \"BOBL\": \"eur\",\n    \"BUND\": \"eur\",\n    \"BUXL\": \"eur\",\n    \"BTP\": \"eur\",\n    \"BTP3\": \"eur\",\n    \"JGB\": \"jpy\",\n    \"BONO\": \"eur\",",
+        "detail": "build.lib.almanac.config.fx_dict",
+        "documentation": {}
+    },
+    {
+        "label": "cost_per_contract_dict",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.instruments",
+        "description": "build.lib.almanac.config.instruments",
+        "peekOfCode": "cost_per_contract_dict = {'US2': 6.1, \"US3\": 8.26, 'US5': 5.306, 'US10': 8.8, 'US30': 15.58, 'US20': 17.04, 'US10U': 9.15, 'OAT': 8.81, 'SHATZ': 4.21, 'BOBL': 7.01, 'BUND': 6.55, 'BUXL': 15.56, 'BTP': 7.96, 'BTP3': 7.98, 'JGB': 5837, 'BONO': 59, 'DOW': 0.52, 'NASDAQ_micro': 1.22, 'R1000': 22, 'SP400': 26.57, 'SP500_micro': 1.5, 'AEX': 16.39, 'DAX': 1.98, 'SMI': 12.1, 'DJSTX-SMALL': 2, 'EU-DIV30': 1.97, 'EURO600': 2.07, 'EUROSTX': 7.3, 'EU-AUTO': 13.8, 'EU-BASIC': 25.5, 'EU-HEALTH': 18.70, 'EU-INSURE': 8.23, 'EU-OIL': 9.35, 'EU-TECH': 16.63, 'EU-UTILS': 9.98, 'MSCIASIA': 18.3, 'FTSECHINAA': .5, 'FTSECHINAH': 9.1, 'NIFTY': 0.11, 'NIKKEI': 328, 'NIKKEI400': 432, 'MUMMY': 568, 'TOPIX': 261,\n                          'MSCISING': 7.3, 'VIX': 15.73, 'V2X': 1.36, 'AUD': 2.56, 'CAD': 5.12, 'CHF': 8.4, 'EUR': 6.7, 'GBP': 23.43, 'JPY': 254, 'NOK': 71, 'NZD': 6.47, 'SEK': 57.6, 'GBPJPY': 3456, 'BRE': 0.0022, 'INR': 240, 'MXP': 5.65, 'RUR': 300, 'SGD': 17.68, 'ALUMINIUM': 42.5, 'COPPER': 13.23, 'GOLD_micro': 1.75, 'IRON': 11.63, 'PALLAD': 176.5, 'PLAT': 12.74, 'SILVER': 5.38, 'BITCOIN': 5.15, 'ETHEREUM': 61.94, 'BRENT-LAST': 23.25, 'CRUDE_W_mini': 19.14, 'GASOILINE': 42.75, 'GAS_US_mini': 7.21, 'HEATOIL': 38.61, 'BBCOMM': 11.13, 'CHEESE': 106.68, 'CORN': 896, 'FEEDCOW': 2688, 'LEANHOG': 1377, 'LIVECOW': 1092, 'OAT': 174.3, 'REDWHEAT': 1560, 'RICE': 47.51, 'SOYBEAN': 1639, 'SOYMEAL': 10.7, 'SOYOIL': 1260, 'WHEAT': 1697}\nmultipliers = {\n    \"US2\": 2000,\n    \"US3\": 2000,\n    \"US5\": 1000,\n    \"US10\": 1000,\n    \"USIRS10\": 1000,\n    \"US20\": 1000,\n    \"US30\": 1000,",
+        "detail": "build.lib.almanac.config.instruments",
+        "documentation": {}
+    },
+    {
+        "label": "multipliers",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.instruments",
+        "description": "build.lib.almanac.config.instruments",
+        "peekOfCode": "multipliers = {\n    \"US2\": 2000,\n    \"US3\": 2000,\n    \"US5\": 1000,\n    \"US10\": 1000,\n    \"USIRS10\": 1000,\n    \"US20\": 1000,\n    \"US30\": 1000,\n    \"USIRS5ERIS\": 1000,\n    \"US10U\": 1000,",
+        "detail": "build.lib.almanac.config.instruments",
+        "documentation": {}
+    },
+    {
+        "label": "instrument_weights",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.instruments",
+        "description": "build.lib.almanac.config.instruments",
+        "peekOfCode": "instrument_weights = {'FEEDCOW': 0.015625, 'SHATZ': 0.03125, 'AUD': 0.0009765625, 'BONO': 0.015625, 'SP400': 0.0078125, 'NZD': 0.00390625, 'IRON': 0.0009765625, 'CRUDE_W_mini': 0.00390625, 'EURO600': 0.001953125, 'MXP': 0.00390625, 'GBPJPY': 0.0078125, 'BTP': 0.001953125, 'V2X': 0.03125, 'EU-AUTO': 0.001953125, 'ETHEREUM': 0.03125, 'US2': 0.015625, 'TOPIX': 0.03125, 'NASDAQ_micro': 0.015625, 'SMI': 0.015625, 'BRENT-LAST': 0.015625, 'CHEESE': 0.00390625, 'PALLAD': 0.015625, 'NIKKEI': 0.03125, 'SOYMEAL': 0.001953125, 'DJSTX-SMALL': 0.001953125, 'R1000': 0.015625, 'RUR': 0.015625, 'GBP': 0.0009765625, 'EUR': 0.00390625, 'GASOILINE': 0.03125, 'EU-BASIC': 0.00390625, 'EU-INSURE': 0.015625, 'US5': 0.015625, 'US30': 0.015625, 'REDWHEAT': 0.015625, 'BRE': 0.0009765625, 'US20': 0.0078125, 'US10U': 0.015625, 'DAX': 0.001953125, 'SOYOIL': 0.0078125, 'US3': 0.0078125, 'COPPER': 0.0009765625, 'MSCISING': 0.0078125,\n                      'RICE': 0.00390625, 'EU-DIV30': 0.0078125, 'CAD': 0.0078125, 'VIX': 0.0625, 'NIKKEI400': 0.03125, 'DOW': 0.0078125, 'BUND': 0.015625, 'GOLD_micro': 0.00390625, 'MSCIASIA': 0.0078125, 'SEK': 0.001953125, 'SGD': 0.0625, 'BUXL': 0.015625, 'BOBL': 0.015625, 'CORN': 0.0078125, 'EU-OIL': 0.0078125, 'WHEAT': 0.001953125, 'MUMMY': 0.015625, 'HEATOIL': 0.015625, 'EU-UTILS': 0.0078125, 'INR': 0.0078125, 'LIVECOW': 0.015625, 'EU-TECH': 0.001953125, 'BBCOMM': 0.015625, 'AEX': 0.001953125, 'OAT': 0.015625, 'NIFTY': 0.0009765625, 'EUROSTX': 0.0078125, 'FTSECHINAA': 0.0009765625, 'SILVER': 0.0078125, 'BITCOIN': 0.001953125, 'JPY': 0.015625, 'GAS_US_mini': 0.0078125, 'FTSECHINAH': 0.015625, 'SOYBEAN': 0.0078125, 'PLAT': 0.0009765625, 'SP500_micro': 0.0078125, 'NOK': 0.0009765625, 'ALUMINIUM': 0.015625, 'BTP3': 0.0078125, 'CHF': 0.0009765625, 'US10': 0.015625, 'JGB': 0.015625, 'EU-HEALTH': 0.0078125, 'LEANHOG': 0.0078125}\nINSTRUMENT_LIST = list(cost_per_contract_dict.keys())",
+        "detail": "build.lib.almanac.config.instruments",
+        "documentation": {}
+    },
+    {
+        "label": "INSTRUMENT_LIST",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.instruments",
+        "description": "build.lib.almanac.config.instruments",
+        "peekOfCode": "INSTRUMENT_LIST = list(cost_per_contract_dict.keys())",
+        "detail": "build.lib.almanac.config.instruments",
+        "documentation": {}
+    },
+    {
         "label": "Read_csv",
         "kind": 6,
         "importPath": "build.lib.almanac.data.data",
@@ -1747,6 +1912,42 @@
         "description": "build.lib.almanac.strategy.strategy4_handcrafting",
         "peekOfCode": "portfolio_weights = handcrafting_algo(portfolio_returns)\nprint(portfolio_weights)",
         "detail": "build.lib.almanac.strategy.strategy4_handcrafting",
+        "documentation": {}
+    },
+    {
+        "label": "create_fx_series_given_adjusted_prices_dict",
+        "kind": 2,
+        "importPath": "build.lib.almanac.utils.fx_series",
+        "description": "build.lib.almanac.utils.fx_series",
+        "peekOfCode": "def create_fx_series_given_adjusted_prices_dict(adjusted_prices_dict: dict) -> dict:\n    fx_series_dict = dict(\n        [\n            (\n                instrument_code,\n                create_fx_series_given_adjusted_prices(\n                    instrument_code, adjusted_prices\n                ),\n            )\n            for instrument_code, adjusted_prices in adjusted_prices_dict.items()",
+        "detail": "build.lib.almanac.utils.fx_series",
+        "documentation": {}
+    },
+    {
+        "label": "create_fx_series_given_adjusted_prices",
+        "kind": 2,
+        "importPath": "build.lib.almanac.utils.fx_series",
+        "description": "build.lib.almanac.utils.fx_series",
+        "peekOfCode": "def create_fx_series_given_adjusted_prices(\n    instrument_code: str, adjusted_prices: pd.Series\n) -> pd.Series:\n    currency_for_instrument = fx_dict.get(instrument_code, \"usd\")\n    if currency_for_instrument == \"usd\":\n        # FX rate, 1 for USD / USD\n        return pd.Series(1, index=adjusted_prices.index)\n    fx_prices = get_fx_prices(currency_for_instrument)\n    fx_prices_aligned = fx_prices.reindex(adjusted_prices.index).ffill()\n    return fx_prices_aligned",
+        "detail": "build.lib.almanac.utils.fx_series",
+        "documentation": {}
+    },
+    {
+        "label": "get_fx_prices",
+        "kind": 2,
+        "importPath": "build.lib.almanac.utils.fx_series",
+        "description": "build.lib.almanac.utils.fx_series",
+        "peekOfCode": "def get_fx_prices(currency: str) -> pd.Series:\n    prices_as_df = pd_readcsv(\"%s_fx.csv\" % currency)\n    return prices_as_df.squeeze()",
+        "detail": "build.lib.almanac.utils.fx_series",
+        "documentation": {}
+    },
+    {
+        "label": "fx_dict",
+        "kind": 5,
+        "importPath": "build.lib.almanac.utils.fx_series",
+        "description": "build.lib.almanac.utils.fx_series",
+        "peekOfCode": "fx_dict = dict(eurostx=\"eur\")\ndef create_fx_series_given_adjusted_prices_dict(adjusted_prices_dict: dict) -> dict:\n    fx_series_dict = dict(\n        [\n            (\n                instrument_code,\n                create_fx_series_given_adjusted_prices(\n                    instrument_code, adjusted_prices\n                ),\n            )",
+        "detail": "build.lib.almanac.utils.fx_series",
         "documentation": {}
     },
     {
