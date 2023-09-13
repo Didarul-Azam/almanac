@@ -10,6 +10,7 @@ almanac/analysis/calculate_stats.py
 almanac/analysis/handcrafting.py
 almanac/analysis/position_sereies_fixed_risk.py
 almanac/analysis/position_sereies_variable_risk.py
+almanac/analysis/positions.py
 almanac/analysis/std_for_risk.py
 almanac/config/__init__.py
 almanac/config/configs.py
