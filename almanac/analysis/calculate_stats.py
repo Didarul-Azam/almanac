@@ -77,8 +77,38 @@ class Stats():
             QUANT_PERCENTILE_STD
         )
         return raw_ratio / NORMAL_DISTR_RATIO
+    def quant_ratio_lower(self):
+        quant_ratio_lower = self._calculate_quant_ratio_lower()
+        self.quant_ratio_lower = quant_ratio_lower
+    def quant_ratio_upper(self):
+        quant_ratio_upper = self._calculate_quant_ratio_upper()
+        self.quant_ratio_upper = quant_ratio_upper
+
+    def stats(self,show=False):
+        self.perc_return_at_freq()
+        self.ann_mean()
+        self.ann_std()
+        self.sharpe_ratio()
+        self.skew_at_freq()
+        self.drawdowns()
+        self.quant_ratio_lower()
+        self.quant_ratio_upper()
+        if show:
+            return dict(
+            ann_mean=self.ann_mean,
+            ann_std=self.ann_std,
+            sharpe_ratio=self.sharpe_ratio,
+            skew=self.skew_at_freq,
+            avg_drawdown=self.avg_drawdown,
+            max_drawdown=self.max_drawdown,
+            quant_ratio_lower=self.quant_ratio_lower,
+            quant_ratio_upper=self.quant_ratio_upper,
+        )
+            
+    def show_stats(self):
+       return self.stats(show=True)
     
-    
+
 
 
 
