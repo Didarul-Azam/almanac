@@ -1,42 +1,164 @@
 [
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "pandas",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "enum",
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "numpy",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "enum",
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "norm",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
         "isExtraImport": true,
-        "detail": "enum",
+        "detail": "scipy.stats",
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "norm",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
         "isExtraImport": true,
-        "detail": "enum",
+        "detail": "scipy.stats",
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "norm",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
         "isExtraImport": true,
-        "detail": "enum",
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "norm",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "norm",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "norm",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "norm",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "periods_per_year",
+        "importPath": "almanac.utils.utils",
+        "description": "almanac.utils.utils",
+        "isExtraImport": true,
+        "detail": "almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "demeaned_remove_zeros",
+        "importPath": "almanac.utils.utils",
+        "description": "almanac.utils.utils",
+        "isExtraImport": true,
+        "detail": "almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "periods_per_year",
+        "importPath": "almanac.utils.utils",
+        "description": "almanac.utils.utils",
+        "isExtraImport": true,
+        "detail": "almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "demeaned_remove_zeros",
+        "importPath": "almanac.utils.utils",
+        "description": "almanac.utils.utils",
+        "isExtraImport": true,
+        "detail": "almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "NATURAL",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "NORMAL_DISTR_RATIO",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "QUANT_PERCENTILE_EXTREME",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "QUANT_PERCENTILE_STD",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "YEAR",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "WEEK",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "MONTH",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
         "documentation": {}
     },
     {
@@ -128,45 +250,251 @@
         "documentation": {}
     },
     {
-        "label": "norm",
-        "importPath": "scipy.stats",
-        "description": "scipy.stats",
+        "label": "NATURAL",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
         "isExtraImport": true,
-        "detail": "scipy.stats",
+        "detail": "almanac.config.configs",
         "documentation": {}
     },
     {
-        "label": "norm",
-        "importPath": "scipy.stats",
-        "description": "scipy.stats",
+        "label": "NORMAL_DISTR_RATIO",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
         "isExtraImport": true,
-        "detail": "scipy.stats",
+        "detail": "almanac.config.configs",
         "documentation": {}
     },
     {
-        "label": "norm",
-        "importPath": "scipy.stats",
-        "description": "scipy.stats",
+        "label": "QUANT_PERCENTILE_EXTREME",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
         "isExtraImport": true,
-        "detail": "scipy.stats",
+        "detail": "almanac.config.configs",
         "documentation": {}
     },
     {
-        "label": "pandas",
-        "kind": 6,
+        "label": "QUANT_PERCENTILE_STD",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
         "isExtraImport": true,
-        "importPath": "pandas",
-        "description": "pandas",
-        "detail": "pandas",
+        "detail": "almanac.config.configs",
         "documentation": {}
     },
     {
-        "label": "numpy",
-        "kind": 6,
+        "label": "YEAR",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
         "isExtraImport": true,
-        "importPath": "numpy",
-        "description": "numpy",
-        "detail": "numpy",
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "WEEK",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "MONTH",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_DATE_FORMAT",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "Frequency",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "NATURAL",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "YEAR",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "MONTH",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "WEEK",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "BUSINESS_DAYS_IN_YEAR",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "WEEKS_PER_YEAR",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "MONTHS_PER_YEAR",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "SECONDS_PER_YEAR",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "PERIODS_PER_YEAR",
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "isExtraImport": true,
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Read_csv",
+        "importPath": "almanac.data.data",
+        "description": "almanac.data.data",
+        "isExtraImport": true,
+        "detail": "almanac.data.data",
+        "documentation": {}
+    },
+    {
+        "label": "Read_csv",
+        "importPath": "almanac.data.data",
+        "description": "almanac.data.data",
+        "isExtraImport": true,
+        "detail": "almanac.data.data",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "Stats",
+        "importPath": "almanac.analysis.calculate_stats",
+        "description": "almanac.analysis.calculate_stats",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_stats",
+        "documentation": {}
+    },
+    {
+        "label": "Stats",
+        "importPath": "almanac.analysis.calculate_stats",
+        "description": "almanac.analysis.calculate_stats",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_stats",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
         "documentation": {}
     },
     {
@@ -195,6 +523,33 @@
         "documentation": {}
     },
     {
+        "label": "calculate_perc_returns",
+        "kind": 2,
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "peekOfCode": "def calculate_perc_returns(\n    position_contracts_held: pd.Series,\n    adjusted_price: pd.Series,\n    fx_series: pd.Series,\n    multiplier: float,\n    capital_required: pd.Series,\n) -> pd.Series:\n    return_price_points = (\n        adjusted_price - adjusted_price.shift(1)\n    ) * position_contracts_held.shift(1)",
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_variable_standard_deviation_for_risk_targeting",
+        "kind": 2,
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "peekOfCode": "def calculate_variable_standard_deviation_for_risk_targeting(\n    adjusted_price: pd.Series,\n    current_price: pd.Series,\n    use_perc_returns: bool = True,\n    annualise_stdev: bool = True,\n) -> pd.Series:\n    if use_perc_returns:\n        daily_returns = calculate_percentage_returns(\n            adjusted_price=adjusted_price, current_price=current_price\n        )",
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "Stats",
+        "kind": 6,
+        "importPath": "almanac.analysis.calculate_stats",
+        "description": "almanac.analysis.calculate_stats",
+        "peekOfCode": "class Stats():\n    def __init__(self,perc_return, at_frequency = NATURAL) -> None:\n        self.perc_return = perc_return\n        self.at_frequency = at_frequency\n    def _sum_at_frequency(self):\n        if self.at_frequency == NATURAL:\n            return self.perc_return\n        at_frequency_str_dict = {YEAR: \"Y\", WEEK: \"7D\", MONTH: \"1M\"}\n        at_frequency_str = at_frequency_str_dict[self.at_frequency]\n        perc_return_at_freq = self.perc_return.resample(at_frequency_str).sum()",
+        "detail": "almanac.analysis.calculate_stats",
+        "documentation": {}
+    },
+    {
         "label": "DEFAULT_DATE_FORMAT",
         "kind": 5,
         "importPath": "almanac.config.configs",
@@ -217,7 +572,7 @@
         "kind": 5,
         "importPath": "almanac.config.configs",
         "description": "almanac.config.configs",
-        "peekOfCode": "NATURAL = Frequency.Natural\nYEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "peekOfCode": "NATURAL = Frequency.Natural\nYEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}\nQUANT_PERCENTILE_EXTREME = 0.01",
         "detail": "almanac.config.configs",
         "documentation": {}
     },
@@ -226,7 +581,7 @@
         "kind": 5,
         "importPath": "almanac.config.configs",
         "description": "almanac.config.configs",
-        "peekOfCode": "YEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "peekOfCode": "YEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}\nQUANT_PERCENTILE_EXTREME = 0.01\nQUANT_PERCENTILE_STD = 0.3",
         "detail": "almanac.config.configs",
         "documentation": {}
     },
@@ -235,7 +590,7 @@
         "kind": 5,
         "importPath": "almanac.config.configs",
         "description": "almanac.config.configs",
-        "peekOfCode": "MONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "peekOfCode": "MONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}\nQUANT_PERCENTILE_EXTREME = 0.01\nQUANT_PERCENTILE_STD = 0.3\nNORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
         "detail": "almanac.config.configs",
         "documentation": {}
     },
@@ -244,7 +599,7 @@
         "kind": 5,
         "importPath": "almanac.config.configs",
         "description": "almanac.config.configs",
-        "peekOfCode": "WEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "peekOfCode": "WEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}\nQUANT_PERCENTILE_EXTREME = 0.01\nQUANT_PERCENTILE_STD = 0.3\nNORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
         "detail": "almanac.config.configs",
         "documentation": {}
     },
@@ -253,7 +608,7 @@
         "kind": 5,
         "importPath": "almanac.config.configs",
         "description": "almanac.config.configs",
-        "peekOfCode": "BUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "peekOfCode": "BUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}\nQUANT_PERCENTILE_EXTREME = 0.01\nQUANT_PERCENTILE_STD = 0.3\nNORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
         "detail": "almanac.config.configs",
         "documentation": {}
     },
@@ -262,7 +617,7 @@
         "kind": 5,
         "importPath": "almanac.config.configs",
         "description": "almanac.config.configs",
-        "peekOfCode": "WEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "peekOfCode": "WEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}\nQUANT_PERCENTILE_EXTREME = 0.01\nQUANT_PERCENTILE_STD = 0.3\nNORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
         "detail": "almanac.config.configs",
         "documentation": {}
     },
@@ -271,7 +626,7 @@
         "kind": 5,
         "importPath": "almanac.config.configs",
         "description": "almanac.config.configs",
-        "peekOfCode": "MONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "peekOfCode": "MONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}\nQUANT_PERCENTILE_EXTREME = 0.01\nQUANT_PERCENTILE_STD = 0.3\nNORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
         "detail": "almanac.config.configs",
         "documentation": {}
     },
@@ -280,7 +635,7 @@
         "kind": 5,
         "importPath": "almanac.config.configs",
         "description": "almanac.config.configs",
-        "peekOfCode": "SECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "peekOfCode": "SECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}\nQUANT_PERCENTILE_EXTREME = 0.01\nQUANT_PERCENTILE_STD = 0.3\nNORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
         "detail": "almanac.config.configs",
         "documentation": {}
     },
@@ -289,8 +644,53 @@
         "kind": 5,
         "importPath": "almanac.config.configs",
         "description": "almanac.config.configs",
-        "peekOfCode": "PERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "peekOfCode": "PERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}\nQUANT_PERCENTILE_EXTREME = 0.01\nQUANT_PERCENTILE_STD = 0.3\nNORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
         "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "QUANT_PERCENTILE_EXTREME",
+        "kind": 5,
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "peekOfCode": "QUANT_PERCENTILE_EXTREME = 0.01\nQUANT_PERCENTILE_STD = 0.3\nNORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "QUANT_PERCENTILE_STD",
+        "kind": 5,
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "peekOfCode": "QUANT_PERCENTILE_STD = 0.3\nNORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "NORMAL_DISTR_RATIO",
+        "kind": 5,
+        "importPath": "almanac.config.configs",
+        "description": "almanac.config.configs",
+        "peekOfCode": "NORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
+        "detail": "almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "Read_csv",
+        "kind": 6,
+        "importPath": "almanac.data.data",
+        "description": "almanac.data.data",
+        "peekOfCode": "class Read_csv:\n    def __init__(self, filename, date_format=\"%Y-%m-%d\", date_index_name=\"index\"):\n        self.filename = filename\n        self.date_format = date_format\n        self.date_index_name = date_index_name\n    def pd_readcsv(self) -> pd.DataFrame:\n        ans = pd.read_csv(self.filename)\n        ans.index = pd.to_datetime(ans[self.date_index_name], format=self.date_format).values\n        del ans[self.date_index_name]\n        ans.index.name = None",
+        "detail": "almanac.data.data",
+        "documentation": {}
+    },
+    {
+        "label": "Strategy1",
+        "kind": 6,
+        "importPath": "almanac.strategy.strategy1",
+        "description": "almanac.strategy.strategy1",
+        "peekOfCode": "class Strategy1:\n    def __init__(self, data_path: str, multiplier: int, risk_target: Union[int, float], capital: int):\n        self.data_path = data_path\n        self.multiplier = multiplier\n        self.risk_target = risk_target\n        self.capital = capital\n        self.data = self.get_data()\n        self.adjusted_price = self.data.adjusted\n        self.current_price = self.data.underlying\n        self.fx_series = pd.Series(1, index=self.data.index)",
+        "detail": "almanac.strategy.strategy1",
         "documentation": {}
     },
     {
@@ -348,6 +748,33 @@
         "documentation": {}
     },
     {
+        "label": "calculate_perc_returns",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.calculate_returns",
+        "description": "build.lib.almanac.analysis.calculate_returns",
+        "peekOfCode": "def calculate_perc_returns(\n    position_contracts_held: pd.Series,\n    adjusted_price: pd.Series,\n    fx_series: pd.Series,\n    multiplier: float,\n    capital_required: pd.Series,\n) -> pd.Series:\n    return_price_points = (\n        adjusted_price - adjusted_price.shift(1)\n    ) * position_contracts_held.shift(1)",
+        "detail": "build.lib.almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_variable_standard_deviation_for_risk_targeting",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.calculate_returns",
+        "description": "build.lib.almanac.analysis.calculate_returns",
+        "peekOfCode": "def calculate_variable_standard_deviation_for_risk_targeting(\n    adjusted_price: pd.Series,\n    current_price: pd.Series,\n    use_perc_returns: bool = True,\n    annualise_stdev: bool = True,\n) -> pd.Series:\n    if use_perc_returns:\n        daily_returns = calculate_percentage_returns(\n            adjusted_price=adjusted_price, current_price=current_price\n        )",
+        "detail": "build.lib.almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "Stats",
+        "kind": 6,
+        "importPath": "build.lib.almanac.analysis.calculate_stats",
+        "description": "build.lib.almanac.analysis.calculate_stats",
+        "peekOfCode": "class Stats():\n    def __init__(self,perc_return, at_frequency = NATURAL) -> None:\n        self.perc_return = perc_return\n        self.at_frequency = at_frequency\n    def _sum_at_frequency(self):\n        if self.at_frequency == NATURAL:\n            return self.perc_return\n        at_frequency_str_dict = {YEAR: \"Y\", WEEK: \"7D\", MONTH: \"1M\"}\n        at_frequency_str = at_frequency_str_dict[self.at_frequency]\n        perc_return_at_freq = self.perc_return.resample(at_frequency_str).sum()",
+        "detail": "build.lib.almanac.analysis.calculate_stats",
+        "documentation": {}
+    },
+    {
         "label": "DEFAULT_DATE_FORMAT",
         "kind": 5,
         "importPath": "build.lib.almanac.config.configs",
@@ -370,7 +797,7 @@
         "kind": 5,
         "importPath": "build.lib.almanac.config.configs",
         "description": "build.lib.almanac.config.configs",
-        "peekOfCode": "NATURAL = Frequency.Natural\nYEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "peekOfCode": "NATURAL = Frequency.Natural\nYEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}\nQUANT_PERCENTILE_EXTREME = 0.01",
         "detail": "build.lib.almanac.config.configs",
         "documentation": {}
     },
@@ -379,7 +806,7 @@
         "kind": 5,
         "importPath": "build.lib.almanac.config.configs",
         "description": "build.lib.almanac.config.configs",
-        "peekOfCode": "YEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "peekOfCode": "YEAR = Frequency.Year\nMONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}\nQUANT_PERCENTILE_EXTREME = 0.01\nQUANT_PERCENTILE_STD = 0.3",
         "detail": "build.lib.almanac.config.configs",
         "documentation": {}
     },
@@ -388,7 +815,7 @@
         "kind": 5,
         "importPath": "build.lib.almanac.config.configs",
         "description": "build.lib.almanac.config.configs",
-        "peekOfCode": "MONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "peekOfCode": "MONTH = Frequency.Month\nWEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}\nQUANT_PERCENTILE_EXTREME = 0.01\nQUANT_PERCENTILE_STD = 0.3\nNORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
         "detail": "build.lib.almanac.config.configs",
         "documentation": {}
     },
@@ -397,7 +824,7 @@
         "kind": 5,
         "importPath": "build.lib.almanac.config.configs",
         "description": "build.lib.almanac.config.configs",
-        "peekOfCode": "WEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "peekOfCode": "WEEK = Frequency.Week\nBUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}\nQUANT_PERCENTILE_EXTREME = 0.01\nQUANT_PERCENTILE_STD = 0.3\nNORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
         "detail": "build.lib.almanac.config.configs",
         "documentation": {}
     },
@@ -406,7 +833,7 @@
         "kind": 5,
         "importPath": "build.lib.almanac.config.configs",
         "description": "build.lib.almanac.config.configs",
-        "peekOfCode": "BUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "peekOfCode": "BUSINESS_DAYS_IN_YEAR = 256\nWEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}\nQUANT_PERCENTILE_EXTREME = 0.01\nQUANT_PERCENTILE_STD = 0.3\nNORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
         "detail": "build.lib.almanac.config.configs",
         "documentation": {}
     },
@@ -415,7 +842,7 @@
         "kind": 5,
         "importPath": "build.lib.almanac.config.configs",
         "description": "build.lib.almanac.config.configs",
-        "peekOfCode": "WEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "peekOfCode": "WEEKS_PER_YEAR = 52.25\nMONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}\nQUANT_PERCENTILE_EXTREME = 0.01\nQUANT_PERCENTILE_STD = 0.3\nNORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
         "detail": "build.lib.almanac.config.configs",
         "documentation": {}
     },
@@ -424,7 +851,7 @@
         "kind": 5,
         "importPath": "build.lib.almanac.config.configs",
         "description": "build.lib.almanac.config.configs",
-        "peekOfCode": "MONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "peekOfCode": "MONTHS_PER_YEAR = 12\nSECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}\nQUANT_PERCENTILE_EXTREME = 0.01\nQUANT_PERCENTILE_STD = 0.3\nNORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
         "detail": "build.lib.almanac.config.configs",
         "documentation": {}
     },
@@ -433,7 +860,7 @@
         "kind": 5,
         "importPath": "build.lib.almanac.config.configs",
         "description": "build.lib.almanac.config.configs",
-        "peekOfCode": "SECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "peekOfCode": "SECONDS_PER_YEAR = 365.25 * 24 * 60 * 60\nPERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}\nQUANT_PERCENTILE_EXTREME = 0.01\nQUANT_PERCENTILE_STD = 0.3\nNORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
         "detail": "build.lib.almanac.config.configs",
         "documentation": {}
     },
@@ -442,8 +869,53 @@
         "kind": 5,
         "importPath": "build.lib.almanac.config.configs",
         "description": "build.lib.almanac.config.configs",
-        "peekOfCode": "PERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}",
+        "peekOfCode": "PERIODS_PER_YEAR = {MONTH: MONTHS_PER_YEAR, WEEK: WEEKS_PER_YEAR, YEAR: 1}\nQUANT_PERCENTILE_EXTREME = 0.01\nQUANT_PERCENTILE_STD = 0.3\nNORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
         "detail": "build.lib.almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "QUANT_PERCENTILE_EXTREME",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.configs",
+        "description": "build.lib.almanac.config.configs",
+        "peekOfCode": "QUANT_PERCENTILE_EXTREME = 0.01\nQUANT_PERCENTILE_STD = 0.3\nNORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
+        "detail": "build.lib.almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "QUANT_PERCENTILE_STD",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.configs",
+        "description": "build.lib.almanac.config.configs",
+        "peekOfCode": "QUANT_PERCENTILE_STD = 0.3\nNORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
+        "detail": "build.lib.almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "NORMAL_DISTR_RATIO",
+        "kind": 5,
+        "importPath": "build.lib.almanac.config.configs",
+        "description": "build.lib.almanac.config.configs",
+        "peekOfCode": "NORMAL_DISTR_RATIO = norm.ppf(QUANT_PERCENTILE_EXTREME) / norm.ppf(QUANT_PERCENTILE_STD)",
+        "detail": "build.lib.almanac.config.configs",
+        "documentation": {}
+    },
+    {
+        "label": "Read_csv",
+        "kind": 6,
+        "importPath": "build.lib.almanac.data.data",
+        "description": "build.lib.almanac.data.data",
+        "peekOfCode": "class Read_csv:\n    def __init__(self, filename, date_format=\"%Y-%m-%d\", date_index_name=\"index\"):\n        self.filename = filename\n        self.date_format = date_format\n        self.date_index_name = date_index_name\n    def pd_readcsv(self) -> pd.DataFrame:\n        ans = pd.read_csv(self.filename)\n        ans.index = pd.to_datetime(ans[self.date_index_name], format=self.date_format).values\n        del ans[self.date_index_name]\n        ans.index.name = None",
+        "detail": "build.lib.almanac.data.data",
+        "documentation": {}
+    },
+    {
+        "label": "Strategy1",
+        "kind": 6,
+        "importPath": "build.lib.almanac.strategy.strategy1",
+        "description": "build.lib.almanac.strategy.strategy1",
+        "peekOfCode": "class Strategy1:\n    def __init__(self, data_path: str, multiplier: int, risk_target: Union[int, float], capital: int):\n        self.data_path = data_path\n        self.multiplier = multiplier\n        self.risk_target = risk_target\n        self.capital = capital\n        self.data = self.get_data()\n        self.adjusted_price = self.data.adjusted\n        self.current_price = self.data.underlying\n        self.fx_series = pd.Series(1, index=self.data.index)",
+        "detail": "build.lib.almanac.strategy.strategy1",
         "documentation": {}
     },
     {
