@@ -1,6 +1,9 @@
 import pandas as pd
 from almanac.config.configs import BUSINESS_DAYS_IN_YEAR
 from almanac.analysis.calculate_returns import calculate_percentage_returns, calculate_daily_returns
+from almanac.data.data import Read_csv
+from almanac.config.instruments import *
+from almanac.utils.standardDeviation import standardDeviation
 
 def calculate_standard_deviation_for_risk_targeting(adjusted_price: pd.Series,
                                                     current_price: pd.Series):
@@ -47,3 +50,33 @@ def calculate_variable_standard_deviation_for_risk_targeting(
     weighted_vol = 0.3 * ten_year_vol + 0.7 * annualised_std_dev
 
     return weighted_vol
+
+
+if __name__ == "__main__":
+    reader = Read_csv()
+    adjusted_prices, current_prices = reader.get_data_dict(INSTRUMENT_LIST)
+    
+    
+def calculate_variable_standard_deviation_for_risk_targeting_from_dict(
+    adjusted_prices: dict,
+    current_prices: dict,
+    use_perc_returns: bool = True,
+    annualise_stdev: bool = True,
+) -> dict:
+
+    std_dev_dict = dict(
+        [
+            (
+                instrument_code,
+                standardDeviation(
+                    adjusted_price=adjusted_prices[instrument_code],
+                    current_price=current_prices[instrument_code],
+                    use_perc_returns=use_perc_returns,
+                    annualise_stdev=annualise_stdev,
+                ),
+            )
+            for instrument_code in adjusted_prices.keys()
+        ]
+    )
+
+    return std_dev_dict
