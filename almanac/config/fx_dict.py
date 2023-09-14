@@ -29,6 +29,5 @@ fx_dict = {
     "MSCISING": "sgd",
     "V2X": "eur",
     "GBPJPY": "jpy",
-    "CNH": "cnh",
     "SGD": "sgd",
 }
