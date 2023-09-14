@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from scipy.cluster import hierarchy as sch
-from almanac.data.data import Read_csv
+from almanac.data.data import pd_readcsv
 
 PRINT_TRACE = False
 
@@ -308,8 +308,7 @@ def aggregate_risk_weights_over_sub_portfolios(
 
 
 def handcrafting_algo(instument_returns):
-    reader = Read_csv(instument_returns)
-    all_returns = reader.pd_readcsv()
+    all_returns = pd_readcsv(instument_returns)
     corr_matrix = correlationEstimate(all_returns.corr())
     handcraft_portfolio = handcraftPortfolio(corr_matrix)
     PRINT_TRACE = True
