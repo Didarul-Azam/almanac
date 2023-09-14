@@ -26,6 +26,7 @@ almanac/strategy/strategy2.py
 almanac/strategy/strategy3.py
 almanac/strategy/strategy4.py
 almanac/strategy/strategy4_handcrafting.py
+almanac/strategy/strategy5.py
 almanac/utils/__init__.py
 almanac/utils/fx_series.py
 almanac/utils/standardDeviation.py
