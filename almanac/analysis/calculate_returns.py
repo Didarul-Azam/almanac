@@ -324,3 +324,29 @@ def calculate_perc_returns_with_costs(
     perc_return = return_base_currency / capital_required
 
     return perc_return
+
+
+
+def long_only_returns(
+    adjusted_prices_dict: dict,
+    std_dev_dict: dict,
+    average_position_contracts_dict: dict,
+    fx_series_dict: dict,
+    cost_per_contract_dict: dict,
+    multipliers: dict,
+    capital: float,
+) -> pd.Series:
+
+    perc_return_dict = calculate_perc_returns_for_dict_with_costs(
+        position_contracts_dict=average_position_contracts_dict,
+        fx_series=fx_series_dict,
+        multipliers=multipliers,
+        capital=capital,
+        adjusted_prices=adjusted_prices_dict,
+        cost_per_contract_dict=cost_per_contract_dict,
+        std_dev_dict=std_dev_dict,
+    )
+
+    perc_return_agg = aggregate_returns(perc_return_dict)
+
+    return perc_return_agg
