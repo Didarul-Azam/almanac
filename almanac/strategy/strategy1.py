@@ -1,4 +1,4 @@
-from almanac.data.data import Read_csv
+from almanac.data.data import pd_readcsv
 from almanac.analysis.calculate_returns import calculate_perc_returns
 from almanac.analysis.calculate_stats import Stats
 from typing import Union
@@ -21,8 +21,7 @@ class Strategy1:
         self.perc_return = self.get_return()
 
     def get_data(self):
-        reader = Read_csv(self.data_path)
-        data = reader.pd_readcsv()
+        data = pd_readcsv(self.data_path)
         return data
 
     def get_return(self):
