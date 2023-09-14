@@ -682,6 +682,54 @@
         "documentation": {}
     },
     {
+        "label": "ewmac",
+        "importPath": "almanac.analysis.forecasts",
+        "description": "almanac.analysis.forecasts",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "ewmac",
+        "importPath": "almanac.analysis.forecasts",
+        "description": "almanac.analysis.forecasts",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "copy",
+        "importPath": "copy",
+        "description": "copy",
+        "isExtraImport": true,
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "copy",
+        "importPath": "copy",
+        "description": "copy",
+        "isExtraImport": true,
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "copy",
+        "importPath": "copy",
+        "description": "copy",
+        "isExtraImport": true,
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "copy",
+        "importPath": "copy",
+        "description": "copy",
+        "isExtraImport": true,
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
         "label": "Enum",
         "importPath": "enum",
         "description": "enum",
@@ -1291,22 +1339,6 @@
         "documentation": {}
     },
     {
-        "label": "copy",
-        "importPath": "copy",
-        "description": "copy",
-        "isExtraImport": true,
-        "detail": "copy",
-        "documentation": {}
-    },
-    {
-        "label": "copy",
-        "importPath": "copy",
-        "description": "copy",
-        "isExtraImport": true,
-        "detail": "copy",
-        "documentation": {}
-    },
-    {
         "label": "almanac",
         "kind": 6,
         "isExtraImport": true,
@@ -1336,7 +1368,7 @@
         "kind": 2,
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_perc_returns(\n    position_contracts_held: pd.Series,\n    adjusted_price: pd.Series,\n    fx_series: pd.Series,\n    multiplier: float,\n    capital_required: pd.Series,\n) -> pd.Series:\n    return_price_points = (\n        adjusted_price - adjusted_price.shift(1)\n    ) * position_contracts_held.shift(1)",
+        "peekOfCode": "def calculate_perc_returns(position_contracts_held: pd.Series,\n                           adjusted_price: pd.Series,\n                           fx_series: pd.Series,\n                           multiplier: float,\n                           capital_required: pd.Series,\n                           ) -> pd.Series:\n    return_price_points = (\n        adjusted_price - adjusted_price.shift(1))*position_contracts_held.shift(1)\n    return_instrument_currency = return_price_points * multiplier\n    fx_series_aligned = fx_series.reindex(",
         "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -1395,11 +1427,11 @@
         "documentation": {}
     },
     {
-        "label": "calculate_perc_returns_for_dict",
+        "label": "calculate_perc_returns_with_costs",
         "kind": 2,
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_perc_returns_for_dict(\n    position_contracts_dict: dict,\n    adjusted_prices: dict,\n    multipliers: dict,\n    fx_series: dict,\n    capital: float,\n) -> dict:\n    perc_returns_dict = dict(\n        [\n            (",
+        "peekOfCode": "def calculate_perc_returns_with_costs(\n    position_contracts_held: pd.Series,\n    adjusted_price: pd.Series,\n    fx_series: pd.Series,\n    stdev_series: standardDeviation,\n    multiplier: float,\n    capital_required: float,\n    cost_per_contract: float,\n) -> pd.Series:\n    precost_return_price_points = (",
         "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -1417,7 +1449,7 @@
         "kind": 2,
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
-        "peekOfCode": "def aggregate_returns(perc_returns_dict: dict) -> pd.Series:\n    both_returns = perc_returns_to_df(perc_returns_dict)\n    agg = both_returns.sum(axis=1)\n    return agg\ndef perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns",
+        "peekOfCode": "def aggregate_returns(perc_returns_dict: dict) -> pd.Series:\n    both_returns = perc_returns_to_df(perc_returns_dict)\n    agg = both_returns.sum(axis=1)\n    return agg\ndef perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns\ndef calculate_perc_returns_for_dict_with_costs(\n    position_contracts_dict: dict,",
         "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -1426,7 +1458,25 @@
         "kind": 2,
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
-        "peekOfCode": "def perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns",
+        "peekOfCode": "def perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns\ndef calculate_perc_returns_for_dict_with_costs(\n    position_contracts_dict: dict,\n    adjusted_prices: dict,\n    multipliers: dict,\n    fx_series: dict,\n    capital: float,",
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns_for_dict_with_costs",
+        "kind": 2,
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "peekOfCode": "def calculate_perc_returns_for_dict_with_costs(\n    position_contracts_dict: dict,\n    adjusted_prices: dict,\n    multipliers: dict,\n    fx_series: dict,\n    capital: float,\n    cost_per_contract_dict: dict,\n    std_dev_dict: dict,\n) -> dict:\n    perc_returns_dict = dict(",
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns_with_costs",
+        "kind": 2,
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "peekOfCode": "def calculate_perc_returns_with_costs(\n    position_contracts_held: pd.Series,\n    adjusted_price: pd.Series,\n    fx_series: pd.Series,\n    stdev_series: standardDeviation,\n    multiplier: float,\n    capital_required: float,\n    cost_per_contract: float,\n) -> pd.Series:\n    precost_return_price_points = (",
         "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -1455,6 +1505,15 @@
         "description": "almanac.analysis.cost_calculation",
         "peekOfCode": "def calculate_deflated_costs(\n    stddev_series: standardDeviation, cost_per_contract: float\n) -> pd.Series:\n    stdev_daily_price = stddev_series.daily_risk_price_terms()\n    final_stdev = stdev_daily_price[-1]\n    cost_deflator = stdev_daily_price / final_stdev\n    historic_cost_per_contract = cost_per_contract * cost_deflator\n    return historic_cost_per_contract",
         "detail": "almanac.analysis.cost_calculation",
+        "documentation": {}
+    },
+    {
+        "label": "ewmac",
+        "kind": 2,
+        "importPath": "almanac.analysis.forecasts",
+        "description": "almanac.analysis.forecasts",
+        "peekOfCode": "def ewmac(adjusted_price: pd.Series, fast_span=16, slow_span=64) -> pd.Series:\n    slow_ewma = adjusted_price.ewm(span=slow_span, min_periods=2).mean()\n    fast_ewma = adjusted_price.ewm(span=fast_span, min_periods=2).mean()\n    return fast_ewma - slow_ewma",
+        "detail": "almanac.analysis.forecasts",
         "documentation": {}
     },
     {
@@ -1643,6 +1702,24 @@
         "importPath": "almanac.analysis.positions",
         "description": "almanac.analysis.positions",
         "peekOfCode": "def calculate_position_series_given_variable_risk_for_dict(\n    capital: float,\n    risk_target_tau: float,\n    idm: float,\n    weights: dict,\n    fx_series_dict: dict,\n    multipliers: dict,\n    std_dev_dict: dict,\n) -> dict:\n    position_series_dict = dict(",
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_dict_with_trend_filter_applied",
+        "kind": 2,
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "peekOfCode": "def calculate_position_dict_with_trend_filter_applied(\n    adjusted_prices_dict: dict,\n    average_position_contracts_dict: dict,\n) -> dict:\n    list_of_instruments = list(adjusted_prices_dict.keys())\n    position_dict_with_trend_filter = dict(\n        [\n            (\n                instrument_code,\n                calculate_position_with_trend_filter_applied(",
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_with_trend_filter_applied",
+        "kind": 2,
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "peekOfCode": "def calculate_position_with_trend_filter_applied(\n    adjusted_price: pd.Series, average_position: pd.Series\n) -> pd.Series:\n    filtered_position = copy(average_position)\n    ewmac_values = ewmac(adjusted_price)\n    bearish = ewmac_values < 0\n    filtered_position[bearish] = 0\n    return filtered_position",
         "detail": "almanac.analysis.positions",
         "documentation": {}
     },
@@ -2047,7 +2124,7 @@
         "kind": 2,
         "importPath": "build.lib.almanac.analysis.calculate_returns",
         "description": "build.lib.almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_perc_returns(\n    position_contracts_held: pd.Series,\n    adjusted_price: pd.Series,\n    fx_series: pd.Series,\n    multiplier: float,\n    capital_required: pd.Series,\n) -> pd.Series:\n    return_price_points = (\n        adjusted_price - adjusted_price.shift(1)\n    ) * position_contracts_held.shift(1)",
+        "peekOfCode": "def calculate_perc_returns(position_contracts_held: pd.Series,\n                           adjusted_price: pd.Series,\n                           fx_series: pd.Series,\n                           multiplier: float,\n                           capital_required: pd.Series,\n                           ) -> pd.Series:\n    return_price_points = (\n        adjusted_price - adjusted_price.shift(1))*position_contracts_held.shift(1)\n    return_instrument_currency = return_price_points * multiplier\n    fx_series_aligned = fx_series.reindex(",
         "detail": "build.lib.almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -2106,11 +2183,11 @@
         "documentation": {}
     },
     {
-        "label": "calculate_perc_returns_for_dict",
+        "label": "calculate_perc_returns_with_costs",
         "kind": 2,
         "importPath": "build.lib.almanac.analysis.calculate_returns",
         "description": "build.lib.almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_perc_returns_for_dict(\n    position_contracts_dict: dict,\n    adjusted_prices: dict,\n    multipliers: dict,\n    fx_series: dict,\n    capital: float,\n) -> dict:\n    perc_returns_dict = dict(\n        [\n            (",
+        "peekOfCode": "def calculate_perc_returns_with_costs(\n    position_contracts_held: pd.Series,\n    adjusted_price: pd.Series,\n    fx_series: pd.Series,\n    stdev_series: standardDeviation,\n    multiplier: float,\n    capital_required: float,\n    cost_per_contract: float,\n) -> pd.Series:\n    precost_return_price_points = (",
         "detail": "build.lib.almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -2128,7 +2205,7 @@
         "kind": 2,
         "importPath": "build.lib.almanac.analysis.calculate_returns",
         "description": "build.lib.almanac.analysis.calculate_returns",
-        "peekOfCode": "def aggregate_returns(perc_returns_dict: dict) -> pd.Series:\n    both_returns = perc_returns_to_df(perc_returns_dict)\n    agg = both_returns.sum(axis=1)\n    return agg\ndef perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns",
+        "peekOfCode": "def aggregate_returns(perc_returns_dict: dict) -> pd.Series:\n    both_returns = perc_returns_to_df(perc_returns_dict)\n    agg = both_returns.sum(axis=1)\n    return agg\ndef perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns\ndef calculate_perc_returns_for_dict_with_costs(\n    position_contracts_dict: dict,",
         "detail": "build.lib.almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -2137,7 +2214,25 @@
         "kind": 2,
         "importPath": "build.lib.almanac.analysis.calculate_returns",
         "description": "build.lib.almanac.analysis.calculate_returns",
-        "peekOfCode": "def perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns",
+        "peekOfCode": "def perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns\ndef calculate_perc_returns_for_dict_with_costs(\n    position_contracts_dict: dict,\n    adjusted_prices: dict,\n    multipliers: dict,\n    fx_series: dict,\n    capital: float,",
+        "detail": "build.lib.almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns_for_dict_with_costs",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.calculate_returns",
+        "description": "build.lib.almanac.analysis.calculate_returns",
+        "peekOfCode": "def calculate_perc_returns_for_dict_with_costs(\n    position_contracts_dict: dict,\n    adjusted_prices: dict,\n    multipliers: dict,\n    fx_series: dict,\n    capital: float,\n    cost_per_contract_dict: dict,\n    std_dev_dict: dict,\n) -> dict:\n    perc_returns_dict = dict(",
+        "detail": "build.lib.almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns_with_costs",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.calculate_returns",
+        "description": "build.lib.almanac.analysis.calculate_returns",
+        "peekOfCode": "def calculate_perc_returns_with_costs(\n    position_contracts_held: pd.Series,\n    adjusted_price: pd.Series,\n    fx_series: pd.Series,\n    stdev_series: standardDeviation,\n    multiplier: float,\n    capital_required: float,\n    cost_per_contract: float,\n) -> pd.Series:\n    precost_return_price_points = (",
         "detail": "build.lib.almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -2166,6 +2261,15 @@
         "description": "build.lib.almanac.analysis.cost_calculation",
         "peekOfCode": "def calculate_deflated_costs(\n    stddev_series: standardDeviation, cost_per_contract: float\n) -> pd.Series:\n    stdev_daily_price = stddev_series.daily_risk_price_terms()\n    final_stdev = stdev_daily_price[-1]\n    cost_deflator = stdev_daily_price / final_stdev\n    historic_cost_per_contract = cost_per_contract * cost_deflator\n    return historic_cost_per_contract",
         "detail": "build.lib.almanac.analysis.cost_calculation",
+        "documentation": {}
+    },
+    {
+        "label": "ewmac",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.forecasts",
+        "description": "build.lib.almanac.analysis.forecasts",
+        "peekOfCode": "def ewmac(adjusted_price: pd.Series, fast_span=16, slow_span=64) -> pd.Series:\n    slow_ewma = adjusted_price.ewm(span=slow_span, min_periods=2).mean()\n    fast_ewma = adjusted_price.ewm(span=fast_span, min_periods=2).mean()\n    return fast_ewma - slow_ewma",
+        "detail": "build.lib.almanac.analysis.forecasts",
         "documentation": {}
     },
     {
@@ -2354,6 +2458,24 @@
         "importPath": "build.lib.almanac.analysis.positions",
         "description": "build.lib.almanac.analysis.positions",
         "peekOfCode": "def calculate_position_series_given_variable_risk_for_dict(\n    capital: float,\n    risk_target_tau: float,\n    idm: float,\n    weights: dict,\n    fx_series_dict: dict,\n    multipliers: dict,\n    std_dev_dict: dict,\n) -> dict:\n    position_series_dict = dict(",
+        "detail": "build.lib.almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_dict_with_trend_filter_applied",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.positions",
+        "description": "build.lib.almanac.analysis.positions",
+        "peekOfCode": "def calculate_position_dict_with_trend_filter_applied(\n    adjusted_prices_dict: dict,\n    average_position_contracts_dict: dict,\n) -> dict:\n    list_of_instruments = list(adjusted_prices_dict.keys())\n    position_dict_with_trend_filter = dict(\n        [\n            (\n                instrument_code,\n                calculate_position_with_trend_filter_applied(",
+        "detail": "build.lib.almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_with_trend_filter_applied",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.positions",
+        "description": "build.lib.almanac.analysis.positions",
+        "peekOfCode": "def calculate_position_with_trend_filter_applied(\n    adjusted_price: pd.Series, average_position: pd.Series\n) -> pd.Series:\n    filtered_position = copy(average_position)\n    ewmac_values = ewmac(adjusted_price)\n    bearish = ewmac_values < 0\n    filtered_position[bearish] = 0\n    return filtered_position",
         "detail": "build.lib.almanac.analysis.positions",
         "documentation": {}
     },
@@ -2551,7 +2673,7 @@
         "kind": 5,
         "importPath": "build.lib.almanac.config.instruments",
         "description": "build.lib.almanac.config.instruments",
-        "peekOfCode": "cost_per_contract_dict = {'US2': 6.1, \"US3\": 8.26, 'US5': 5.306, 'US10': 8.8, 'US30': 15.58, 'US20': 17.04, 'US10U': 9.15, 'OAT': 8.81, 'SHATZ': 4.21, 'BOBL': 7.01, 'BUND': 6.55, 'BUXL': 15.56, 'BTP': 7.96, 'BTP3': 7.98, 'JGB': 5837, 'BONO': 59, 'DOW': 0.52, 'NASDAQ_micro': 1.22, 'R1000': 22, 'SP400': 26.57, 'SP500_micro': 1.5, 'AEX': 16.39, 'DAX': 1.98, 'SMI': 12.1, 'DJSTX-SMALL': 2, 'EU-DIV30': 1.97, 'EURO600': 2.07, 'EUROSTX': 7.3, 'EU-AUTO': 13.8, 'EU-BASIC': 25.5, 'EU-HEALTH': 18.70, 'EU-INSURE': 8.23, 'EU-OIL': 9.35, 'EU-TECH': 16.63, 'EU-UTILS': 9.98, 'MSCIASIA': 18.3, 'FTSECHINAA': .5, 'FTSECHINAH': 9.1, 'NIFTY': 0.11, 'NIKKEI': 328, 'NIKKEI400': 432, 'MUMMY': 568, 'TOPIX': 261,\n                          'MSCISING': 7.3, 'VIX': 15.73, 'V2X': 1.36, 'AUD': 2.56, 'CAD': 5.12, 'CHF': 8.4, 'EUR': 6.7, 'GBP': 23.43, 'JPY': 254, 'NOK': 71, 'NZD': 6.47, 'SEK': 57.6, 'GBPJPY': 3456, 'BRE': 0.0022, 'INR': 240, 'MXP': 5.65, 'RUR': 300, 'SGD': 17.68, 'ALUMINIUM': 42.5, 'COPPER': 13.23, 'GOLD_micro': 1.75, 'IRON': 11.63, 'PALLAD': 176.5, 'PLAT': 12.74, 'SILVER': 5.38, 'BITCOIN': 5.15, 'ETHEREUM': 61.94, 'BRENT-LAST': 23.25, 'CRUDE_W_mini': 19.14, 'GASOILINE': 42.75, 'GAS_US_mini': 7.21, 'HEATOIL': 38.61, 'BBCOMM': 11.13, 'CHEESE': 106.68, 'CORN': 896, 'FEEDCOW': 2688, 'LEANHOG': 1377, 'LIVECOW': 1092, 'OAT': 174.3, 'REDWHEAT': 1560, 'RICE': 47.51, 'SOYBEAN': 1639, 'SOYMEAL': 10.7, 'SOYOIL': 1260, 'WHEAT': 1697}\nmultipliers = {\n    \"US2\": 2000,\n    \"US3\": 2000,\n    \"US5\": 1000,\n    \"US10\": 1000,\n    \"USIRS10\": 1000,\n    \"US20\": 1000,\n    \"US30\": 1000,",
+        "peekOfCode": "cost_per_contract_dict = {'US2': 6.1, \"US3\": 8.26, 'US5': 5.306, 'US10': 8.8, 'US30': 15.58, 'US20': 17.04, 'US10U': 9.15, 'OAT': 8.81, 'SHATZ': 4.21, 'BOBL': 7.01,\n                          'BUND': 6.55, 'BUXL': 15.56, 'BTP': 7.96, 'BTP3': 7.98, 'JGB': 5837, 'BONO': 59, 'DOW': 0.52, 'NASDAQ_micro': 1.22, 'R1000': 22,\n                          'SP400': 26.57, 'SP500_micro': 1.5, 'AEX': 16.39, 'DAX': 1.98, 'SMI': 12.1, 'DJSTX-SMALL': 2, 'EU-DIV30': 1.97, 'EURO600': 2.07,\n                          'EUROSTX': 7.3, 'EU-AUTO': 13.8, 'EU-BASIC': 25.5, 'EU-HEALTH': 18.70, 'EU-INSURE': 8.23, 'EU-OIL': 9.35, 'EU-TECH': 16.63, 'EU-UTILS': 9.98,\n                          'MSCIASIA': 18.3, 'FTSECHINAA': .5, 'FTSECHINAH': 9.1, 'NIFTY': 0.11, 'NIKKEI': 328, 'NIKKEI400': 432, 'MUMMY': 568, 'TOPIX': 261,\n                          'MSCISING': 7.3, 'VIX': 15.73, 'V2X': 1.36, 'AUD': 2.56, 'CAD': 5.12, 'CHF': 8.4, 'EUR': 6.7,\n                          'GBP': 23.43,\n                          # 'JPY': 254,\n                          'NOK': 71, 'NZD': 6.47,\n                          'SEK': 57.6, 'GBPJPY': 3456, 'BRE': 0.0022, 'INR': 240, 'MXP': 5.65, 'RUR': 300, 'SGD': 17.68, 'ALUMINIUM': 42.5, 'COPPER': 13.23, 'GOLD_micro': 1.75,",
         "detail": "build.lib.almanac.config.instruments",
         "documentation": {}
     },

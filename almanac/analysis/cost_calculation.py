@@ -3,6 +3,7 @@ import pandas as pd
 from almanac.utils.standardDeviation import standardDeviation
 from almanac.config.instruments import cost_per_contract_dict
 
+
 def calculate_costs_deflated_for_vol(
     stddev_series: standardDeviation,
     cost_per_contract: float,
@@ -37,4 +38,3 @@ def calculate_deflated_costs(
     historic_cost_per_contract = cost_per_contract * cost_deflator
 
     return historic_cost_per_contract
-
