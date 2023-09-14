@@ -1445,6 +1445,15 @@
         "documentation": {}
     },
     {
+        "label": "calculate_perc_returns_for_dict",
+        "kind": 2,
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "peekOfCode": "def calculate_perc_returns_for_dict(\n    position_contracts_dict: dict,\n    adjusted_prices: dict,\n    multipliers: dict,\n    fx_series: dict,\n    capital: float,\n) -> dict:\n    perc_returns_dict = dict(\n        [\n            (",
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
         "label": "aggregate_returns",
         "kind": 2,
         "importPath": "almanac.analysis.calculate_returns",
@@ -2201,6 +2210,15 @@
         "documentation": {}
     },
     {
+        "label": "calculate_perc_returns_for_dict",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.calculate_returns",
+        "description": "build.lib.almanac.analysis.calculate_returns",
+        "peekOfCode": "def calculate_perc_returns_for_dict(\n    position_contracts_dict: dict,\n    adjusted_prices: dict,\n    multipliers: dict,\n    fx_series: dict,\n    capital: float,\n) -> dict:\n    perc_returns_dict = dict(\n        [\n            (",
+        "detail": "build.lib.almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
         "label": "aggregate_returns",
         "kind": 2,
         "importPath": "build.lib.almanac.analysis.calculate_returns",
@@ -2673,7 +2691,7 @@
         "kind": 5,
         "importPath": "build.lib.almanac.config.instruments",
         "description": "build.lib.almanac.config.instruments",
-        "peekOfCode": "cost_per_contract_dict = {'US2': 6.1, \"US3\": 8.26, 'US5': 5.306, 'US10': 8.8, 'US30': 15.58, 'US20': 17.04, 'US10U': 9.15, 'OAT': 8.81, 'SHATZ': 4.21, 'BOBL': 7.01,\n                          'BUND': 6.55, 'BUXL': 15.56, 'BTP': 7.96, 'BTP3': 7.98, 'JGB': 5837, 'BONO': 59, 'DOW': 0.52, 'NASDAQ_micro': 1.22, 'R1000': 22,\n                          'SP400': 26.57, 'SP500_micro': 1.5, 'AEX': 16.39, 'DAX': 1.98, 'SMI': 12.1, 'DJSTX-SMALL': 2, 'EU-DIV30': 1.97, 'EURO600': 2.07,\n                          'EUROSTX': 7.3, 'EU-AUTO': 13.8, 'EU-BASIC': 25.5, 'EU-HEALTH': 18.70, 'EU-INSURE': 8.23, 'EU-OIL': 9.35, 'EU-TECH': 16.63, 'EU-UTILS': 9.98,\n                          'MSCIASIA': 18.3, 'FTSECHINAA': .5, 'FTSECHINAH': 9.1, 'NIFTY': 0.11, 'NIKKEI': 328, 'NIKKEI400': 432, 'MUMMY': 568, 'TOPIX': 261,\n                          'MSCISING': 7.3, 'VIX': 15.73, 'V2X': 1.36, 'AUD': 2.56, 'CAD': 5.12, 'CHF': 8.4, 'EUR': 6.7,\n                          'GBP': 23.43,\n                          # 'JPY': 254,\n                          'NOK': 71, 'NZD': 6.47,\n                          'SEK': 57.6, 'GBPJPY': 3456, 'BRE': 0.0022, 'INR': 240, 'MXP': 5.65, 'RUR': 300, 'SGD': 17.68, 'ALUMINIUM': 42.5, 'COPPER': 13.23, 'GOLD_micro': 1.75,",
+        "peekOfCode": "cost_per_contract_dict = {'US2': 6.1, \"US3\": 8.26, 'US5': 5.306, 'US10': 8.8, 'US30': 15.58, 'US20': 17.04, 'US10U': 9.15, 'OAT': 8.81, 'SHATZ': 4.21, 'BOBL': 7.01, 'BUND': 6.55, 'BUXL': 15.56, 'BTP': 7.96, 'BTP3': 7.98, 'JGB': 5837, 'BONO': 59, 'DOW': 0.52, 'NASDAQ_micro': 1.22, 'R1000': 22, 'SP400': 26.57, 'SP500_micro': 1.5, 'AEX': 16.39, 'DAX': 1.98, 'SMI': 12.1, 'DJSTX-SMALL': 2, 'EU-DIV30': 1.97, 'EURO600': 2.07, 'EUROSTX': 7.3, 'EU-AUTO': 13.8, 'EU-BASIC': 25.5, 'EU-HEALTH': 18.70, 'EU-INSURE': 8.23, 'EU-OIL': 9.35, 'EU-TECH': 16.63, 'EU-UTILS': 9.98, 'MSCIASIA': 18.3, 'FTSECHINAA': .5, 'FTSECHINAH': 9.1, 'NIFTY': 0.11, 'NIKKEI': 328, 'NIKKEI400': 432, 'MUMMY': 568, 'TOPIX': 261,\n                          'MSCISING': 7.3, 'VIX': 15.73, 'V2X': 1.36, 'AUD': 2.56, 'CAD': 5.12, 'CHF': 8.4, 'EUR': 6.7, 'GBP': 23.43, 'JPY': 254, 'NOK': 71, 'NZD': 6.47, 'SEK': 57.6, 'GBPJPY': 3456, 'BRE': 0.0022, 'INR': 240, 'MXP': 5.65, 'RUR': 300, 'SGD': 17.68, 'ALUMINIUM': 42.5, 'COPPER': 13.23, 'GOLD_micro': 1.75, 'IRON': 11.63, 'PALLAD': 176.5, 'PLAT': 12.74, 'SILVER': 5.38, 'BITCOIN': 5.15, 'ETHEREUM': 61.94, 'BRENT-LAST': 23.25, 'CRUDE_W_mini': 19.14, 'GASOILINE': 42.75, 'GAS_US_mini': 7.21, 'HEATOIL': 38.61, 'BBCOMM': 11.13, 'CHEESE': 106.68, 'CORN': 896, 'FEEDCOW': 2688, 'LEANHOG': 1377, 'LIVECOW': 1092, 'OAT': 174.3, 'REDWHEAT': 1560, 'RICE': 47.51, 'SOYBEAN': 1639, 'SOYMEAL': 10.7, 'SOYOIL': 1260, 'WHEAT': 1697}\nmultipliers = {\n    \"US2\": 2000,\n    \"US3\": 2000,\n    \"US5\": 1000,\n    \"US10\": 1000,\n    \"USIRS10\": 1000,\n    \"US20\": 1000,\n    \"US30\": 1000,",
         "detail": "build.lib.almanac.config.instruments",
         "documentation": {}
     },
