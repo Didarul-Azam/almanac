@@ -1,6 +1,8 @@
 import pandas as pd
 from almanac.utils.standardDeviation import standardDeviation
 from almanac.config.configs import *
+from almanac.analysis.forecasts import ewmac
+from copy import copy
 
 
 def calculate_position_series_given_fixed_risk(capital: float,
@@ -64,3 +66,37 @@ def calculate_position_series_given_variable_risk_for_dict(
     )
 
     return position_series_dict
+
+
+def calculate_position_dict_with_trend_filter_applied(
+    adjusted_prices_dict: dict,
+    average_position_contracts_dict: dict,
+) -> dict:
+
+    list_of_instruments = list(adjusted_prices_dict.keys())
+    position_dict_with_trend_filter = dict(
+        [
+            (
+                instrument_code,
+                calculate_position_with_trend_filter_applied(
+                    adjusted_prices_dict[instrument_code],
+                    average_position_contracts_dict[instrument_code],
+                ),
+            )
+            for instrument_code in list_of_instruments
+        ]
+    )
+
+    return position_dict_with_trend_filter
+
+
+def calculate_position_with_trend_filter_applied(
+    adjusted_price: pd.Series, average_position: pd.Series
+) -> pd.Series:
+
+    filtered_position = copy(average_position)
+    ewmac_values = ewmac(adjusted_price)
+    bearish = ewmac_values < 0
+    filtered_position[bearish] = 0
+
+    return filtered_position
