@@ -7,6 +7,7 @@ almanac.egg-info/top_level.txt
 almanac/analysis/__init__.py
 almanac/analysis/calculate_returns.py
 almanac/analysis/calculate_stats.py
+almanac/analysis/cost_calculation.py
 almanac/analysis/handcrafting.py
 almanac/analysis/positions.py
 almanac/analysis/std_for_risk.py

@@ -10,10 +10,12 @@ def calculate_position_series_given_fixed_risk(capital: float,
                                                multiplier: float,
                                                instrument_risk_ann_perc: float) -> pd.Series:
 
-    #N = (Capital × τ) ÷ (Multiplier × Price × FX × σ %)
-    position_in_contracts =  capital * risk_target_tau / (multiplier * current_price * fx * instrument_risk_ann_perc)
+    # N = (Capital × τ) ÷ (Multiplier × Price × FX × σ %)
+    position_in_contracts = capital * risk_target_tau / \
+        (multiplier * current_price * fx * instrument_risk_ann_perc)
 
     return position_in_contracts
+
 
 def calculate_position_series_given_variable_risk(
     capital: float,
@@ -24,8 +26,8 @@ def calculate_position_series_given_variable_risk(
 ) -> pd.Series:
 
     # N = (Capital × τ) ÷ (Multiplier × Price × FX × σ %)
-    ## resolves to N = (Capital × τ) ÷ (Multiplier × FX × daily stdev price terms × 16)
-    ## for simplicity we use the daily risk in price terms, even if we calculated annualised % returns
+    # resolves to N = (Capital × τ) ÷ (Multiplier × FX × daily stdev price terms × 16)
+    # for simplicity we use the daily risk in price terms, even if we calculated annualised % returns
     daily_risk_price_terms = instrument_risk.daily_risk_price_terms()
 
     return (
@@ -33,8 +35,8 @@ def calculate_position_series_given_variable_risk(
         * risk_target_tau
         / (multiplier * fx * daily_risk_price_terms * (BUSINESS_DAYS_IN_YEAR ** 0.5))
     )
-    
-    
+
+
 def calculate_position_series_given_variable_risk_for_dict(
     capital: float,
     risk_target_tau: float,
