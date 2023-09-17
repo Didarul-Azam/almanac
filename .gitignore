@@ -125,3 +125,5 @@ __pycache__/
 
 # PyInstaller
 dist/
+almanac.egg-info/SOURCES.txt
+almanac.egg-info/SOURCES.txt
