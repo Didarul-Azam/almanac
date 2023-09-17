@@ -5,6 +5,7 @@ almanac.egg-info/SOURCES.txt
 almanac.egg-info/dependency_links.txt
 almanac.egg-info/top_level.txt
 almanac/analysis/__init__.py
+almanac/analysis/buffering.py
 almanac/analysis/calculate_returns.py
 almanac/analysis/calculate_stats.py
 almanac/analysis/cost_calculation.py
@@ -32,6 +33,7 @@ almanac/strategy/strategy4_handcrafting.py
 almanac/strategy/strategy5.py
 almanac/strategy/strategy6.py
 almanac/strategy/strategy7.py
+almanac/strategy/strategy8.py
 almanac/utils/__init__.py
 almanac/utils/fx_series.py
 almanac/utils/standardDeviation.py
