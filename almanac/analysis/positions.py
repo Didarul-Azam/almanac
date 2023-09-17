@@ -218,3 +218,47 @@ def calculate_position_with_multiple_trend_forecast_applied(
     )
 
     return forecast * average_position / 10
+
+
+
+def calculate_position_dict_with_multiple_carry_forecast_applied(
+    adjusted_prices_dict: dict,
+    std_dev_dict: dict,
+    average_position_contracts_dict: dict,
+    carry_prices_dict: dict,
+    carry_spans: list,
+) -> dict:
+
+    list_of_instruments = list(adjusted_prices_dict.keys())
+    position_dict_with_carry = dict(
+        [
+            (
+                instrument_code,
+                calculate_position_with_multiple_carry_forecast_applied(
+                    average_position=average_position_contracts_dict[instrument_code],
+                    stdev_ann_perc=std_dev_dict[instrument_code],
+                    carry_price=carry_prices_dict[instrument_code],
+                    carry_spans=carry_spans,
+                ),
+            )
+            for instrument_code in list_of_instruments
+        ]
+    )
+
+    return position_dict_with_carry
+
+
+def calculate_position_with_multiple_carry_forecast_applied(
+    average_position: pd.Series,
+    stdev_ann_perc: standardDeviation,
+    carry_price: pd.DataFrame,
+    carry_spans: list,
+) -> pd.Series:
+    from almanac.analysis.forecasts import calculate_combined_carry_forecast
+    forecast = calculate_combined_carry_forecast(
+        stdev_ann_perc=stdev_ann_perc,
+        carry_price=carry_price,
+        carry_spans=carry_spans,
+    )
+
+    return forecast * average_position / 10

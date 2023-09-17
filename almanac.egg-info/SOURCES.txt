@@ -8,6 +8,7 @@ almanac/analysis/__init__.py
 almanac/analysis/buffering.py
 almanac/analysis/calculate_returns.py
 almanac/analysis/calculate_stats.py
+almanac/analysis/carry.py
 almanac/analysis/cost_calculation.py
 almanac/analysis/forecasts.py
 almanac/analysis/handcrafting.py
