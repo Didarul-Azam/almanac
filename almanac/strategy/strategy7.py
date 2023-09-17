@@ -80,4 +80,4 @@ class Strategy7(StrategyBase):
         self.position_contracts_dict = self.calculate_positions()
         self.perc_return_dict = self.calculate_returns()
         self.perc_return_agg = aggregate_returns(self.perc_return_dict)
-        self.calculate_quantstats(self.perc_return_agg)
+        self.calculate_quantstats()
