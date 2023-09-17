@@ -4,6 +4,7 @@ from almanac.utils.standardDeviation import standardDeviation
 from typing import Union
 from almanac.analysis.cost_calculation import calculate_costs_deflated_for_vol
 
+
 def calculate_perc_returns(position_contracts_held: pd.Series,
                            adjusted_price: pd.Series,
                            fx_series: pd.Series,
@@ -74,6 +75,7 @@ def calculate_perc_returns_with_costs(
     perc_return = return_base_currency / capital_required
 
     return perc_return
+
 
 def calculate_perc_returns_for_dict_with_costs(
     position_contracts_dict: dict,
@@ -179,66 +181,69 @@ def perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:
 
     return both_returns
 
+
 class ArgumentError(Exception):
     pass
 
+
 def calculate_returns(
-    position_contracts: Union[dict,pd.Series],
-    adjusted_prices: Union[dict,pd.Series],
-    multipliers: Union[dict,float],
-    fx_series: Union[dict,pd.Series],
+    position_contracts: Union[dict, pd.Series],
+    adjusted_prices: Union[dict, pd.Series],
+    multipliers: Union[dict, float],
+    fx_series: Union[dict, pd.Series],
     capital: float,
-    cost_per_contract: Union[dict,float],
-    std_dev: Union[dict,standardDeviation],
-    aggregate = True,
-): 
-    if isinstance(position_contracts,dict):
+    cost_per_contract: Union[dict, float],
+    std_dev: Union[dict, standardDeviation],
+    aggregate=True,
+):
+    if isinstance(position_contracts, dict):
         if aggregate:
-            pre_cost_returns_dict,post_cost_returns_dict = calculate_returns_perc_dict(
-                position_contracts_dict = position_contracts,
-                adjusted_prices= adjusted_prices,
-                multipliers = multipliers,
-                fx_series = fx_series,
-                capital = capital,
-                cost_per_contract_dict =cost_per_contract,
-                std_dev_dict = std_dev,
+            pre_cost_returns_dict, post_cost_returns_dict = calculate_returns_perc_dict(
+                position_contracts_dict=position_contracts,
+                adjusted_prices=adjusted_prices,
+                multipliers=multipliers,
+                fx_series=fx_series,
+                capital=capital,
+                cost_per_contract_dict=cost_per_contract,
+                std_dev_dict=std_dev,
             )
-            pre_cost_portfolio_returns = aggregate_returns(pre_cost_returns_dict)
-            post_cost_portfolio_returns = aggregate_returns(post_cost_returns_dict)
-            return pre_cost_portfolio_returns,post_cost_portfolio_returns
+            pre_cost_portfolio_returns = aggregate_returns(
+                pre_cost_returns_dict)
+            post_cost_portfolio_returns = aggregate_returns(
+                post_cost_returns_dict)
+            return pre_cost_portfolio_returns, post_cost_portfolio_returns
         else:
-            pre_cost_returns_dict,post_cost_returns_dict = calculate_returns_perc_dict(
-                position_contracts_dict = position_contracts,
-                adjusted_prices= adjusted_prices,
-                multipliers = multipliers,
-                fx_series = fx_series,
-                capital = capital,
-                cost_per_contract_dict =cost_per_contract,
-                std_dev_dict = std_dev,
+            pre_cost_returns_dict, post_cost_returns_dict = calculate_returns_perc_dict(
+                position_contracts_dict=position_contracts,
+                adjusted_prices=adjusted_prices,
+                multipliers=multipliers,
+                fx_series=fx_series,
+                capital=capital,
+                cost_per_contract_dict=cost_per_contract,
+                std_dev_dict=std_dev,
             )
-            return pre_cost_returns_dict,post_cost_returns_dict
+            return pre_cost_returns_dict, post_cost_returns_dict
     elif isinstance(position_contracts, pd.Series):
         pre_cost_returns = calculate_perc_returns_with_costs(
-            position_contracts_held = position_contracts,
-            adjusted_price = adjusted_prices ,
-            fx_series = fx_series,
-            stdev_series= std_dev,
-            multiplier = multipliers ,
-            capital_required = capital,
-            cost_per_contract = 0,
+            position_contracts_held=position_contracts,
+            adjusted_price=adjusted_prices,
+            fx_series=fx_series,
+            stdev_series=std_dev,
+            multiplier=multipliers,
+            capital_required=capital,
+            cost_per_contract=0,
         )
         post_cost_returns = calculate_perc_returns_with_costs(
-            position_contracts_held = position_contracts,
-            adjusted_price = adjusted_prices ,
-            fx_series = fx_series,
-            stdev_series= std_dev,
-            multiplier = multipliers ,
-            capital_required = capital,
-            cost_per_contract = cost_per_contract ,
+            position_contracts_held=position_contracts,
+            adjusted_price=adjusted_prices,
+            fx_series=fx_series,
+            stdev_series=std_dev,
+            multiplier=multipliers,
+            capital_required=capital,
+            cost_per_contract=cost_per_contract,
         )
-        return pre_cost_returns,post_cost_returns
+        return pre_cost_returns, post_cost_returns
 
     else:
         # Raise an ArgumentError with a custom error message
-        raise ArgumentError("Position must be a Pandas Series or a dictionary")    
-    
+        raise ArgumentError("Position must be a Pandas Series or a dictionary")

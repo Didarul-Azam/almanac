@@ -98,6 +98,166 @@
         "documentation": {}
     },
     {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_costs_deflated_for_vol",
+        "importPath": "almanac.analysis.cost_calculation",
+        "description": "almanac.analysis.cost_calculation",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.cost_calculation",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_costs_deflated_for_vol",
+        "importPath": "almanac.analysis.cost_calculation",
+        "description": "almanac.analysis.cost_calculation",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.cost_calculation",
+        "documentation": {}
+    },
+    {
         "label": "norm",
         "importPath": "scipy.stats",
         "description": "scipy.stats",
@@ -170,7 +330,7 @@
         "documentation": {}
     },
     {
-        "label": "minimum_capital_for_sub_strategy",
+        "label": "*",
         "importPath": "almanac.utils.utils",
         "description": "almanac.utils.utils",
         "isExtraImport": true,
@@ -202,7 +362,7 @@
         "documentation": {}
     },
     {
-        "label": "minimum_capital_for_sub_strategy",
+        "label": "*",
         "importPath": "almanac.utils.utils",
         "description": "almanac.utils.utils",
         "isExtraImport": true,
@@ -490,14 +650,6 @@
         "documentation": {}
     },
     {
-        "label": "instrument_weights",
-        "importPath": "almanac.config.instruments",
-        "description": "almanac.config.instruments",
-        "isExtraImport": true,
-        "detail": "almanac.config.instruments",
-        "documentation": {}
-    },
-    {
         "label": "INSTRUMENT_LIST",
         "importPath": "almanac.config.instruments",
         "description": "almanac.config.instruments",
@@ -523,6 +675,14 @@
     },
     {
         "label": "cost_per_contract_dict",
+        "importPath": "almanac.config.instruments",
+        "description": "almanac.config.instruments",
+        "isExtraImport": true,
+        "detail": "almanac.config.instruments",
+        "documentation": {}
+    },
+    {
+        "label": "*",
         "importPath": "almanac.config.instruments",
         "description": "almanac.config.instruments",
         "isExtraImport": true,
@@ -578,14 +738,6 @@
         "documentation": {}
     },
     {
-        "label": "instrument_weights",
-        "importPath": "almanac.config.instruments",
-        "description": "almanac.config.instruments",
-        "isExtraImport": true,
-        "detail": "almanac.config.instruments",
-        "documentation": {}
-    },
-    {
         "label": "INSTRUMENT_LIST",
         "importPath": "almanac.config.instruments",
         "description": "almanac.config.instruments",
@@ -611,6 +763,14 @@
     },
     {
         "label": "cost_per_contract_dict",
+        "importPath": "almanac.config.instruments",
+        "description": "almanac.config.instruments",
+        "isExtraImport": true,
+        "detail": "almanac.config.instruments",
+        "documentation": {}
+    },
+    {
+        "label": "*",
         "importPath": "almanac.config.instruments",
         "description": "almanac.config.instruments",
         "isExtraImport": true,
@@ -674,7 +834,7 @@
         "documentation": {}
     },
     {
-        "label": "pd_readcsv",
+        "label": "get_data_dict",
         "importPath": "almanac.data.data",
         "description": "almanac.data.data",
         "isExtraImport": true,
@@ -730,7 +890,31 @@
         "documentation": {}
     },
     {
+        "label": "get_data_dict",
+        "importPath": "almanac.data.data",
+        "description": "almanac.data.data",
+        "isExtraImport": true,
+        "detail": "almanac.data.data",
+        "documentation": {}
+    },
+    {
         "label": "pd_readcsv",
+        "importPath": "almanac.data.data",
+        "description": "almanac.data.data",
+        "isExtraImport": true,
+        "detail": "almanac.data.data",
+        "documentation": {}
+    },
+    {
+        "label": "pd_readcsv",
+        "importPath": "almanac.data.data",
+        "description": "almanac.data.data",
+        "isExtraImport": true,
+        "detail": "almanac.data.data",
+        "documentation": {}
+    },
+    {
+        "label": "get_data_dict",
         "importPath": "almanac.data.data",
         "description": "almanac.data.data",
         "isExtraImport": true,
@@ -762,15 +946,7 @@
         "documentation": {}
     },
     {
-        "label": "pd_readcsv",
-        "importPath": "almanac.data.data",
-        "description": "almanac.data.data",
-        "isExtraImport": true,
-        "detail": "almanac.data.data",
-        "documentation": {}
-    },
-    {
-        "label": "pd_readcsv",
+        "label": "get_data_dict",
         "importPath": "almanac.data.data",
         "description": "almanac.data.data",
         "isExtraImport": true,
@@ -818,7 +994,55 @@
         "documentation": {}
     },
     {
+        "label": "calculate_forecast_for_ewmac",
+        "importPath": "almanac.analysis.forecasts",
+        "description": "almanac.analysis.forecasts",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_scaled_forecast_for_ewmac",
+        "importPath": "almanac.analysis.forecasts",
+        "description": "almanac.analysis.forecasts",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_risk_adjusted_forecast_for_ewmac",
+        "importPath": "almanac.analysis.forecasts",
+        "description": "almanac.analysis.forecasts",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
         "label": "ewmac",
+        "importPath": "almanac.analysis.forecasts",
+        "description": "almanac.analysis.forecasts",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_forecast_for_ewmac",
+        "importPath": "almanac.analysis.forecasts",
+        "description": "almanac.analysis.forecasts",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_scaled_forecast_for_ewmac",
+        "importPath": "almanac.analysis.forecasts",
+        "description": "almanac.analysis.forecasts",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_risk_adjusted_forecast_for_ewmac",
         "importPath": "almanac.analysis.forecasts",
         "description": "almanac.analysis.forecasts",
         "isExtraImport": true,
@@ -898,435 +1122,83 @@
         "documentation": {}
     },
     {
-        "label": "calculate_perc_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
+        "label": "create_fx_series_given_adjusted_prices_dict",
+        "importPath": "almanac.utils.fx_series",
+        "description": "almanac.utils.fx_series",
         "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
+        "detail": "almanac.utils.fx_series",
         "documentation": {}
     },
     {
-        "label": "calculate_perc_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
+        "label": "create_fx_series_given_adjusted_prices_dict",
+        "importPath": "almanac.utils.fx_series",
+        "description": "almanac.utils.fx_series",
         "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
+        "detail": "almanac.utils.fx_series",
         "documentation": {}
     },
     {
-        "label": "calculate_perc_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
+        "label": "calculate_variable_standard_deviation_for_risk_targeting_from_dict",
+        "importPath": "almanac.analysis.std_for_risk",
+        "description": "almanac.analysis.std_for_risk",
         "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
+        "detail": "almanac.analysis.std_for_risk",
         "documentation": {}
     },
     {
-        "label": "calculate_percentage_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
+        "label": "calculate_standard_deviation_for_risk_targeting",
+        "importPath": "almanac.analysis.std_for_risk",
+        "description": "almanac.analysis.std_for_risk",
         "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
+        "detail": "almanac.analysis.std_for_risk",
         "documentation": {}
     },
     {
-        "label": "calculate_daily_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
+        "label": "calculate_standard_deviation_for_risk_targeting",
+        "importPath": "almanac.analysis.std_for_risk",
+        "description": "almanac.analysis.std_for_risk",
         "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
+        "detail": "almanac.analysis.std_for_risk",
         "documentation": {}
     },
     {
-        "label": "calculate_perc_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
+        "label": "calculate_variable_standard_deviation_for_risk_targeting",
+        "importPath": "almanac.analysis.std_for_risk",
+        "description": "almanac.analysis.std_for_risk",
         "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
+        "detail": "almanac.analysis.std_for_risk",
         "documentation": {}
     },
     {
-        "label": "calculate_percentage_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
+        "label": "calculate_variable_standard_deviation_for_risk_targeting_from_dict",
+        "importPath": "almanac.analysis.std_for_risk",
+        "description": "almanac.analysis.std_for_risk",
         "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
+        "detail": "almanac.analysis.std_for_risk",
         "documentation": {}
     },
     {
-        "label": "calculate_daily_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
+        "label": "calculate_standard_deviation_for_risk_targeting",
+        "importPath": "almanac.analysis.std_for_risk",
+        "description": "almanac.analysis.std_for_risk",
         "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
+        "detail": "almanac.analysis.std_for_risk",
         "documentation": {}
     },
     {
-        "label": "calculate_perc_returns_for_dict",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
+        "label": "calculate_standard_deviation_for_risk_targeting",
+        "importPath": "almanac.analysis.std_for_risk",
+        "description": "almanac.analysis.std_for_risk",
         "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
+        "detail": "almanac.analysis.std_for_risk",
         "documentation": {}
     },
     {
-        "label": "aggregate_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
+        "label": "calculate_variable_standard_deviation_for_risk_targeting",
+        "importPath": "almanac.analysis.std_for_risk",
+        "description": "almanac.analysis.std_for_risk",
         "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "perc_returns_to_df",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_for_dict_with_costs",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "aggregate_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "aggregate_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_for_dict_with_costs",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_percentage_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_daily_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_percentage_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_daily_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_for_dict",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "aggregate_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "perc_returns_to_df",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_for_dict_with_costs",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "aggregate_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "aggregate_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_for_dict_with_costs",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "Stats",
-        "importPath": "almanac.analysis.calculate_stats",
-        "description": "almanac.analysis.calculate_stats",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_stats",
-        "documentation": {}
-    },
-    {
-        "label": "Stats",
-        "importPath": "almanac.analysis.calculate_stats",
-        "description": "almanac.analysis.calculate_stats",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_stats",
-        "documentation": {}
-    },
-    {
-        "label": "Stats",
-        "importPath": "almanac.analysis.calculate_stats",
-        "description": "almanac.analysis.calculate_stats",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_stats",
-        "documentation": {}
-    },
-    {
-        "label": "Stats",
-        "importPath": "almanac.analysis.calculate_stats",
-        "description": "almanac.analysis.calculate_stats",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_stats",
-        "documentation": {}
-    },
-    {
-        "label": "Stats",
-        "importPath": "almanac.analysis.calculate_stats",
-        "description": "almanac.analysis.calculate_stats",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_stats",
-        "documentation": {}
-    },
-    {
-        "label": "Stats",
-        "importPath": "almanac.analysis.calculate_stats",
-        "description": "almanac.analysis.calculate_stats",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_stats",
-        "documentation": {}
-    },
-    {
-        "label": "Stats",
-        "importPath": "almanac.analysis.calculate_stats",
-        "description": "almanac.analysis.calculate_stats",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_stats",
-        "documentation": {}
-    },
-    {
-        "label": "Stats",
-        "importPath": "almanac.analysis.calculate_stats",
-        "description": "almanac.analysis.calculate_stats",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_stats",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_position_series_given_fixed_risk",
-        "importPath": "almanac.analysis.positions",
-        "description": "almanac.analysis.positions",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.positions",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_position_series_given_fixed_risk",
-        "importPath": "almanac.analysis.positions",
-        "description": "almanac.analysis.positions",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.positions",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_position_series_given_variable_risk",
-        "importPath": "almanac.analysis.positions",
-        "description": "almanac.analysis.positions",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.positions",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_position_series_given_fixed_risk",
-        "importPath": "almanac.analysis.positions",
-        "description": "almanac.analysis.positions",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.positions",
+        "detail": "almanac.analysis.std_for_risk",
         "documentation": {}
     },
     {
@@ -1338,7 +1210,39 @@
         "documentation": {}
     },
     {
+        "label": "calculate_position_dict_with_trend_filter_applied",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_series_given_fixed_risk",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_series_given_fixed_risk",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
         "label": "calculate_position_series_given_variable_risk",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_series_given_variable_risk_for_dict",
         "importPath": "almanac.analysis.positions",
         "description": "almanac.analysis.positions",
         "isExtraImport": true,
@@ -1378,7 +1282,7 @@
         "documentation": {}
     },
     {
-        "label": "calculate_position_series_given_fixed_risk",
+        "label": "calculate_position_series_given_variable_risk_for_dict",
         "importPath": "almanac.analysis.positions",
         "description": "almanac.analysis.positions",
         "isExtraImport": true,
@@ -1386,7 +1290,7 @@
         "documentation": {}
     },
     {
-        "label": "calculate_position_series_given_fixed_risk",
+        "label": "calculate_position_dict_with_trend_forecast_applied",
         "importPath": "almanac.analysis.positions",
         "description": "almanac.analysis.positions",
         "isExtraImport": true,
@@ -1394,15 +1298,7 @@
         "documentation": {}
     },
     {
-        "label": "calculate_position_series_given_variable_risk",
-        "importPath": "almanac.analysis.positions",
-        "description": "almanac.analysis.positions",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.positions",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_position_series_given_fixed_risk",
+        "label": "calculate_position_with_trend_forecast_applied",
         "importPath": "almanac.analysis.positions",
         "description": "almanac.analysis.positions",
         "isExtraImport": true,
@@ -1418,7 +1314,39 @@
         "documentation": {}
     },
     {
+        "label": "calculate_position_dict_with_trend_filter_applied",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_series_given_fixed_risk",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_series_given_fixed_risk",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
         "label": "calculate_position_series_given_variable_risk",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_series_given_variable_risk_for_dict",
         "importPath": "almanac.analysis.positions",
         "description": "almanac.analysis.positions",
         "isExtraImport": true,
@@ -1458,115 +1386,283 @@
         "documentation": {}
     },
     {
-        "label": "calculate_standard_deviation_for_risk_targeting",
-        "importPath": "almanac.analysis.std_for_risk",
-        "description": "almanac.analysis.std_for_risk",
+        "label": "calculate_position_series_given_variable_risk_for_dict",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
         "isExtraImport": true,
-        "detail": "almanac.analysis.std_for_risk",
+        "detail": "almanac.analysis.positions",
         "documentation": {}
     },
     {
-        "label": "calculate_standard_deviation_for_risk_targeting",
-        "importPath": "almanac.analysis.std_for_risk",
-        "description": "almanac.analysis.std_for_risk",
+        "label": "calculate_position_dict_with_trend_forecast_applied",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
         "isExtraImport": true,
-        "detail": "almanac.analysis.std_for_risk",
+        "detail": "almanac.analysis.positions",
         "documentation": {}
     },
     {
-        "label": "calculate_standard_deviation_for_risk_targeting",
-        "importPath": "almanac.analysis.std_for_risk",
-        "description": "almanac.analysis.std_for_risk",
+        "label": "calculate_position_with_trend_forecast_applied",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
         "isExtraImport": true,
-        "detail": "almanac.analysis.std_for_risk",
+        "detail": "almanac.analysis.positions",
         "documentation": {}
     },
     {
-        "label": "calculate_variable_standard_deviation_for_risk_targeting_from_dict",
-        "importPath": "almanac.analysis.std_for_risk",
-        "description": "almanac.analysis.std_for_risk",
+        "label": "calculate_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
         "isExtraImport": true,
-        "detail": "almanac.analysis.std_for_risk",
+        "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
     {
-        "label": "calculate_variable_standard_deviation_for_risk_targeting_from_dict",
-        "importPath": "almanac.analysis.std_for_risk",
-        "description": "almanac.analysis.std_for_risk",
+        "label": "calculate_perc_returns_for_dict_with_costs",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
         "isExtraImport": true,
-        "detail": "almanac.analysis.std_for_risk",
+        "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
     {
-        "label": "calculate_variable_standard_deviation_for_risk_targeting_from_dict",
-        "importPath": "almanac.analysis.std_for_risk",
-        "description": "almanac.analysis.std_for_risk",
+        "label": "aggregate_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
         "isExtraImport": true,
-        "detail": "almanac.analysis.std_for_risk",
+        "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
     {
-        "label": "calculate_variable_standard_deviation_for_risk_targeting",
-        "importPath": "almanac.analysis.std_for_risk",
-        "description": "almanac.analysis.std_for_risk",
+        "label": "calculate_perc_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
         "isExtraImport": true,
-        "detail": "almanac.analysis.std_for_risk",
+        "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
     {
-        "label": "calculate_standard_deviation_for_risk_targeting",
-        "importPath": "almanac.analysis.std_for_risk",
-        "description": "almanac.analysis.std_for_risk",
+        "label": "calculate_perc_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
         "isExtraImport": true,
-        "detail": "almanac.analysis.std_for_risk",
+        "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
     {
-        "label": "calculate_standard_deviation_for_risk_targeting",
-        "importPath": "almanac.analysis.std_for_risk",
-        "description": "almanac.analysis.std_for_risk",
+        "label": "calculate_perc_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
         "isExtraImport": true,
-        "detail": "almanac.analysis.std_for_risk",
+        "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
     {
-        "label": "calculate_standard_deviation_for_risk_targeting",
-        "importPath": "almanac.analysis.std_for_risk",
-        "description": "almanac.analysis.std_for_risk",
+        "label": "calculate_percentage_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
         "isExtraImport": true,
-        "detail": "almanac.analysis.std_for_risk",
+        "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
     {
-        "label": "calculate_variable_standard_deviation_for_risk_targeting_from_dict",
-        "importPath": "almanac.analysis.std_for_risk",
-        "description": "almanac.analysis.std_for_risk",
+        "label": "calculate_daily_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
         "isExtraImport": true,
-        "detail": "almanac.analysis.std_for_risk",
+        "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
     {
-        "label": "calculate_variable_standard_deviation_for_risk_targeting_from_dict",
-        "importPath": "almanac.analysis.std_for_risk",
-        "description": "almanac.analysis.std_for_risk",
+        "label": "aggregate_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
         "isExtraImport": true,
-        "detail": "almanac.analysis.std_for_risk",
+        "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
     {
-        "label": "calculate_variable_standard_deviation_for_risk_targeting_from_dict",
-        "importPath": "almanac.analysis.std_for_risk",
-        "description": "almanac.analysis.std_for_risk",
+        "label": "calculate_perc_returns_for_dict",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
         "isExtraImport": true,
-        "detail": "almanac.analysis.std_for_risk",
+        "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
     {
-        "label": "calculate_variable_standard_deviation_for_risk_targeting",
-        "importPath": "almanac.analysis.std_for_risk",
-        "description": "almanac.analysis.std_for_risk",
+        "label": "aggregate_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
         "isExtraImport": true,
-        "detail": "almanac.analysis.std_for_risk",
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns_for_dict_with_costs",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "aggregate_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns_for_dict_with_costs",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "aggregate_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns_for_dict_with_costs",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns_for_dict_with_costs",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "aggregate_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_percentage_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_daily_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "aggregate_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns_for_dict",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "aggregate_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns_for_dict_with_costs",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "aggregate_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns_for_dict_with_costs",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "aggregate_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_perc_returns_for_dict_with_costs",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
     {
@@ -1579,83 +1675,131 @@
         "documentation": {}
     },
     {
-        "label": "create_fx_series_given_adjusted_prices_dict",
-        "importPath": "almanac.utils.fx_series",
-        "description": "almanac.utils.fx_series",
+        "label": "Stats",
+        "importPath": "almanac.analysis.calculate_stats",
+        "description": "almanac.analysis.calculate_stats",
         "isExtraImport": true,
-        "detail": "almanac.utils.fx_series",
+        "detail": "almanac.analysis.calculate_stats",
         "documentation": {}
     },
     {
-        "label": "create_fx_series_given_adjusted_prices",
-        "importPath": "almanac.utils.fx_series",
-        "description": "almanac.utils.fx_series",
+        "label": "Stats",
+        "importPath": "almanac.analysis.calculate_stats",
+        "description": "almanac.analysis.calculate_stats",
         "isExtraImport": true,
-        "detail": "almanac.utils.fx_series",
+        "detail": "almanac.analysis.calculate_stats",
         "documentation": {}
     },
     {
-        "label": "get_fx_prices",
-        "importPath": "almanac.utils.fx_series",
-        "description": "almanac.utils.fx_series",
+        "label": "Stats",
+        "importPath": "almanac.analysis.calculate_stats",
+        "description": "almanac.analysis.calculate_stats",
         "isExtraImport": true,
-        "detail": "almanac.utils.fx_series",
+        "detail": "almanac.analysis.calculate_stats",
         "documentation": {}
     },
     {
-        "label": "create_fx_series_given_adjusted_prices_dict",
-        "importPath": "almanac.utils.fx_series",
-        "description": "almanac.utils.fx_series",
+        "label": "Stats",
+        "importPath": "almanac.analysis.calculate_stats",
+        "description": "almanac.analysis.calculate_stats",
         "isExtraImport": true,
-        "detail": "almanac.utils.fx_series",
+        "detail": "almanac.analysis.calculate_stats",
         "documentation": {}
     },
     {
-        "label": "create_fx_series_given_adjusted_prices_dict",
-        "importPath": "almanac.utils.fx_series",
-        "description": "almanac.utils.fx_series",
+        "label": "Stats",
+        "importPath": "almanac.analysis.calculate_stats",
+        "description": "almanac.analysis.calculate_stats",
         "isExtraImport": true,
-        "detail": "almanac.utils.fx_series",
+        "detail": "almanac.analysis.calculate_stats",
         "documentation": {}
     },
     {
-        "label": "create_fx_series_given_adjusted_prices_dict",
-        "importPath": "almanac.utils.fx_series",
-        "description": "almanac.utils.fx_series",
+        "label": "Stats",
+        "importPath": "almanac.analysis.calculate_stats",
+        "description": "almanac.analysis.calculate_stats",
         "isExtraImport": true,
-        "detail": "almanac.utils.fx_series",
+        "detail": "almanac.analysis.calculate_stats",
         "documentation": {}
     },
     {
-        "label": "create_fx_series_given_adjusted_prices",
-        "importPath": "almanac.utils.fx_series",
-        "description": "almanac.utils.fx_series",
+        "label": "StrategyBase",
+        "importPath": "almanac.strategy.baseStrategy",
+        "description": "almanac.strategy.baseStrategy",
         "isExtraImport": true,
-        "detail": "almanac.utils.fx_series",
+        "detail": "almanac.strategy.baseStrategy",
         "documentation": {}
     },
     {
-        "label": "get_fx_prices",
-        "importPath": "almanac.utils.fx_series",
-        "description": "almanac.utils.fx_series",
+        "label": "StrategyBase",
+        "importPath": "almanac.strategy.baseStrategy",
+        "description": "almanac.strategy.baseStrategy",
         "isExtraImport": true,
-        "detail": "almanac.utils.fx_series",
+        "detail": "almanac.strategy.baseStrategy",
         "documentation": {}
     },
     {
-        "label": "create_fx_series_given_adjusted_prices_dict",
-        "importPath": "almanac.utils.fx_series",
-        "description": "almanac.utils.fx_series",
+        "label": "StrategyBase",
+        "importPath": "almanac.strategy.baseStrategy",
+        "description": "almanac.strategy.baseStrategy",
         "isExtraImport": true,
-        "detail": "almanac.utils.fx_series",
+        "detail": "almanac.strategy.baseStrategy",
         "documentation": {}
     },
     {
-        "label": "create_fx_series_given_adjusted_prices_dict",
-        "importPath": "almanac.utils.fx_series",
-        "description": "almanac.utils.fx_series",
+        "label": "StrategyBase",
+        "importPath": "almanac.strategy.baseStrategy",
+        "description": "almanac.strategy.baseStrategy",
         "isExtraImport": true,
-        "detail": "almanac.utils.fx_series",
+        "detail": "almanac.strategy.baseStrategy",
+        "documentation": {}
+    },
+    {
+        "label": "StrategyBase",
+        "importPath": "almanac.strategy.baseStrategy",
+        "description": "almanac.strategy.baseStrategy",
+        "isExtraImport": true,
+        "detail": "almanac.strategy.baseStrategy",
+        "documentation": {}
+    },
+    {
+        "label": "StrategyBase",
+        "importPath": "almanac.strategy.baseStrategy",
+        "description": "almanac.strategy.baseStrategy",
+        "isExtraImport": true,
+        "detail": "almanac.strategy.baseStrategy",
+        "documentation": {}
+    },
+    {
+        "label": "StrategyBase",
+        "importPath": "almanac.strategy.baseStrategy",
+        "description": "almanac.strategy.baseStrategy",
+        "isExtraImport": true,
+        "detail": "almanac.strategy.baseStrategy",
+        "documentation": {}
+    },
+    {
+        "label": "StrategyBase",
+        "importPath": "almanac.strategy.baseStrategy",
+        "description": "almanac.strategy.baseStrategy",
+        "isExtraImport": true,
+        "detail": "almanac.strategy.baseStrategy",
+        "documentation": {}
+    },
+    {
+        "label": "StrategyBase",
+        "importPath": "almanac.strategy.baseStrategy",
+        "description": "almanac.strategy.baseStrategy",
+        "isExtraImport": true,
+        "detail": "almanac.strategy.baseStrategy",
+        "documentation": {}
+    },
+    {
+        "label": "StrategyBase",
+        "importPath": "almanac.strategy.baseStrategy",
+        "description": "almanac.strategy.baseStrategy",
+        "isExtraImport": true,
+        "detail": "almanac.strategy.baseStrategy",
         "documentation": {}
     },
     {
@@ -1716,6 +1860,15 @@
         "documentation": {}
     },
     {
+        "label": "ArgumentError",
+        "kind": 6,
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "peekOfCode": "class ArgumentError(Exception):\n    pass\ndef calculate_returns(\n    position_contracts: Union[dict, pd.Series],\n    adjusted_prices: Union[dict, pd.Series],\n    multipliers: Union[dict, float],\n    fx_series: Union[dict, pd.Series],\n    capital: float,\n    cost_per_contract: Union[dict, float],\n    std_dev: Union[dict, standardDeviation],",
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
         "label": "calculate_perc_returns",
         "kind": 2,
         "importPath": "almanac.analysis.calculate_returns",
@@ -1752,24 +1905,6 @@
         "documentation": {}
     },
     {
-        "label": "calculate_costs_deflated_for_vol",
-        "kind": 2,
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_costs_deflated_for_vol(\n    stddev_series: standardDeviation,\n    cost_per_contract: float,\n    position_contracts_held: pd.Series,\n) -> pd.Series:\n    round_position_contracts_held = position_contracts_held.round()\n    position_change = (\n        round_position_contracts_held - round_position_contracts_held.shift(1)\n    )\n    abs_trades = position_change.abs()",
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_deflated_costs",
-        "kind": 2,
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_deflated_costs(\n    stddev_series: standardDeviation, cost_per_contract: float\n) -> pd.Series:\n    stdev_daily_price = stddev_series.daily_risk_price_terms()\n    final_stdev = stdev_daily_price[-1]\n    cost_deflator = stdev_daily_price / final_stdev\n    historic_cost_per_contract = cost_per_contract * cost_deflator\n    return historic_cost_per_contract\ndef calculate_perc_returns_for_dict_with_costs(\n    position_contracts_dict: dict,",
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
         "label": "calculate_perc_returns_for_dict_with_costs",
         "kind": 2,
         "importPath": "almanac.analysis.calculate_returns",
@@ -1779,20 +1914,11 @@
         "documentation": {}
     },
     {
-        "label": "calculate_perc_returns_with_costs",
+        "label": "calculate_returns_perc_dict",
         "kind": 2,
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_perc_returns_with_costs(\n    position_contracts_held: pd.Series,\n    adjusted_price: pd.Series,\n    fx_series: pd.Series,\n    stdev_series: standardDeviation,\n    multiplier: float,\n    capital_required: float,\n    cost_per_contract: float,\n) -> pd.Series:\n    precost_return_price_points = (",
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_returns_perc",
-        "kind": 2,
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_returns_perc(\n    position_contracts_dict: dict,\n    adjusted_prices: dict,\n    multipliers: dict,\n    fx_series: dict,\n    capital: float,\n    cost_per_contract_dict: dict,\n    std_dev_dict: dict,\n) -> dict:\n    perc_returns_dict_with_costs = calculate_perc_returns_for_dict_with_costs(",
+        "peekOfCode": "def calculate_returns_perc_dict(\n    position_contracts_dict: dict,\n    adjusted_prices: dict,\n    multipliers: dict,\n    fx_series: dict,\n    capital: float,\n    cost_per_contract_dict: dict,\n    std_dev_dict: dict,\n) -> dict:\n    perc_returns_dict_with_costs = calculate_perc_returns_for_dict_with_costs(",
         "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -1810,7 +1936,7 @@
         "kind": 2,
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
-        "peekOfCode": "def aggregate_returns(perc_returns_dict: dict) -> pd.Series:\n    both_returns = perc_returns_to_df(perc_returns_dict)\n    agg = both_returns.sum(axis=1)\n    return agg\ndef perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns\ndef calculate_perc_returns_for_dict_with_costs(\n    position_contracts_dict: dict,",
+        "peekOfCode": "def aggregate_returns(perc_returns_dict: dict) -> pd.Series:\n    both_returns = perc_returns_to_df(perc_returns_dict)\n    agg = both_returns.sum(axis=1)\n    return agg\ndef perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns\nclass ArgumentError(Exception):\n    pass",
         "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -1819,34 +1945,16 @@
         "kind": 2,
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
-        "peekOfCode": "def perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns\ndef calculate_perc_returns_for_dict_with_costs(\n    position_contracts_dict: dict,\n    adjusted_prices: dict,\n    multipliers: dict,\n    fx_series: dict,\n    capital: float,",
+        "peekOfCode": "def perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns\nclass ArgumentError(Exception):\n    pass\ndef calculate_returns(\n    position_contracts: Union[dict, pd.Series],\n    adjusted_prices: Union[dict, pd.Series],\n    multipliers: Union[dict, float],",
         "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
     {
-        "label": "calculate_perc_returns_for_dict_with_costs",
+        "label": "calculate_returns",
         "kind": 2,
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_perc_returns_for_dict_with_costs(\n    position_contracts_dict: dict,\n    adjusted_prices: dict,\n    multipliers: dict,\n    fx_series: dict,\n    capital: float,\n    cost_per_contract_dict: dict,\n    std_dev_dict: dict,\n) -> dict:\n    perc_returns_dict = dict(",
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_with_costs",
-        "kind": 2,
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_perc_returns_with_costs(\n    position_contracts_held: pd.Series,\n    adjusted_price: pd.Series,\n    fx_series: pd.Series,\n    stdev_series: standardDeviation,\n    multiplier: float,\n    capital_required: float,\n    cost_per_contract: float,\n) -> pd.Series:\n    precost_return_price_points = (",
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "long_only_returns",
-        "kind": 2,
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "peekOfCode": "def long_only_returns(\n    adjusted_prices_dict: dict,\n    std_dev_dict: dict,\n    average_position_contracts_dict: dict,\n    fx_series_dict: dict,\n    cost_per_contract_dict: dict,\n    multipliers: dict,\n    capital: float,\n) -> pd.Series:\n    perc_return_dict = calculate_perc_returns_for_dict_with_costs(",
+        "peekOfCode": "def calculate_returns(\n    position_contracts: Union[dict, pd.Series],\n    adjusted_prices: Union[dict, pd.Series],\n    multipliers: Union[dict, float],\n    fx_series: Union[dict, pd.Series],\n    capital: float,\n    cost_per_contract: Union[dict, float],\n    std_dev: Union[dict, standardDeviation],\n    aggregate=True,\n):",
         "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -1882,7 +1990,34 @@
         "kind": 2,
         "importPath": "almanac.analysis.forecasts",
         "description": "almanac.analysis.forecasts",
-        "peekOfCode": "def ewmac(adjusted_price: pd.Series, fast_span=16, slow_span=64) -> pd.Series:\n    slow_ewma = adjusted_price.ewm(span=slow_span, min_periods=2).mean()\n    fast_ewma = adjusted_price.ewm(span=fast_span, min_periods=2).mean()\n    return fast_ewma - slow_ewma",
+        "peekOfCode": "def ewmac(adjusted_price: pd.Series, fast_span=16, slow_span=64) -> pd.Series:\n    slow_ewma = adjusted_price.ewm(span=slow_span, min_periods=2).mean()\n    fast_ewma = adjusted_price.ewm(span=fast_span, min_periods=2).mean()\n    return fast_ewma - slow_ewma\ndef calculate_forecast_for_ewmac(\n    adjusted_price: pd.Series, stdev_ann_perc: standardDeviation, fast_span: int = 64\n):\n    scaled_ewmac = calculate_scaled_forecast_for_ewmac(\n        adjusted_price=adjusted_price,\n        stdev_ann_perc=stdev_ann_perc,",
+        "detail": "almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_forecast_for_ewmac",
+        "kind": 2,
+        "importPath": "almanac.analysis.forecasts",
+        "description": "almanac.analysis.forecasts",
+        "peekOfCode": "def calculate_forecast_for_ewmac(\n    adjusted_price: pd.Series, stdev_ann_perc: standardDeviation, fast_span: int = 64\n):\n    scaled_ewmac = calculate_scaled_forecast_for_ewmac(\n        adjusted_price=adjusted_price,\n        stdev_ann_perc=stdev_ann_perc,\n        fast_span=fast_span,\n    )\n    capped_ewmac = scaled_ewmac.clip(-20, 20)\n    return capped_ewmac",
+        "detail": "almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_scaled_forecast_for_ewmac",
+        "kind": 2,
+        "importPath": "almanac.analysis.forecasts",
+        "description": "almanac.analysis.forecasts",
+        "peekOfCode": "def calculate_scaled_forecast_for_ewmac(\n    adjusted_price: pd.Series,\n    stdev_ann_perc: standardDeviation,\n    fast_span: int = 64,\n):\n    scalar_dict = {64: 1.91, 32: 2.79, 16: 4.1, 8: 5.95, 4: 8.53, 2: 12.1}\n    risk_adjusted_ewmac = calculate_risk_adjusted_forecast_for_ewmac(\n        adjusted_price=adjusted_price,\n        stdev_ann_perc=stdev_ann_perc,\n        fast_span=fast_span,",
+        "detail": "almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_risk_adjusted_forecast_for_ewmac",
+        "kind": 2,
+        "importPath": "almanac.analysis.forecasts",
+        "description": "almanac.analysis.forecasts",
+        "peekOfCode": "def calculate_risk_adjusted_forecast_for_ewmac(\n    adjusted_price: pd.Series,\n    stdev_ann_perc: standardDeviation,\n    fast_span: int = 64,\n):\n    ewmac_values = ewmac(adjusted_price, fast_span=fast_span, slow_span=fast_span * 4)\n    daily_price_vol = stdev_ann_perc.daily_risk_price_terms()\n    risk_adjusted_ewmac = ewmac_values / daily_price_vol\n    return risk_adjusted_ewmac",
         "detail": "almanac.analysis.forecasts",
         "documentation": {}
     },
@@ -2107,7 +2242,25 @@
         "kind": 2,
         "importPath": "almanac.analysis.positions",
         "description": "almanac.analysis.positions",
-        "peekOfCode": "def calculate_position_with_symmetric_trend_filter_applied(\n    adjusted_price: pd.Series, average_position: pd.Series\n) -> pd.Series:\n    filtered_position = copy(average_position)\n    ewmac_values = ewmac(adjusted_price)\n    bearish = ewmac_values < 0\n    filtered_position[bearish] = -filtered_position[bearish]\n    return filtered_position",
+        "peekOfCode": "def calculate_position_with_symmetric_trend_filter_applied(\n    adjusted_price: pd.Series, average_position: pd.Series\n) -> pd.Series:\n    filtered_position = copy(average_position)\n    ewmac_values = ewmac(adjusted_price)\n    bearish = ewmac_values < 0\n    filtered_position[bearish] = -filtered_position[bearish]\n    return filtered_position\ndef calculate_position_dict_with_trend_forecast_applied(\n    adjusted_prices_dict: dict,",
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_dict_with_trend_forecast_applied",
+        "kind": 2,
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "peekOfCode": "def calculate_position_dict_with_trend_forecast_applied(\n    adjusted_prices_dict: dict,\n    average_position_contracts_dict: dict,\n    std_dev_dict: dict,\n    fast_span: int = 64,\n) -> dict:\n    list_of_instruments = list(adjusted_prices_dict.keys())\n    position_dict_with_trend_filter = dict(\n        [\n            (",
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_with_trend_forecast_applied",
+        "kind": 2,
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "peekOfCode": "def calculate_position_with_trend_forecast_applied(\n    adjusted_price: pd.Series,\n    average_position: pd.Series,\n    stdev_ann_perc: standardDeviation,\n    fast_span: int = 64,\n) -> pd.Series:\n    from almanac.analysis.forecasts import calculate_forecast_for_ewmac\n    forecast = calculate_forecast_for_ewmac(\n        adjusted_price=adjusted_price,\n        stdev_ann_perc=stdev_ann_perc,",
         "detail": "almanac.analysis.positions",
         "documentation": {}
     },
@@ -2355,6 +2508,15 @@
         "documentation": {}
     },
     {
+        "label": "StrategyBase",
+        "kind": 6,
+        "importPath": "almanac.strategy.baseStrategy",
+        "description": "almanac.strategy.baseStrategy",
+        "peekOfCode": "class StrategyBase:\n    def __init__(self, data_path: str, fx_path: str, instrument_list: list,\n                 instrument_weights: dict, multipliers: dict, idm: Union[int, float],\n                 risk_target: Union[int, float], capital: int, cost_per_contract_dict: dict):\n        self.data_path = data_path\n        self.fx_path = fx_path\n        self.instrument_list = instrument_list\n        self.instrument_weights = instrument_weights\n        self.multipliers = multipliers\n        self.idm = idm",
+        "detail": "almanac.strategy.baseStrategy",
+        "documentation": {}
+    },
+    {
         "label": "Strategy1",
         "kind": 6,
         "importPath": "almanac.strategy.strategy1",
@@ -2377,7 +2539,7 @@
         "kind": 6,
         "importPath": "almanac.strategy.strategy3",
         "description": "almanac.strategy.strategy3",
-        "peekOfCode": "class Strategy3:\n    def __init__(self, data_path: str, multiplier: int, risk_target: Union[int, float], capital: int):\n        self.data_path = data_path\n        self.multiplier = multiplier\n        self.risk_target = risk_target\n        self.capital = capital\n        self.data = self.get_data()\n        self.adjusted_price = self.data.adjusted\n        self.current_price = self.data.underlying\n        self.fx_series = pd.Series(1, index=self.data.index)",
+        "peekOfCode": "class Strategy3(StrategyBase):\n    def __init__(self, data_path: str, multiplier: int, risk_target: Union[int, float], capital: int):\n        self.data_path = data_path\n        self.multiplier = multiplier\n        self.risk_target = risk_target\n        self.capital = capital\n        self.data = self.get_data()\n        self.adjusted_price = self.data.adjusted\n        self.current_price = self.data.underlying\n        self.fx_series = pd.Series(1, index=self.data.index)",
         "detail": "almanac.strategy.strategy3",
         "documentation": {}
     },
@@ -2386,7 +2548,7 @@
         "kind": 6,
         "importPath": "almanac.strategy.strategy4",
         "description": "almanac.strategy.strategy4",
-        "peekOfCode": "class Strategy4:\n    def __init__(\n        self,\n        data_path: str,\n        fx_path: str,\n        instrument_list: list,\n        instrument_weights: dict,\n        multipliers: dict,\n        idm: Union[int, float],\n        risk_target: Union[int, float],",
+        "peekOfCode": "class Strategy4(StrategyBase):\n    def __init__(\n        self,\n        data_path: str,\n        fx_path: str,\n        instrument_list: list,\n        instrument_weights: dict,\n        multipliers: dict,\n        idm: Union[int, float],\n        risk_target: Union[int, float],",
         "detail": "almanac.strategy.strategy4",
         "documentation": {}
     },
@@ -2413,7 +2575,7 @@
         "kind": 6,
         "importPath": "almanac.strategy.strategy5",
         "description": "almanac.strategy.strategy5",
-        "peekOfCode": "class Strategy5:\n    def __init__(self, data_path: str,\n                 fx_path: str,\n                 instrument_list: list,\n                 instrument_weights: dict,\n                 multipliers: dict,\n                 idm: Union[int, float],\n                 risk_target: Union[int, float],\n                 cost_per_contract_dict: dict,\n                 capital: int,):",
+        "peekOfCode": "class Strategy5(StrategyBase):\n    def __init__(\n        self,\n        data_path: str,\n        fx_path: str,\n        instrument_list: list,\n        instrument_weights: dict,\n        multipliers: dict,\n        idm: Union[int, float],\n        risk_target: Union[int, float],",
         "detail": "almanac.strategy.strategy5",
         "documentation": {}
     },
@@ -2422,8 +2584,17 @@
         "kind": 6,
         "importPath": "almanac.strategy.strategy6",
         "description": "almanac.strategy.strategy6",
-        "peekOfCode": "class Strategy6:\n    def __init__(self, data_path: str,\n                 fx_path: str,\n                 instrument_list: list,\n                 instrument_weights: dict,\n                 multipliers: dict,\n                 idm: Union[int, float],\n                 risk_target: Union[int, float],\n                 cost_per_contract_dict: dict,\n                 capital: int,):",
+        "peekOfCode": "class Strategy6(StrategyBase):\n    def __init__(\n        self,\n        data_path: str,\n        fx_path: str,\n        instrument_list: list,\n        instrument_weights: dict,\n        multipliers: dict,\n        idm: Union[int, float],\n        risk_target: Union[int, float],",
         "detail": "almanac.strategy.strategy6",
+        "documentation": {}
+    },
+    {
+        "label": "Strategy7",
+        "kind": 6,
+        "importPath": "almanac.strategy.strategy7",
+        "description": "almanac.strategy.strategy7",
+        "peekOfCode": "class Strategy7(StrategyBase):\n    def __init__(\n        self,\n        data_path: str,\n        fx_path: str,\n        instrument_list: list,\n        instrument_weights: dict,\n        multipliers: dict,\n        idm: Union[int, float],\n        risk_target: Union[int, float],",
+        "detail": "almanac.strategy.strategy7",
         "documentation": {}
     },
     {
@@ -2526,6 +2697,15 @@
         "documentation": {}
     },
     {
+        "label": "ArgumentError",
+        "kind": 6,
+        "importPath": "build.lib.almanac.analysis.calculate_returns",
+        "description": "build.lib.almanac.analysis.calculate_returns",
+        "peekOfCode": "class ArgumentError(Exception):\n    pass\ndef calculate_returns(\n    position_contracts: Union[dict, pd.Series],\n    adjusted_prices: Union[dict, pd.Series],\n    multipliers: Union[dict, float],\n    fx_series: Union[dict, pd.Series],\n    capital: float,\n    cost_per_contract: Union[dict, float],\n    std_dev: Union[dict, standardDeviation],",
+        "detail": "build.lib.almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
         "label": "calculate_perc_returns",
         "kind": 2,
         "importPath": "build.lib.almanac.analysis.calculate_returns",
@@ -2562,24 +2742,6 @@
         "documentation": {}
     },
     {
-        "label": "calculate_costs_deflated_for_vol",
-        "kind": 2,
-        "importPath": "build.lib.almanac.analysis.calculate_returns",
-        "description": "build.lib.almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_costs_deflated_for_vol(\n    stddev_series: standardDeviation,\n    cost_per_contract: float,\n    position_contracts_held: pd.Series,\n) -> pd.Series:\n    round_position_contracts_held = position_contracts_held.round()\n    position_change = (\n        round_position_contracts_held - round_position_contracts_held.shift(1)\n    )\n    abs_trades = position_change.abs()",
-        "detail": "build.lib.almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_deflated_costs",
-        "kind": 2,
-        "importPath": "build.lib.almanac.analysis.calculate_returns",
-        "description": "build.lib.almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_deflated_costs(\n    stddev_series: standardDeviation, cost_per_contract: float\n) -> pd.Series:\n    stdev_daily_price = stddev_series.daily_risk_price_terms()\n    final_stdev = stdev_daily_price[-1]\n    cost_deflator = stdev_daily_price / final_stdev\n    historic_cost_per_contract = cost_per_contract * cost_deflator\n    return historic_cost_per_contract\ndef calculate_perc_returns_for_dict_with_costs(\n    position_contracts_dict: dict,",
-        "detail": "build.lib.almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
         "label": "calculate_perc_returns_for_dict_with_costs",
         "kind": 2,
         "importPath": "build.lib.almanac.analysis.calculate_returns",
@@ -2589,20 +2751,11 @@
         "documentation": {}
     },
     {
-        "label": "calculate_perc_returns_with_costs",
+        "label": "calculate_returns_perc_dict",
         "kind": 2,
         "importPath": "build.lib.almanac.analysis.calculate_returns",
         "description": "build.lib.almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_perc_returns_with_costs(\n    position_contracts_held: pd.Series,\n    adjusted_price: pd.Series,\n    fx_series: pd.Series,\n    stdev_series: standardDeviation,\n    multiplier: float,\n    capital_required: float,\n    cost_per_contract: float,\n) -> pd.Series:\n    precost_return_price_points = (",
-        "detail": "build.lib.almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_returns_perc",
-        "kind": 2,
-        "importPath": "build.lib.almanac.analysis.calculate_returns",
-        "description": "build.lib.almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_returns_perc(\n    position_contracts_dict: dict,\n    adjusted_prices: dict,\n    multipliers: dict,\n    fx_series: dict,\n    capital: float,\n    cost_per_contract_dict: dict,\n    std_dev_dict: dict,\n) -> dict:\n    perc_returns_dict_with_costs = calculate_perc_returns_for_dict_with_costs(",
+        "peekOfCode": "def calculate_returns_perc_dict(\n    position_contracts_dict: dict,\n    adjusted_prices: dict,\n    multipliers: dict,\n    fx_series: dict,\n    capital: float,\n    cost_per_contract_dict: dict,\n    std_dev_dict: dict,\n) -> dict:\n    perc_returns_dict_with_costs = calculate_perc_returns_for_dict_with_costs(",
         "detail": "build.lib.almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -2620,7 +2773,7 @@
         "kind": 2,
         "importPath": "build.lib.almanac.analysis.calculate_returns",
         "description": "build.lib.almanac.analysis.calculate_returns",
-        "peekOfCode": "def aggregate_returns(perc_returns_dict: dict) -> pd.Series:\n    both_returns = perc_returns_to_df(perc_returns_dict)\n    agg = both_returns.sum(axis=1)\n    return agg\ndef perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns\ndef calculate_perc_returns_for_dict_with_costs(\n    position_contracts_dict: dict,",
+        "peekOfCode": "def aggregate_returns(perc_returns_dict: dict) -> pd.Series:\n    both_returns = perc_returns_to_df(perc_returns_dict)\n    agg = both_returns.sum(axis=1)\n    return agg\ndef perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns\nclass ArgumentError(Exception):\n    pass",
         "detail": "build.lib.almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -2629,34 +2782,16 @@
         "kind": 2,
         "importPath": "build.lib.almanac.analysis.calculate_returns",
         "description": "build.lib.almanac.analysis.calculate_returns",
-        "peekOfCode": "def perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns\ndef calculate_perc_returns_for_dict_with_costs(\n    position_contracts_dict: dict,\n    adjusted_prices: dict,\n    multipliers: dict,\n    fx_series: dict,\n    capital: float,",
+        "peekOfCode": "def perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns\nclass ArgumentError(Exception):\n    pass\ndef calculate_returns(\n    position_contracts: Union[dict, pd.Series],\n    adjusted_prices: Union[dict, pd.Series],\n    multipliers: Union[dict, float],",
         "detail": "build.lib.almanac.analysis.calculate_returns",
         "documentation": {}
     },
     {
-        "label": "calculate_perc_returns_for_dict_with_costs",
+        "label": "calculate_returns",
         "kind": 2,
         "importPath": "build.lib.almanac.analysis.calculate_returns",
         "description": "build.lib.almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_perc_returns_for_dict_with_costs(\n    position_contracts_dict: dict,\n    adjusted_prices: dict,\n    multipliers: dict,\n    fx_series: dict,\n    capital: float,\n    cost_per_contract_dict: dict,\n    std_dev_dict: dict,\n) -> dict:\n    perc_returns_dict = dict(",
-        "detail": "build.lib.almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_with_costs",
-        "kind": 2,
-        "importPath": "build.lib.almanac.analysis.calculate_returns",
-        "description": "build.lib.almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_perc_returns_with_costs(\n    position_contracts_held: pd.Series,\n    adjusted_price: pd.Series,\n    fx_series: pd.Series,\n    stdev_series: standardDeviation,\n    multiplier: float,\n    capital_required: float,\n    cost_per_contract: float,\n) -> pd.Series:\n    precost_return_price_points = (",
-        "detail": "build.lib.almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "long_only_returns",
-        "kind": 2,
-        "importPath": "build.lib.almanac.analysis.calculate_returns",
-        "description": "build.lib.almanac.analysis.calculate_returns",
-        "peekOfCode": "def long_only_returns(\n    adjusted_prices_dict: dict,\n    std_dev_dict: dict,\n    average_position_contracts_dict: dict,\n    fx_series_dict: dict,\n    cost_per_contract_dict: dict,\n    multipliers: dict,\n    capital: float,\n) -> pd.Series:\n    perc_return_dict = calculate_perc_returns_for_dict_with_costs(",
+        "peekOfCode": "def calculate_returns(\n    position_contracts: Union[dict, pd.Series],\n    adjusted_prices: Union[dict, pd.Series],\n    multipliers: Union[dict, float],\n    fx_series: Union[dict, pd.Series],\n    capital: float,\n    cost_per_contract: Union[dict, float],\n    std_dev: Union[dict, standardDeviation],\n    aggregate=True,\n):",
         "detail": "build.lib.almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -2692,7 +2827,34 @@
         "kind": 2,
         "importPath": "build.lib.almanac.analysis.forecasts",
         "description": "build.lib.almanac.analysis.forecasts",
-        "peekOfCode": "def ewmac(adjusted_price: pd.Series, fast_span=16, slow_span=64) -> pd.Series:\n    slow_ewma = adjusted_price.ewm(span=slow_span, min_periods=2).mean()\n    fast_ewma = adjusted_price.ewm(span=fast_span, min_periods=2).mean()\n    return fast_ewma - slow_ewma",
+        "peekOfCode": "def ewmac(adjusted_price: pd.Series, fast_span=16, slow_span=64) -> pd.Series:\n    slow_ewma = adjusted_price.ewm(span=slow_span, min_periods=2).mean()\n    fast_ewma = adjusted_price.ewm(span=fast_span, min_periods=2).mean()\n    return fast_ewma - slow_ewma\ndef calculate_forecast_for_ewmac(\n    adjusted_price: pd.Series, stdev_ann_perc: standardDeviation, fast_span: int = 64\n):\n    scaled_ewmac = calculate_scaled_forecast_for_ewmac(\n        adjusted_price=adjusted_price,\n        stdev_ann_perc=stdev_ann_perc,",
+        "detail": "build.lib.almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_forecast_for_ewmac",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.forecasts",
+        "description": "build.lib.almanac.analysis.forecasts",
+        "peekOfCode": "def calculate_forecast_for_ewmac(\n    adjusted_price: pd.Series, stdev_ann_perc: standardDeviation, fast_span: int = 64\n):\n    scaled_ewmac = calculate_scaled_forecast_for_ewmac(\n        adjusted_price=adjusted_price,\n        stdev_ann_perc=stdev_ann_perc,\n        fast_span=fast_span,\n    )\n    capped_ewmac = scaled_ewmac.clip(-20, 20)\n    return capped_ewmac",
+        "detail": "build.lib.almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_scaled_forecast_for_ewmac",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.forecasts",
+        "description": "build.lib.almanac.analysis.forecasts",
+        "peekOfCode": "def calculate_scaled_forecast_for_ewmac(\n    adjusted_price: pd.Series,\n    stdev_ann_perc: standardDeviation,\n    fast_span: int = 64,\n):\n    scalar_dict = {64: 1.91, 32: 2.79, 16: 4.1, 8: 5.95, 4: 8.53, 2: 12.1}\n    risk_adjusted_ewmac = calculate_risk_adjusted_forecast_for_ewmac(\n        adjusted_price=adjusted_price,\n        stdev_ann_perc=stdev_ann_perc,\n        fast_span=fast_span,",
+        "detail": "build.lib.almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_risk_adjusted_forecast_for_ewmac",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.forecasts",
+        "description": "build.lib.almanac.analysis.forecasts",
+        "peekOfCode": "def calculate_risk_adjusted_forecast_for_ewmac(\n    adjusted_price: pd.Series,\n    stdev_ann_perc: standardDeviation,\n    fast_span: int = 64,\n):\n    ewmac_values = ewmac(adjusted_price, fast_span=fast_span, slow_span=fast_span * 4)\n    daily_price_vol = stdev_ann_perc.daily_risk_price_terms()\n    risk_adjusted_ewmac = ewmac_values / daily_price_vol\n    return risk_adjusted_ewmac",
         "detail": "build.lib.almanac.analysis.forecasts",
         "documentation": {}
     },
@@ -2917,7 +3079,25 @@
         "kind": 2,
         "importPath": "build.lib.almanac.analysis.positions",
         "description": "build.lib.almanac.analysis.positions",
-        "peekOfCode": "def calculate_position_with_symmetric_trend_filter_applied(\n    adjusted_price: pd.Series, average_position: pd.Series\n) -> pd.Series:\n    filtered_position = copy(average_position)\n    ewmac_values = ewmac(adjusted_price)\n    bearish = ewmac_values < 0\n    filtered_position[bearish] = -filtered_position[bearish]\n    return filtered_position",
+        "peekOfCode": "def calculate_position_with_symmetric_trend_filter_applied(\n    adjusted_price: pd.Series, average_position: pd.Series\n) -> pd.Series:\n    filtered_position = copy(average_position)\n    ewmac_values = ewmac(adjusted_price)\n    bearish = ewmac_values < 0\n    filtered_position[bearish] = -filtered_position[bearish]\n    return filtered_position\ndef calculate_position_dict_with_trend_forecast_applied(\n    adjusted_prices_dict: dict,",
+        "detail": "build.lib.almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_dict_with_trend_forecast_applied",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.positions",
+        "description": "build.lib.almanac.analysis.positions",
+        "peekOfCode": "def calculate_position_dict_with_trend_forecast_applied(\n    adjusted_prices_dict: dict,\n    average_position_contracts_dict: dict,\n    std_dev_dict: dict,\n    fast_span: int = 64,\n) -> dict:\n    list_of_instruments = list(adjusted_prices_dict.keys())\n    position_dict_with_trend_filter = dict(\n        [\n            (",
+        "detail": "build.lib.almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_with_trend_forecast_applied",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.positions",
+        "description": "build.lib.almanac.analysis.positions",
+        "peekOfCode": "def calculate_position_with_trend_forecast_applied(\n    adjusted_price: pd.Series,\n    average_position: pd.Series,\n    stdev_ann_perc: standardDeviation,\n    fast_span: int = 64,\n) -> pd.Series:\n    from almanac.analysis.forecasts import calculate_forecast_for_ewmac\n    forecast = calculate_forecast_for_ewmac(\n        adjusted_price=adjusted_price,\n        stdev_ann_perc=stdev_ann_perc,",
         "detail": "build.lib.almanac.analysis.positions",
         "documentation": {}
     },
@@ -3165,6 +3345,15 @@
         "documentation": {}
     },
     {
+        "label": "StrategyBase",
+        "kind": 6,
+        "importPath": "build.lib.almanac.strategy.baseStrategy",
+        "description": "build.lib.almanac.strategy.baseStrategy",
+        "peekOfCode": "class StrategyBase:\n    def __init__(self, data_path: str, fx_path: str, instrument_list: list,\n                 instrument_weights: dict, multipliers: dict, idm: Union[int, float],\n                 risk_target: Union[int, float], capital: int, cost_per_contract_dict: dict):\n        self.data_path = data_path\n        self.fx_path = fx_path\n        self.instrument_list = instrument_list\n        self.instrument_weights = instrument_weights\n        self.multipliers = multipliers\n        self.idm = idm",
+        "detail": "build.lib.almanac.strategy.baseStrategy",
+        "documentation": {}
+    },
+    {
         "label": "Strategy1",
         "kind": 6,
         "importPath": "build.lib.almanac.strategy.strategy1",
@@ -3187,7 +3376,7 @@
         "kind": 6,
         "importPath": "build.lib.almanac.strategy.strategy3",
         "description": "build.lib.almanac.strategy.strategy3",
-        "peekOfCode": "class Strategy3:\n    def __init__(self, data_path: str, multiplier: int, risk_target: Union[int, float], capital: int):\n        self.data_path = data_path\n        self.multiplier = multiplier\n        self.risk_target = risk_target\n        self.capital = capital\n        self.data = self.get_data()\n        self.adjusted_price = self.data.adjusted\n        self.current_price = self.data.underlying\n        self.fx_series = pd.Series(1, index=self.data.index)",
+        "peekOfCode": "class Strategy3(StrategyBase):\n    def __init__(self, data_path: str, multiplier: int, risk_target: Union[int, float], capital: int):\n        self.data_path = data_path\n        self.multiplier = multiplier\n        self.risk_target = risk_target\n        self.capital = capital\n        self.data = self.get_data()\n        self.adjusted_price = self.data.adjusted\n        self.current_price = self.data.underlying\n        self.fx_series = pd.Series(1, index=self.data.index)",
         "detail": "build.lib.almanac.strategy.strategy3",
         "documentation": {}
     },
@@ -3196,7 +3385,7 @@
         "kind": 6,
         "importPath": "build.lib.almanac.strategy.strategy4",
         "description": "build.lib.almanac.strategy.strategy4",
-        "peekOfCode": "class Strategy4:\n    def __init__(\n        self,\n        data_path: str,\n        fx_path: str,\n        instrument_list: list,\n        instrument_weights: dict,\n        multipliers: dict,\n        idm: Union[int, float],\n        risk_target: Union[int, float],",
+        "peekOfCode": "class Strategy4(StrategyBase):\n    def __init__(\n        self,\n        data_path: str,\n        fx_path: str,\n        instrument_list: list,\n        instrument_weights: dict,\n        multipliers: dict,\n        idm: Union[int, float],\n        risk_target: Union[int, float],",
         "detail": "build.lib.almanac.strategy.strategy4",
         "documentation": {}
     },
@@ -3223,7 +3412,7 @@
         "kind": 6,
         "importPath": "build.lib.almanac.strategy.strategy5",
         "description": "build.lib.almanac.strategy.strategy5",
-        "peekOfCode": "class Strategy5:\n    def __init__(self, data_path: str,\n                 fx_path: str,\n                 instrument_list: list,\n                 instrument_weights: dict,\n                 multipliers: dict,\n                 idm: Union[int, float],\n                 risk_target: Union[int, float],\n                 cost_per_contract_dict: dict,\n                 capital: int,):",
+        "peekOfCode": "class Strategy5(StrategyBase):\n    def __init__(\n        self,\n        data_path: str,\n        fx_path: str,\n        instrument_list: list,\n        instrument_weights: dict,\n        multipliers: dict,\n        idm: Union[int, float],\n        risk_target: Union[int, float],",
         "detail": "build.lib.almanac.strategy.strategy5",
         "documentation": {}
     },
@@ -3232,8 +3421,17 @@
         "kind": 6,
         "importPath": "build.lib.almanac.strategy.strategy6",
         "description": "build.lib.almanac.strategy.strategy6",
-        "peekOfCode": "class Strategy6:\n    def __init__(self, data_path: str,\n                 fx_path: str,\n                 instrument_list: list,\n                 instrument_weights: dict,\n                 multipliers: dict,\n                 idm: Union[int, float],\n                 risk_target: Union[int, float],\n                 cost_per_contract_dict: dict,\n                 capital: int,):",
+        "peekOfCode": "class Strategy6(StrategyBase):\n    def __init__(\n        self,\n        data_path: str,\n        fx_path: str,\n        instrument_list: list,\n        instrument_weights: dict,\n        multipliers: dict,\n        idm: Union[int, float],\n        risk_target: Union[int, float],",
         "detail": "build.lib.almanac.strategy.strategy6",
+        "documentation": {}
+    },
+    {
+        "label": "Strategy7",
+        "kind": 6,
+        "importPath": "build.lib.almanac.strategy.strategy7",
+        "description": "build.lib.almanac.strategy.strategy7",
+        "peekOfCode": "class Strategy7(StrategyBase):\n    def __init__(\n        self,\n        data_path: str,\n        fx_path: str,\n        instrument_list: list,\n        instrument_weights: dict,\n        multipliers: dict,\n        idm: Union[int, float],\n        risk_target: Union[int, float],",
+        "detail": "build.lib.almanac.strategy.strategy7",
         "documentation": {}
     },
     {

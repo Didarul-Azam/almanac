@@ -3,7 +3,7 @@ from almanac.data.data import get_data_dict
 from almanac.utils.fx_series import create_fx_series_given_adjusted_prices_dict
 from almanac.analysis.std_for_risk import calculate_variable_standard_deviation_for_risk_targeting_from_dict
 from almanac.analysis.positions import calculate_position_series_given_variable_risk_for_dict, calculate_position_dict_with_trend_filter_applied
-from almanac.analysis.calculate_returns import calculate_perc_returns_for_dict_with_costs, aggregate_returns
+from almanac.analysis.calculate_returns import calculate_returns, calculate_perc_returns_for_dict_with_costs, aggregate_returns
 from typing import Union
 import pandas as pd
 import numpy as np
@@ -39,17 +39,18 @@ class StrategyBase:
         )
         return std_dev_dict
 
-    def calculate_returns(self, position_contracts_dict, adjusted_prices):
-        returns = calculate_perc_returns_for_dict_with_costs(
-            position_contracts_dict=position_contracts_dict,
-            fx_series=self.fx_series_dict,
-            multipliers=self.multipliers,
-            capital=self.capital,
-            adjusted_prices=adjusted_prices,
-            cost_per_contract_dict=self.cost_per_contract_dict,
-            std_dev_dict=self.std_dev_dict,
-        )
-        return returns
+    def cost_calculations(self):
+        self.pre_cost_portfolio_returns, self.post_cost_portfoilio_returns = calculate_returns(position_contracts=self.position_contracts_dict,
+                                                                                               adjusted_prices=self.adjusted_prices,
+                                                                                               multipliers=self.multipliers,
+                                                                                               fx_series=self.fx_series_dict,
+                                                                                               capital=self.capital,
+                                                                                               cost_per_contract=self.cost_per_contract_dict,
+                                                                                               std_dev=self.std_dev_dict,
+                                                                                               aggregate=True)
+        return self.pre_cost_portfolio_returns, self.post_cost_portfoilio_returns
 
-    def calculate_quantstats(self, perc_return_agg):
-        qs.reports.full(perc_return_agg, benchmark='^GSPC')
+    def calculate_quantstats(self):
+        self.pre_cost_portfolio_returns, self.post_cost_portfoilio_returns = self.cost_calculations()
+        qs.reports.full(precost_returns=self.pre_cost_portfolio_returns,
+                        postcost_returns=self.post_cost_portfoilio_returns, benchmark='^GSPC')
