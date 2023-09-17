@@ -10,10 +10,8 @@ almanac/analysis/calculate_returns.py
 almanac/analysis/calculate_stats.py
 almanac/analysis/cost_calculation.py
 almanac/analysis/forecasts.py
-almanac/analysis/forecasts_9.py
 almanac/analysis/handcrafting.py
 almanac/analysis/positions.py
-almanac/analysis/positions_9.py
 almanac/analysis/std_for_risk.py
 almanac/analysis/turnover.py
 almanac/config/__init__.py
@@ -34,6 +32,7 @@ almanac/strategy/strategy5.py
 almanac/strategy/strategy6.py
 almanac/strategy/strategy7.py
 almanac/strategy/strategy8.py
+almanac/strategy/strategy9.py
 almanac/utils/__init__.py
 almanac/utils/fx_series.py
 almanac/utils/standardDeviation.py
