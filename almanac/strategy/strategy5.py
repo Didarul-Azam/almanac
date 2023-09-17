@@ -55,19 +55,6 @@ class Strategy5(StrategyBase):
         )
         return position_contracts_dict
 
-    def calculate_returns(self):
-        returns_dict = calculate_perc_returns_for_dict_with_costs(
-            position_contracts_dict=self.position_contracts_dict,
-            fx_series=self.fx_series_dict,
-            multipliers=self.multipliers,
-            capital=self.capital,
-            adjusted_prices=self.adjusted_prices,
-            cost_per_contract_dict=self.cost_per_contract_dict,
-            std_dev_dict=self.std_dev_dict
-        )
-
-        return returns_dict
-
     def run_strategy(self):
         self.adjusted_prices, self.current_prices = self.get_data()
         self.fx_series_dict = self.create_fx_series(self.adjusted_prices)
@@ -75,6 +62,4 @@ class Strategy5(StrategyBase):
             self.adjusted_prices, self.current_prices)
         self.position_contracts_dict = self.calculate_positions(
             self.adjusted_prices, self.std_dev_dict)
-        self.perc_return_dict = self.calculate_returns()
-        self.perc_return_agg = aggregate_returns(self.perc_return_dict)
         self.calculate_quantstats()

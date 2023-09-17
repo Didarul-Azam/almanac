@@ -63,3 +63,36 @@ def get_data_dict(data_path, INSTRUMENT_LIST):
     )
 
     return adjusted_prices, current_prices
+
+
+def get_data_dict_with_carry(data_path, carry_path, INSTRUMENT_LIST: list = None):
+
+    all_data = dict(
+        [
+            (instrument_code, pd_readcsv(f"{data_path}{instrument_code}.csv"))
+            for instrument_code in INSTRUMENT_LIST
+        ]
+    )
+
+    adjusted_prices = dict(
+        [
+            (instrument_code, data_for_instrument.adjusted)
+            for instrument_code, data_for_instrument in all_data.items()
+        ]
+    )
+
+    current_prices = dict(
+        [
+            (instrument_code, data_for_instrument.underlying)
+            for instrument_code, data_for_instrument in all_data.items()
+        ]
+    )
+
+    carry_data = dict(
+        [
+            (instrument_code, pd_readcsv(f"{carry_path}{instrument_code}.csv"))
+            for instrument_code in INSTRUMENT_LIST
+        ]
+    )
+
+    return adjusted_prices, current_prices, carry_data
