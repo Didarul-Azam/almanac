@@ -21,6 +21,7 @@ class Strategy6(StrategyBase):
         risk_target: Union[int, float],
         capital: int,
         cost_per_contract_dict: dict,
+        use_buffer=False,
     ):
         super().__init__(
             data_path=data_path,
@@ -32,6 +33,7 @@ class Strategy6(StrategyBase):
             risk_target=risk_target,
             capital=capital,
             cost_per_contract_dict=cost_per_contract_dict,
+            use_buffer=use_buffer
         )
 
     def get_data(self):
