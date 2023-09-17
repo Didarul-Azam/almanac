@@ -1,6 +1,6 @@
 import pandas as pd
 from almanac.utils.standardDeviation import standardDeviation
-
+from almanac.config.fdm_lst import get_fdm
 
 def ewmac(adjusted_price: pd.Series, fast_span=16, slow_span=64) -> pd.Series:
 
@@ -131,3 +131,58 @@ def calculate_forecast_for_carry(
     capped_carry = scaled_carry.clip(-20, 20)
 
     return capped_carry
+
+def calculate_combined_forecast(
+    stdev_ann_perc: standardDeviation,
+    carry_price: pd.DataFrame,
+    adjusted_price: pd.Series,
+    rule_spec: list,
+) -> pd.Series:
+
+    all_forecasts_as_list = [
+        calculate_forecast(
+            adjusted_price=adjusted_price,
+            stdev_ann_perc=stdev_ann_perc,
+            carry_price=carry_price,
+            rule=rule,
+        )
+        for rule in rule_spec
+    ]
+
+    ### NOTE: This assumes we are equally weighted across spans
+    ### eg all forecast weights the same, equally weighted
+    all_forecasts_as_df = pd.concat(all_forecasts_as_list, axis=1)
+    average_forecast = all_forecasts_as_df.mean(axis=1)
+
+    ## apply an FDM
+    rule_count = len(rule_spec)
+    fdm = get_fdm(rule_count)
+    scaled_forecast = average_forecast * fdm
+    capped_forecast = scaled_forecast.clip(-20, 20)
+
+    return capped_forecast
+
+def calculate_forecast(
+    stdev_ann_perc: standardDeviation,
+    carry_price: pd.DataFrame,
+    adjusted_price: pd.Series,
+    rule: dict,
+) -> pd.Series:
+
+    if rule["function"] == "carry":
+        span = rule["span"]
+        forecast = calculate_forecast_for_carry(
+            stdev_ann_perc=stdev_ann_perc, carry_price=carry_price, span=span
+        )
+
+    elif rule["function"] == "ewmac":
+        fast_span = rule["fast_span"]
+        forecast = calculate_forecast_for_ewmac(
+            adjusted_price=adjusted_price,
+            stdev_ann_perc=stdev_ann_perc,
+            fast_span=fast_span,
+        )
+    else:
+        raise Exception("Rule %s not recognised!" % rule["function"])
+
+    return forecast
