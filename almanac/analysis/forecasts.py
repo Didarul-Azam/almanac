@@ -23,6 +23,7 @@ def calculate_forecast_for_ewmac(
 
     return capped_ewmac
 
+
 def calculate_scaled_forecast_for_ewmac(
     adjusted_price: pd.Series,
     stdev_ann_perc: standardDeviation,
@@ -40,16 +41,48 @@ def calculate_scaled_forecast_for_ewmac(
 
     return scaled_ewmac
 
+
 def calculate_risk_adjusted_forecast_for_ewmac(
     adjusted_price: pd.Series,
     stdev_ann_perc: standardDeviation,
     fast_span: int = 64,
 ):
 
-    ewmac_values = ewmac(adjusted_price, fast_span=fast_span, slow_span=fast_span * 4)
+    ewmac_values = ewmac(
+        adjusted_price, fast_span=fast_span, slow_span=fast_span * 4)
     daily_price_vol = stdev_ann_perc.daily_risk_price_terms()
 
     risk_adjusted_ewmac = ewmac_values / daily_price_vol
 
     return risk_adjusted_ewmac
 
+
+def calculate_combined_ewmac_forecast(
+    adjusted_price: pd.Series,
+    stdev_ann_perc: standardDeviation,
+    fast_spans: list,
+) -> pd.Series:
+
+    all_forecasts_as_list = [
+        calculate_forecast_for_ewmac(
+            adjusted_price=adjusted_price,
+            stdev_ann_perc=stdev_ann_perc,
+            fast_span=fast_span,
+        )
+        for fast_span in fast_spans
+    ]
+
+    # NOTE: This assumes we are equally weighted across spans
+    # eg all forecast weights the same, equally weighted
+    all_forecasts_as_df = pd.concat(all_forecasts_as_list, axis=1)
+    average_forecast = all_forecasts_as_df.mean(axis=1)
+
+    # apply an FDM
+    rule_count = len(fast_spans)
+    FDM_DICT = {1: 1.0, 2: 1.03, 3: 1.08, 4: 1.13, 5: 1.19, 6: 1.26}
+    fdm = FDM_DICT[rule_count]
+
+    scaled_forecast = average_forecast * fdm
+    capped_forecast = scaled_forecast.clip(-20, 20)
+
+    return capped_forecast
