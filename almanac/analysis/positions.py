@@ -136,3 +136,43 @@ def calculate_position_with_symmetric_trend_filter_applied(
     return filtered_position
 
 
+def calculate_position_dict_with_trend_forecast_applied(
+    adjusted_prices_dict: dict,
+    average_position_contracts_dict: dict,
+    std_dev_dict: dict,
+    fast_span: int = 64,
+) -> dict:
+
+    list_of_instruments = list(adjusted_prices_dict.keys())
+    position_dict_with_trend_filter = dict(
+        [
+            (
+                instrument_code,
+                calculate_position_with_trend_forecast_applied(
+                    adjusted_prices_dict[instrument_code],
+                    average_position_contracts_dict[instrument_code],
+                    stdev_ann_perc=std_dev_dict[instrument_code],
+                    fast_span=fast_span,
+                ),
+            )
+            for instrument_code in list_of_instruments
+        ]
+    )
+
+    return position_dict_with_trend_filter
+
+
+def calculate_position_with_trend_forecast_applied(
+    adjusted_price: pd.Series,
+    average_position: pd.Series,
+    stdev_ann_perc: standardDeviation,
+    fast_span: int = 64,
+) -> pd.Series:
+    from almanac.analysis.forecasts import calculate_forecast_for_ewmac
+    forecast = calculate_forecast_for_ewmac(
+        adjusted_price=adjusted_price,
+        stdev_ann_perc=stdev_ann_perc,
+        fast_span=fast_span,
+    )
+
+    return forecast * average_position / 10
