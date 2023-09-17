@@ -17,6 +17,7 @@ almanac/analysis/std_for_risk.py
 almanac/analysis/turnover.py
 almanac/config/__init__.py
 almanac/config/configs.py
+almanac/config/fdm_lst.py
 almanac/config/fx_dict.py
 almanac/config/instruments.py
 almanac/data/__init__.py
