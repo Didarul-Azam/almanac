@@ -39,17 +39,17 @@ class StrategyBase:
         )
         return std_dev_dict
 
-    def calculate_returns(self, position_contracts_dict, adjusted_prices):
-        returns = calculate_perc_returns_for_dict_with_costs(
-            position_contracts_dict=position_contracts_dict,
-            fx_series=self.fx_series_dict,
-            multipliers=self.multipliers,
-            capital=self.capital,
-            adjusted_prices=adjusted_prices,
-            cost_per_contract_dict=self.cost_per_contract_dict,
-            std_dev_dict=self.std_dev_dict,
-        )
-        return returns
+    # def calculate_returns(self, position_contracts_dict, adjusted_prices):
+    #     returns = calculate_perc_returns_for_dict_with_costs(
+    #         position_contracts_dict=position_contracts_dict,
+    #         fx_series=self.fx_series_dict,
+    #         multipliers=self.multipliers,
+    #         capital=self.capital,
+    #         adjusted_prices=adjusted_prices,
+    #         cost_per_contract_dict=self.cost_per_contract_dict,
+    #         std_dev_dict=self.std_dev_dict,
+    #     )
+    #     return returns
 
     def calculate_quantstats(self, perc_return_agg):
         qs.reports.full(perc_return_agg, benchmark='^GSPC')
