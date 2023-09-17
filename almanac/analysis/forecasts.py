@@ -86,3 +86,48 @@ def calculate_combined_ewmac_forecast(
     capped_forecast = scaled_forecast.clip(-20, 20)
 
     return capped_forecast
+
+
+
+def calculate_combined_carry_forecast(
+    stdev_ann_perc: standardDeviation,
+    carry_price: pd.DataFrame,
+    carry_spans: list,
+) -> pd.Series:
+
+    all_forecasts_as_list = [
+        calculate_forecast_for_carry(
+            stdev_ann_perc=stdev_ann_perc,
+            carry_price=carry_price,
+            span=span,
+        )
+        for span in carry_spans
+    ]
+
+    ### NOTE: This assumes we are equally weighted across spans
+    ### eg all forecast weights the same, equally weighted
+    all_forecasts_as_df = pd.concat(all_forecasts_as_list, axis=1)
+    average_forecast = all_forecasts_as_df.mean(axis=1)
+
+    ## apply an FDM
+    rule_count = len(carry_spans)
+    FDM_DICT = {1: 1.0, 2: 1.02, 3: 1.03, 4: 1.04}
+    fdm = FDM_DICT[rule_count]
+
+    scaled_forecast = average_forecast * fdm
+    capped_forecast = scaled_forecast.clip(-20, 20)
+
+    return capped_forecast
+
+
+def calculate_forecast_for_carry(
+    stdev_ann_perc: standardDeviation, carry_price: pd.DataFrame, span: int
+):
+    from almanac.analysis.carry import calculate_smoothed_carry
+    smooth_carry = calculate_smoothed_carry(
+        stdev_ann_perc=stdev_ann_perc, carry_price=carry_price, span=span
+    )
+    scaled_carry = smooth_carry * 30
+    capped_carry = scaled_carry.clip(-20, 20)
+
+    return capped_carry
