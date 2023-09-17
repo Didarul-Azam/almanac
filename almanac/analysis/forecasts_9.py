@@ -67,3 +67,18 @@ def calculate_combined_ewmac_forecast(
         )
         for fast_span in fast_spans
     ]
+
+    ### NOTE: This assumes we are equally weighted across spans
+    ### eg all forecast weights the same, equally weighted
+    all_forecasts_as_df = pd.concat(all_forecasts_as_list, axis=1)
+    average_forecast = all_forecasts_as_df.mean(axis=1)
+
+    ## apply an FDM
+    rule_count = len(fast_spans)
+    FDM_DICT = {1: 1.0, 2: 1.03, 3: 1.08, 4: 1.13, 5: 1.19, 6: 1.26}
+    fdm = FDM_DICT[rule_count]
+
+    scaled_forecast = average_forecast * fdm
+    capped_forecast = scaled_forecast.clip(-20, 20)
+
+    return capped_forecast
