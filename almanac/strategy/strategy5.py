@@ -75,4 +75,4 @@ class Strategy5(StrategyBase):
             self.adjusted_prices, self.std_dev_dict)
         self.perc_return_dict = self.calculate_returns()
         self.perc_return_agg = aggregate_returns(self.perc_return_dict)
-        self.calculate_quantstats(self.perc_return_agg)
+        self.calculate_quantstats()

@@ -1410,6 +1410,14 @@
         "documentation": {}
     },
     {
+        "label": "calculate_returns",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
         "label": "calculate_perc_returns_for_dict_with_costs",
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
@@ -1523,6 +1531,14 @@
     },
     {
         "label": "calculate_perc_returns_for_dict_with_costs",
+        "importPath": "almanac.analysis.calculate_returns",
+        "description": "almanac.analysis.calculate_returns",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.calculate_returns",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_returns",
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
         "isExtraImport": true,
@@ -1848,7 +1864,7 @@
         "kind": 6,
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
-        "peekOfCode": "class ArgumentError(Exception):\n    pass\ndef calculate_returns(\n    position_contracts: Union[dict,pd.Series],\n    adjusted_prices: Union[dict,pd.Series],\n    multipliers: Union[dict,float],\n    fx_series: Union[dict,pd.Series],\n    capital: float,\n    cost_per_contract: Union[dict,float],\n    std_dev: Union[dict,standardDeviation],",
+        "peekOfCode": "class ArgumentError(Exception):\n    pass\ndef calculate_returns(\n    position_contracts: Union[dict, pd.Series],\n    adjusted_prices: Union[dict, pd.Series],\n    multipliers: Union[dict, float],\n    fx_series: Union[dict, pd.Series],\n    capital: float,\n    cost_per_contract: Union[dict, float],\n    std_dev: Union[dict, standardDeviation],",
         "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -1929,7 +1945,7 @@
         "kind": 2,
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
-        "peekOfCode": "def perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns\nclass ArgumentError(Exception):\n    pass\ndef calculate_returns(\n    position_contracts: Union[dict,pd.Series],\n    adjusted_prices: Union[dict,pd.Series],\n    multipliers: Union[dict,float],",
+        "peekOfCode": "def perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns\nclass ArgumentError(Exception):\n    pass\ndef calculate_returns(\n    position_contracts: Union[dict, pd.Series],\n    adjusted_prices: Union[dict, pd.Series],\n    multipliers: Union[dict, float],",
         "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -1938,7 +1954,7 @@
         "kind": 2,
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_returns(\n    position_contracts: Union[dict,pd.Series],\n    adjusted_prices: Union[dict,pd.Series],\n    multipliers: Union[dict,float],\n    fx_series: Union[dict,pd.Series],\n    capital: float,\n    cost_per_contract: Union[dict,float],\n    std_dev: Union[dict,standardDeviation],\n    aggregate = True,\n): ",
+        "peekOfCode": "def calculate_returns(\n    position_contracts: Union[dict, pd.Series],\n    adjusted_prices: Union[dict, pd.Series],\n    multipliers: Union[dict, float],\n    fx_series: Union[dict, pd.Series],\n    capital: float,\n    cost_per_contract: Union[dict, float],\n    std_dev: Union[dict, standardDeviation],\n    aggregate=True,\n):",
         "detail": "almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -2685,7 +2701,7 @@
         "kind": 6,
         "importPath": "build.lib.almanac.analysis.calculate_returns",
         "description": "build.lib.almanac.analysis.calculate_returns",
-        "peekOfCode": "class ArgumentError(Exception):\n    pass\ndef calculate_returns(\n    position_contracts: Union[dict,pd.Series],\n    adjusted_prices: Union[dict,pd.Series],\n    multipliers: Union[dict,float],\n    fx_series: Union[dict,pd.Series],\n    capital: float,\n    cost_per_contract: Union[dict,float],\n    std_dev: Union[dict,standardDeviation],",
+        "peekOfCode": "class ArgumentError(Exception):\n    pass\ndef calculate_returns(\n    position_contracts: Union[dict, pd.Series],\n    adjusted_prices: Union[dict, pd.Series],\n    multipliers: Union[dict, float],\n    fx_series: Union[dict, pd.Series],\n    capital: float,\n    cost_per_contract: Union[dict, float],\n    std_dev: Union[dict, standardDeviation],",
         "detail": "build.lib.almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -2766,7 +2782,7 @@
         "kind": 2,
         "importPath": "build.lib.almanac.analysis.calculate_returns",
         "description": "build.lib.almanac.analysis.calculate_returns",
-        "peekOfCode": "def perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns\nclass ArgumentError(Exception):\n    pass\ndef calculate_returns(\n    position_contracts: Union[dict,pd.Series],\n    adjusted_prices: Union[dict,pd.Series],\n    multipliers: Union[dict,float],",
+        "peekOfCode": "def perc_returns_to_df(perc_returns_dict: dict) -> pd.DataFrame:\n    both_returns = pd.concat(perc_returns_dict, axis=1)\n    both_returns = both_returns.dropna(how=\"all\")\n    return both_returns\nclass ArgumentError(Exception):\n    pass\ndef calculate_returns(\n    position_contracts: Union[dict, pd.Series],\n    adjusted_prices: Union[dict, pd.Series],\n    multipliers: Union[dict, float],",
         "detail": "build.lib.almanac.analysis.calculate_returns",
         "documentation": {}
     },
@@ -2775,7 +2791,7 @@
         "kind": 2,
         "importPath": "build.lib.almanac.analysis.calculate_returns",
         "description": "build.lib.almanac.analysis.calculate_returns",
-        "peekOfCode": "def calculate_returns(\n    position_contracts: Union[dict,pd.Series],\n    adjusted_prices: Union[dict,pd.Series],\n    multipliers: Union[dict,float],\n    fx_series: Union[dict,pd.Series],\n    capital: float,\n    cost_per_contract: Union[dict,float],\n    std_dev: Union[dict,standardDeviation],\n    aggregate = True,\n): ",
+        "peekOfCode": "def calculate_returns(\n    position_contracts: Union[dict, pd.Series],\n    adjusted_prices: Union[dict, pd.Series],\n    multipliers: Union[dict, float],\n    fx_series: Union[dict, pd.Series],\n    capital: float,\n    cost_per_contract: Union[dict, float],\n    std_dev: Union[dict, standardDeviation],\n    aggregate=True,\n):",
         "detail": "build.lib.almanac.analysis.calculate_returns",
         "documentation": {}
     },
