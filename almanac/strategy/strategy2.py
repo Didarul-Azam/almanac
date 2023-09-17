@@ -7,6 +7,7 @@ from almanac.analysis.calculate_returns import calculate_perc_returns
 from typing import Union
 import pandas as pd
 import numpy as np
+import quantstats as qs
 
 
 class Strategy2:
@@ -34,12 +35,17 @@ class Strategy2:
         return data
 
     def get_return(self):
-        return calculate_perc_returns(position_contracts_held=self.position_contracts_held,
-                                      adjusted_price=self.adjusted_price,
-                                      fx_series=self.fx_series,
-                                      multiplier=self.multiplier,
-                                      capital_required=self.capital)
+        self.perc_return = calculate_perc_returns(position_contracts_held=self.position_contracts_held,
+                                                  adjusted_price=self.adjusted_price,
+                                                  fx_series=self.fx_series,
+                                                  multiplier=self.multiplier,
+                                                  capital_required=self.capital)
+
+        return self.perc_return
 
     def show_stats(self):
         statistics = Stats(self.perc_return)
         print(statistics.stats(show=True))
+
+    def run_strategy(self):
+        qs.reports.full(self.perc_return, benchmark='^GSPC')

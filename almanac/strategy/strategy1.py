@@ -1,6 +1,7 @@
 from almanac.data.data import pd_readcsv
 from almanac.analysis.calculate_returns import calculate_perc_returns
 from almanac.analysis.calculate_stats import Stats
+import quantstats as qs
 from typing import Union
 import pandas as pd
 import numpy as np
@@ -36,3 +37,6 @@ class Strategy1:
     def show_stats(self):
         statistics = Stats(self.perc_return)
         print(statistics.stats(show=True))
+
+    def run_strategy(self):
+        qs.reports.full(self.perc_return, benchmark='^GSPC')
