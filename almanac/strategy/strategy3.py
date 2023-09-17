@@ -5,13 +5,15 @@ from almanac.analysis.calculate_stats import Stats
 from almanac.analysis.calculate_returns import calculate_perc_returns, calculate_percentage_returns, calculate_daily_returns
 from almanac.analysis.positions import calculate_position_series_given_variable_risk
 from almanac.utils.standardDeviation import standardDeviation
+from almanac.strategy.baseStrategy import StrategyBase
 
 from typing import Union
 import pandas as pd
 import numpy as np
+import quantstats as qs
 
 
-class Strategy3:
+class Strategy3(StrategyBase):
     def __init__(self, data_path: str, multiplier: int, risk_target: Union[int, float], capital: int):
         self.data_path = data_path
         self.multiplier = multiplier
@@ -46,3 +48,6 @@ class Strategy3:
     def show_stats(self):
         statistics = Stats(self.perc_return)
         print(statistics.stats(show=True))
+
+    def run_strategy(self):
+        qs.reports.full(self.perc_return, benchmark='^GSPC')
