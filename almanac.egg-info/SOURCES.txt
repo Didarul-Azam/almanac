@@ -25,6 +25,7 @@ almanac/deployment/__init__.py
 almanac/strategy/__init__.py
 almanac/strategy/baseStrategy.py
 almanac/strategy/strategy1.py
+almanac/strategy/strategy10.py
 almanac/strategy/strategy2.py
 almanac/strategy/strategy3.py
 almanac/strategy/strategy4.py
