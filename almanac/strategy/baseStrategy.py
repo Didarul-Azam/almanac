@@ -4,6 +4,7 @@ from almanac.utils.fx_series import create_fx_series_given_adjusted_prices_dict
 from almanac.analysis.std_for_risk import calculate_variable_standard_deviation_for_risk_targeting_from_dict
 from almanac.analysis.positions import calculate_position_series_given_variable_risk_for_dict, calculate_position_dict_with_trend_filter_applied
 from almanac.analysis.calculate_returns import calculate_returns, calculate_perc_returns_for_dict_with_costs, aggregate_returns
+from almanac.analysis.buffering import apply_buffering_to_position_dict
 from typing import Union
 import pandas as pd
 import numpy as np
@@ -13,7 +14,8 @@ import quantstats as qs
 class StrategyBase:
     def __init__(self, data_path: str, fx_path: str, instrument_list: list,
                  instrument_weights: dict, multipliers: dict, idm: Union[int, float],
-                 risk_target: Union[int, float], capital: int, cost_per_contract_dict: dict):
+                 risk_target: Union[int, float], capital: int, cost_per_contract_dict: dict,
+                 use_buffer=False):
         self.data_path = data_path
         self.fx_path = fx_path
         self.instrument_list = instrument_list
@@ -23,6 +25,7 @@ class StrategyBase:
         self.risk_target = risk_target
         self.cost_per_contract_dict = cost_per_contract_dict
         self.capital = capital
+        self.use_buffer = use_buffer
 
     def create_fx_series(self, adjusted_prices):
         fx_series_dict = create_fx_series_given_adjusted_prices_dict(
@@ -39,16 +42,33 @@ class StrategyBase:
         )
         return std_dev_dict
 
+    def buffered_position(self):
+        self.buffered_position_dict = apply_buffering_to_position_dict(position_contracts_dict=self.position_contracts_dict,
+                                                                       average_position_contracts_dict=self.average_position_contracts_dict,)
+
+        return self.buffered_position_dict
+
     def cost_calculations(self):
-        self.pre_cost_portfolio_returns, self.post_cost_portfoilio_returns = calculate_returns(position_contracts=self.position_contracts_dict,
-                                                                                               adjusted_prices=self.adjusted_prices,
-                                                                                               multipliers=self.multipliers,
-                                                                                               fx_series=self.fx_series_dict,
-                                                                                               capital=self.capital,
-                                                                                               cost_per_contract=self.cost_per_contract_dict,
-                                                                                               std_dev=self.std_dev_dict,
-                                                                                               aggregate=True)
-        return self.pre_cost_portfolio_returns, self.post_cost_portfoilio_returns
+        if self.use_buffer:
+            self.pre_cost_portfolio_returns, self.post_cost_portfoilio_returns = calculate_returns(position_contracts=self.buffered_position(),
+                                                                                                   adjusted_prices=self.adjusted_prices,
+                                                                                                   multipliers=self.multipliers,
+                                                                                                   fx_series=self.fx_series_dict,
+                                                                                                   capital=self.capital,
+                                                                                                   cost_per_contract=self.cost_per_contract_dict,
+                                                                                                   std_dev=self.std_dev_dict,
+                                                                                                   aggregate=True)
+            return self.pre_cost_portfolio_returns, self.post_cost_portfoilio_returns
+        else:
+            self.pre_cost_portfolio_returns, self.post_cost_portfoilio_returns = calculate_returns(position_contracts=self.position_contracts_dict,
+                                                                                                   adjusted_prices=self.adjusted_prices,
+                                                                                                   multipliers=self.multipliers,
+                                                                                                   fx_series=self.fx_series_dict,
+                                                                                                   capital=self.capital,
+                                                                                                   cost_per_contract=self.cost_per_contract_dict,
+                                                                                                   std_dev=self.std_dev_dict,
+                                                                                                   aggregate=True)
+            return self.pre_cost_portfolio_returns, self.post_cost_portfoilio_returns
 
     def calculate_quantstats(self):
         self.pre_cost_portfolio_returns, self.post_cost_portfoilio_returns = self.cost_calculations()
