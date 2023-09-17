@@ -114,22 +114,6 @@
         "documentation": {}
     },
     {
-        "label": "standardDeviation",
-        "importPath": "almanac.utils.standardDeviation",
-        "description": "almanac.utils.standardDeviation",
-        "isExtraImport": true,
-        "detail": "almanac.utils.standardDeviation",
-        "documentation": {}
-    },
-    {
-        "label": "standardDeviation",
-        "importPath": "almanac.utils.standardDeviation",
-        "description": "almanac.utils.standardDeviation",
-        "isExtraImport": true,
-        "detail": "almanac.utils.standardDeviation",
-        "documentation": {}
-    },
-    {
         "label": "Union",
         "importPath": "typing",
         "description": "typing",
@@ -439,14 +423,6 @@
         "description": "almanac.utils.utils",
         "isExtraImport": true,
         "detail": "almanac.utils.utils",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "almanac.config.configs",
-        "description": "almanac.config.configs",
-        "isExtraImport": true,
-        "detail": "almanac.config.configs",
         "documentation": {}
     },
     {
@@ -1106,14 +1082,6 @@
         "documentation": {}
     },
     {
-        "label": "ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
         "label": "calculate_forecast_for_ewmac",
         "importPath": "almanac.analysis.forecasts",
         "description": "almanac.analysis.forecasts",
@@ -1223,14 +1191,6 @@
         "description": "almanac.analysis.forecasts",
         "isExtraImport": true,
         "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "copy",
-        "importPath": "copy",
-        "description": "copy",
-        "isExtraImport": true,
-        "detail": "copy",
         "documentation": {}
     },
     {
@@ -2357,53 +2317,17 @@
         "kind": 2,
         "importPath": "almanac.analysis.forecasts",
         "description": "almanac.analysis.forecasts",
-        "peekOfCode": "def calculate_risk_adjusted_forecast_for_ewmac(\n    adjusted_price: pd.Series,\n    stdev_ann_perc: standardDeviation,\n    fast_span: int = 64,\n):\n    ewmac_values = ewmac(adjusted_price, fast_span=fast_span, slow_span=fast_span * 4)\n    daily_price_vol = stdev_ann_perc.daily_risk_price_terms()\n    risk_adjusted_ewmac = ewmac_values / daily_price_vol\n    return risk_adjusted_ewmac",
+        "peekOfCode": "def calculate_risk_adjusted_forecast_for_ewmac(\n    adjusted_price: pd.Series,\n    stdev_ann_perc: standardDeviation,\n    fast_span: int = 64,\n):\n    ewmac_values = ewmac(\n        adjusted_price, fast_span=fast_span, slow_span=fast_span * 4)\n    daily_price_vol = stdev_ann_perc.daily_risk_price_terms()\n    risk_adjusted_ewmac = ewmac_values / daily_price_vol\n    return risk_adjusted_ewmac",
         "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "ewmac",
-        "kind": 2,
-        "importPath": "almanac.analysis.forecasts_9",
-        "description": "almanac.analysis.forecasts_9",
-        "peekOfCode": "def ewmac(adjusted_price: pd.Series, fast_span=16, slow_span=64) -> pd.Series:\n    slow_ewma = adjusted_price.ewm(span=slow_span, min_periods=2).mean()\n    fast_ewma = adjusted_price.ewm(span=fast_span, min_periods=2).mean()\n    return fast_ewma - slow_ewma\ndef calculate_forecast_for_ewmac(\n    adjusted_price: pd.Series, stdev_ann_perc: standardDeviation, fast_span: int = 64\n):\n    scaled_ewmac = calculate_scaled_forecast_for_ewmac(\n        adjusted_price=adjusted_price,\n        stdev_ann_perc=stdev_ann_perc,",
-        "detail": "almanac.analysis.forecasts_9",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_forecast_for_ewmac",
-        "kind": 2,
-        "importPath": "almanac.analysis.forecasts_9",
-        "description": "almanac.analysis.forecasts_9",
-        "peekOfCode": "def calculate_forecast_for_ewmac(\n    adjusted_price: pd.Series, stdev_ann_perc: standardDeviation, fast_span: int = 64\n):\n    scaled_ewmac = calculate_scaled_forecast_for_ewmac(\n        adjusted_price=adjusted_price,\n        stdev_ann_perc=stdev_ann_perc,\n        fast_span=fast_span,\n    )\n    capped_ewmac = scaled_ewmac.clip(-20, 20)\n    return capped_ewmac",
-        "detail": "almanac.analysis.forecasts_9",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_scaled_forecast_for_ewmac",
-        "kind": 2,
-        "importPath": "almanac.analysis.forecasts_9",
-        "description": "almanac.analysis.forecasts_9",
-        "peekOfCode": "def calculate_scaled_forecast_for_ewmac(\n    adjusted_price: pd.Series,\n    stdev_ann_perc: standardDeviation,\n    fast_span: int = 64,\n):\n    scalar_dict = {64: 1.91, 32: 2.79, 16: 4.1, 8: 5.95, 4: 8.53, 2: 12.1}\n    risk_adjusted_ewmac = calculate_risk_adjusted_forecast_for_ewmac(\n        adjusted_price=adjusted_price,\n        stdev_ann_perc=stdev_ann_perc,\n        fast_span=fast_span,",
-        "detail": "almanac.analysis.forecasts_9",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_risk_adjusted_forecast_for_ewmac",
-        "kind": 2,
-        "importPath": "almanac.analysis.forecasts_9",
-        "description": "almanac.analysis.forecasts_9",
-        "peekOfCode": "def calculate_risk_adjusted_forecast_for_ewmac(\n    adjusted_price: pd.Series,\n    stdev_ann_perc: standardDeviation,\n    fast_span: int = 64,\n):\n    ewmac_values = ewmac(adjusted_price, fast_span=fast_span, slow_span=fast_span * 4)\n    daily_price_vol = stdev_ann_perc.daily_risk_price_terms()\n    risk_adjusted_ewmac = ewmac_values / daily_price_vol\n    return risk_adjusted_ewmac\ndef calculate_combined_ewmac_forecast(",
-        "detail": "almanac.analysis.forecasts_9",
         "documentation": {}
     },
     {
         "label": "calculate_combined_ewmac_forecast",
         "kind": 2,
-        "importPath": "almanac.analysis.forecasts_9",
-        "description": "almanac.analysis.forecasts_9",
+        "importPath": "almanac.analysis.forecasts",
+        "description": "almanac.analysis.forecasts",
         "peekOfCode": "def calculate_combined_ewmac_forecast(\n    adjusted_price: pd.Series,\n    stdev_ann_perc: standardDeviation,\n    fast_spans: list,\n) -> pd.Series:\n    all_forecasts_as_list = [\n        calculate_forecast_for_ewmac(\n            adjusted_price=adjusted_price,\n            stdev_ann_perc=stdev_ann_perc,\n            fast_span=fast_span,",
-        "detail": "almanac.analysis.forecasts_9",
+        "detail": "almanac.analysis.forecasts",
         "documentation": {}
     },
     {
@@ -2650,102 +2574,21 @@
         "documentation": {}
     },
     {
-        "label": "calculate_position_series_given_fixed_risk",
-        "kind": 2,
-        "importPath": "almanac.analysis.positions_9",
-        "description": "almanac.analysis.positions_9",
-        "peekOfCode": "def calculate_position_series_given_fixed_risk(capital: float,\n                                               risk_target_tau: float,\n                                               current_price: pd.Series,\n                                               fx: pd.Series,\n                                               multiplier: float,\n                                               instrument_risk_ann_perc: float) -> pd.Series:\n    # N = (Capital × τ) ÷ (Multiplier × Price × FX × σ %)\n    position_in_contracts = capital * risk_target_tau / \\\n        (multiplier * current_price * fx * instrument_risk_ann_perc)\n    return position_in_contracts",
-        "detail": "almanac.analysis.positions_9",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_position_series_given_variable_risk",
-        "kind": 2,
-        "importPath": "almanac.analysis.positions_9",
-        "description": "almanac.analysis.positions_9",
-        "peekOfCode": "def calculate_position_series_given_variable_risk(\n    capital: float,\n    risk_target_tau: float,\n    fx: pd.Series,\n    multiplier: float,\n    instrument_risk: standardDeviation,\n) -> pd.Series:\n    # N = (Capital × τ) ÷ (Multiplier × Price × FX × σ %)\n    # resolves to N = (Capital × τ) ÷ (Multiplier × FX × daily stdev price terms × 16)\n    # for simplicity we use the daily risk in price terms, even if we calculated annualised % returns",
-        "detail": "almanac.analysis.positions_9",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_position_series_given_variable_risk_for_dict",
-        "kind": 2,
-        "importPath": "almanac.analysis.positions_9",
-        "description": "almanac.analysis.positions_9",
-        "peekOfCode": "def calculate_position_series_given_variable_risk_for_dict(\n    capital: float,\n    risk_target_tau: float,\n    idm: float,\n    weights: dict,\n    fx_series_dict: dict,\n    multipliers: dict,\n    std_dev_dict: dict,\n) -> dict:\n    position_series_dict = dict(",
-        "detail": "almanac.analysis.positions_9",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_position_dict_with_trend_filter_applied",
-        "kind": 2,
-        "importPath": "almanac.analysis.positions_9",
-        "description": "almanac.analysis.positions_9",
-        "peekOfCode": "def calculate_position_dict_with_trend_filter_applied(\n    adjusted_prices_dict: dict,\n    average_position_contracts_dict: dict,\n) -> dict:\n    list_of_instruments = list(adjusted_prices_dict.keys())\n    position_dict_with_trend_filter = dict(\n        [\n            (\n                instrument_code,\n                calculate_position_with_trend_filter_applied(",
-        "detail": "almanac.analysis.positions_9",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_position_with_trend_filter_applied",
-        "kind": 2,
-        "importPath": "almanac.analysis.positions_9",
-        "description": "almanac.analysis.positions_9",
-        "peekOfCode": "def calculate_position_with_trend_filter_applied(\n    adjusted_price: pd.Series, average_position: pd.Series\n) -> pd.Series:\n    filtered_position = copy(average_position)\n    ewmac_values = ewmac(adjusted_price)\n    bearish = ewmac_values < 0\n    filtered_position[bearish] = 0\n    return filtered_position\ndef calculate_position_dict_with_symmetric_trend_filter_applied(\n    adjusted_prices_dict: dict,",
-        "detail": "almanac.analysis.positions_9",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_position_dict_with_symmetric_trend_filter_applied",
-        "kind": 2,
-        "importPath": "almanac.analysis.positions_9",
-        "description": "almanac.analysis.positions_9",
-        "peekOfCode": "def calculate_position_dict_with_symmetric_trend_filter_applied(\n    adjusted_prices_dict: dict,\n    average_position_contracts_dict: dict,\n) -> dict:\n    list_of_instruments = list(adjusted_prices_dict.keys())\n    position_dict_with_trend_filter = dict(\n        [\n            (\n                instrument_code,\n                calculate_position_with_symmetric_trend_filter_applied(",
-        "detail": "almanac.analysis.positions_9",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_position_with_symmetric_trend_filter_applied",
-        "kind": 2,
-        "importPath": "almanac.analysis.positions_9",
-        "description": "almanac.analysis.positions_9",
-        "peekOfCode": "def calculate_position_with_symmetric_trend_filter_applied(\n    adjusted_price: pd.Series, average_position: pd.Series\n) -> pd.Series:\n    filtered_position = copy(average_position)\n    ewmac_values = ewmac(adjusted_price)\n    bearish = ewmac_values < 0\n    filtered_position[bearish] = -filtered_position[bearish]\n    return filtered_position\ndef calculate_position_dict_with_trend_forecast_applied(\n    adjusted_prices_dict: dict,",
-        "detail": "almanac.analysis.positions_9",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_position_dict_with_trend_forecast_applied",
-        "kind": 2,
-        "importPath": "almanac.analysis.positions_9",
-        "description": "almanac.analysis.positions_9",
-        "peekOfCode": "def calculate_position_dict_with_trend_forecast_applied(\n    adjusted_prices_dict: dict,\n    average_position_contracts_dict: dict,\n    std_dev_dict: dict,\n    fast_span: int = 64,\n) -> dict:\n    list_of_instruments = list(adjusted_prices_dict.keys())\n    position_dict_with_trend_filter = dict(\n        [\n            (",
-        "detail": "almanac.analysis.positions_9",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_position_with_trend_forecast_applied",
-        "kind": 2,
-        "importPath": "almanac.analysis.positions_9",
-        "description": "almanac.analysis.positions_9",
-        "peekOfCode": "def calculate_position_with_trend_forecast_applied(\n    adjusted_price: pd.Series,\n    average_position: pd.Series,\n    stdev_ann_perc: standardDeviation,\n    fast_span: int = 64,\n) -> pd.Series:\n    from almanac.analysis.forecasts import calculate_forecast_for_ewmac\n    forecast = calculate_forecast_for_ewmac(\n        adjusted_price=adjusted_price,\n        stdev_ann_perc=stdev_ann_perc,",
-        "detail": "almanac.analysis.positions_9",
-        "documentation": {}
-    },
-    {
         "label": "calculate_position_dict_with_multiple_trend_forecast_applied",
         "kind": 2,
-        "importPath": "almanac.analysis.positions_9",
-        "description": "almanac.analysis.positions_9",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
         "peekOfCode": "def calculate_position_dict_with_multiple_trend_forecast_applied(\n    adjusted_prices_dict: dict,\n    average_position_contracts_dict: dict,\n    std_dev_dict: dict,\n    fast_spans: list,\n) -> dict:\n    list_of_instruments = list(adjusted_prices_dict.keys())\n    position_dict_with_trend_filter = dict(\n        [\n            (",
-        "detail": "almanac.analysis.positions_9",
+        "detail": "almanac.analysis.positions",
         "documentation": {}
     },
     {
         "label": "calculate_position_with_multiple_trend_forecast_applied",
         "kind": 2,
-        "importPath": "almanac.analysis.positions_9",
-        "description": "almanac.analysis.positions_9",
-        "peekOfCode": "def calculate_position_with_multiple_trend_forecast_applied(\n    adjusted_price: pd.Series,\n    average_position: pd.Series,\n    stdev_ann_perc: standardDeviation,\n    fast_spans: list,\n) -> pd.Series:\n    from almanac.analysis.forecasts_9 import calculate_combined_ewmac_forecast\n    forecast = calculate_combined_ewmac_forecast(\n        adjusted_price=adjusted_price,\n        stdev_ann_perc=stdev_ann_perc,",
-        "detail": "almanac.analysis.positions_9",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "peekOfCode": "def calculate_position_with_multiple_trend_forecast_applied(\n    adjusted_price: pd.Series,\n    average_position: pd.Series,\n    stdev_ann_perc: standardDeviation,\n    fast_spans: list,\n) -> pd.Series:\n    from almanac.analysis.forecasts import calculate_combined_ewmac_forecast\n    forecast = calculate_combined_ewmac_forecast(\n        adjusted_price=adjusted_price,\n        stdev_ann_perc=stdev_ann_perc,",
+        "detail": "almanac.analysis.positions",
         "documentation": {}
     },
     {
