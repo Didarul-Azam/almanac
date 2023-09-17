@@ -80,3 +80,22 @@ def minimum_capital_for_sub_strategy(
         * instrument_risk_ann_perc
         / (risk_target * idm * weight)
     )
+    
+    
+def _total_year_frac_from_contract_series(x):
+    years = _year_from_contract_series(x)
+    month_frac = _month_as_year_frac_from_contract_series(x)
+
+    return years + month_frac
+
+
+def _year_from_contract_series(x):
+    return x.floordiv(10000)
+
+
+def _month_as_year_frac_from_contract_series(x):
+    return _month_from_contract_series(x) / 12.0
+
+
+def _month_from_contract_series(x):
+    return x.mod(10000) / 100.0
