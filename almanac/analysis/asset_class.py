@@ -96,6 +96,7 @@ asset_class_groupings = {
     ],
 }
 
+
 def calculate_asset_class_price_dict(
     normalised_price_dict: dict, asset_class_groupings: dict
 ):
@@ -117,6 +118,7 @@ def calculate_asset_class_price_dict(
 
     return asset_class_price_dict
 
+
 def calculate_asset_prices_for_instrument(
     instrument_code: str, normalised_price_dict: dict, asset_class_groupings: dict
 ) -> pd.Series:
@@ -130,6 +132,8 @@ def calculate_asset_prices_for_instrument(
         asset_class_groupings=asset_class_groupings,
         normalised_price_dict=normalised_price_dict,
     )
+
+
 def get_asset_class_for_instrument(
     instrument_code: str, asset_class_groupings: dict
 ) -> str:
@@ -142,6 +146,7 @@ def get_asset_class_for_instrument(
     ][0]
 
     return asset_class
+
 
 def get_normalised_price_for_asset_class(
     asset_class: str, normalised_price_dict: dict, asset_class_groupings: dict
