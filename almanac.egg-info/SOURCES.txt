@@ -5,16 +5,15 @@ almanac.egg-info/SOURCES.txt
 almanac.egg-info/dependency_links.txt
 almanac.egg-info/top_level.txt
 almanac/analysis/__init__.py
+almanac/analysis/asset_class.py
 almanac/analysis/buffering.py
 almanac/analysis/calculate_returns.py
 almanac/analysis/calculate_stats.py
 almanac/analysis/carry.py
 almanac/analysis/cost_calculation.py
 almanac/analysis/forecasts.py
-almanac/analysis/forecasts_13.py
 almanac/analysis/handcrafting.py
 almanac/analysis/positions.py
-almanac/analysis/positions_13.py
 almanac/analysis/std_for_risk.py
 almanac/analysis/turnover.py
 almanac/config/__init__.py
@@ -32,7 +31,11 @@ almanac/strategy/strategy1.py
 almanac/strategy/strategy10.py
 almanac/strategy/strategy11.py
 almanac/strategy/strategy12.py
+almanac/strategy/strategy13.py
 almanac/strategy/strategy14.py
+almanac/strategy/strategy15.py
+almanac/strategy/strategy16.py
+almanac/strategy/strategy17.py
 almanac/strategy/strategy2.py
 almanac/strategy/strategy3.py
 almanac/strategy/strategy4.py
@@ -46,4 +49,3 @@ almanac/utils/__init__.py
 almanac/utils/fx_series.py
 almanac/utils/standardDeviation.py
 almanac/utils/utils.py
-almanac/utils/utils_13.py
