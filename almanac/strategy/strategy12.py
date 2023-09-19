@@ -60,11 +60,3 @@ class Strategy12(StrategyBase):
             average_position_contracts_dict=self.average_position_contracts_dict,
             fast_spans=self.fast_spans,)
         return self.position_contracts_dict
-
-    def run_strategy(self):
-        self.adjusted_prices, self.current_prices, self.carry_prices = self.get_data()
-        self.fx_series_dict = self.create_fx_series(self.adjusted_prices)
-        self.std_dev_dict = self.calculate_std_dev(
-            self.adjusted_prices, self.current_prices)
-        self.position_contracts_dict = self.calculate_positions()
-        self.calculate_quantstats()
