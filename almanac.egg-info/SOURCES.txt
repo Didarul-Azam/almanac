@@ -17,6 +17,7 @@ almanac/analysis/std_for_risk.py
 almanac/analysis/turnover.py
 almanac/config/__init__.py
 almanac/config/configs.py
+almanac/config/fdm_lst.py
 almanac/config/fx_dict.py
 almanac/config/instruments.py
 almanac/data/__init__.py
@@ -26,6 +27,7 @@ almanac/strategy/__init__.py
 almanac/strategy/baseStrategy.py
 almanac/strategy/strategy1.py
 almanac/strategy/strategy10.py
+almanac/strategy/strategy11.py
 almanac/strategy/strategy2.py
 almanac/strategy/strategy3.py
 almanac/strategy/strategy4.py
