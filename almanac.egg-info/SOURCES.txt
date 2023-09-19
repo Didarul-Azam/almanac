@@ -11,8 +11,10 @@ almanac/analysis/calculate_stats.py
 almanac/analysis/carry.py
 almanac/analysis/cost_calculation.py
 almanac/analysis/forecasts.py
+almanac/analysis/forecasts_13.py
 almanac/analysis/handcrafting.py
 almanac/analysis/positions.py
+almanac/analysis/positions_13.py
 almanac/analysis/std_for_risk.py
 almanac/analysis/turnover.py
 almanac/config/__init__.py
@@ -22,6 +24,7 @@ almanac/config/fx_dict.py
 almanac/config/instruments.py
 almanac/data/__init__.py
 almanac/data/data.py
+almanac/data/normalised_price.py
 almanac/deployment/__init__.py
 almanac/strategy/__init__.py
 almanac/strategy/baseStrategy.py
@@ -29,6 +32,7 @@ almanac/strategy/strategy1.py
 almanac/strategy/strategy10.py
 almanac/strategy/strategy11.py
 almanac/strategy/strategy12.py
+almanac/strategy/strategy14.py
 almanac/strategy/strategy2.py
 almanac/strategy/strategy3.py
 almanac/strategy/strategy4.py
@@ -42,3 +46,4 @@ almanac/utils/__init__.py
 almanac/utils/fx_series.py
 almanac/utils/standardDeviation.py
 almanac/utils/utils.py
+almanac/utils/utils_13.py
