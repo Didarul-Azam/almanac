@@ -2,7 +2,6 @@ from almanac.config.instruments import *
 from almanac.utils.utils import *
 from almanac.data.data import get_data_dict
 from almanac.analysis.positions import calculate_position_series_given_variable_risk_for_dict
-from almanac.analysis.calculate_returns import aggregate_returns, calculate_perc_returns_for_dict_with_costs
 from almanac.analysis.positions import calculate_position_dict_with_symmetric_trend_filter_applied
 from almanac.strategy.baseStrategy import StrategyBase
 

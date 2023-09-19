@@ -4,7 +4,6 @@ from almanac.analysis.calculate_stats import Stats
 import quantstats as qs
 from typing import Union
 import pandas as pd
-import numpy as np
 
 
 class Strategy1:
