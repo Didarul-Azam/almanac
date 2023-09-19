@@ -5,6 +5,7 @@ from almanac.analysis.std_for_risk import calculate_variable_standard_deviation_
 from almanac.analysis.positions import calculate_position_series_given_variable_risk_for_dict, calculate_position_dict_with_trend_filter_applied
 from almanac.analysis.calculate_returns import calculate_returns, calculate_perc_returns_for_dict_with_costs, aggregate_returns
 from almanac.analysis.buffering import apply_buffering_to_position_dict
+from almanac.analysis.turnover import turnover
 from typing import Union
 import pandas as pd
 import numpy as np
@@ -70,7 +71,15 @@ class StrategyBase:
                                                                                                    aggregate=True)
             return self.pre_cost_portfolio_returns, self.post_cost_portfoilio_returns
 
+    def calculate_turnover(self):
+        if not self.instrument_weights:
+            self.instrument_weights = 1
+        return turnover(position=self.position_contracts_dict,
+                        weightage_dict=self.instrument_weights)
+
     def calculate_quantstats(self):
+        portfolio_turnover = self.calculate_turnover()
+        print(f"Portfolio Turnover: {portfolio_turnover}")
         self.pre_cost_portfolio_returns, self.post_cost_portfoilio_returns = self.cost_calculations()
         qs.reports.full(precost_returns=self.pre_cost_portfolio_returns,
                         postcost_returns=self.post_cost_portfoilio_returns, benchmark='^GSPC')
