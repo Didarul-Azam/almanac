@@ -80,8 +80,8 @@ def minimum_capital_for_sub_strategy(
         * instrument_risk_ann_perc
         / (risk_target * idm * weight)
     )
-    
-    
+
+
 def _total_year_frac_from_contract_series(x):
     years = _year_from_contract_series(x)
     month_frac = _month_as_year_frac_from_contract_series(x)
@@ -99,3 +99,59 @@ def _month_as_year_frac_from_contract_series(x):
 
 def _month_from_contract_series(x):
     return x.mod(10000) / 100.0
+
+
+def calculate_synthetic_spot_dict(
+    adjusted_prices_dict: dict, carry_prices_dict: dict
+) -> dict:
+
+    list_of_instruments = list(adjusted_prices_dict.keys())
+    synthetic_spot_dict = dict(
+        [
+            (
+                instrument_code,
+                calculate_synthetic_spot(
+                    adjusted_prices_dict[instrument_code],
+                    carry_price=carry_prices_dict[instrument_code],
+                ),
+            )
+            for instrument_code in list_of_instruments
+        ]
+    )
+
+    return synthetic_spot_dict
+
+
+def calculate_synthetic_spot(
+    adjusted_price: pd.Series, carry_price: pd.Series
+) -> pd.Series:
+    from almanac.analysis.carry import calculate_annualised_carry
+    ann_carry = calculate_annualised_carry(carry_price)
+    diff_index_in_years_as_pd = pd_series_of_diff_index_in_years(ann_carry)
+
+    carry_per_period = diff_index_in_years_as_pd * ann_carry
+    cum_carry = carry_per_period.cumsum()
+    syn_spot = adjusted_price - cum_carry
+
+    return syn_spot
+
+
+def pd_series_of_diff_index_in_years(x: pd.Series):
+    diff_index_in_years = get_annual_intervals_from_series(x)
+
+    return pd.Series([0] + diff_index_in_years, x.index)
+
+
+def get_annual_intervals_from_series(x: pd.Series):
+    from almanac.config.configs import SECONDS_IN_YEAR
+    diff_index = x[1:].index - x[:-1].index
+    diff_index_as_list = list(diff_index)
+    diff_index_in_seconds = [
+        index_item.total_seconds() for index_item in diff_index_as_list
+    ]
+    diff_index_in_years = [
+        index_item_in_seconds / SECONDS_IN_YEAR
+        for index_item_in_seconds in diff_index_in_seconds
+    ]
+
+    return diff_index_in_years
