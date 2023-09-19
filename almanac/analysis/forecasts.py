@@ -1,6 +1,8 @@
 import pandas as pd
+from copy import copy
 from almanac.utils.standardDeviation import standardDeviation
 from almanac.config.fdm_lst import get_fdm
+
 
 def ewmac(adjusted_price: pd.Series, fast_span=16, slow_span=64) -> pd.Series:
 
@@ -88,7 +90,6 @@ def calculate_combined_ewmac_forecast(
     return capped_forecast
 
 
-
 def calculate_combined_carry_forecast(
     stdev_ann_perc: standardDeviation,
     carry_price: pd.DataFrame,
@@ -104,12 +105,12 @@ def calculate_combined_carry_forecast(
         for span in carry_spans
     ]
 
-    ### NOTE: This assumes we are equally weighted across spans
-    ### eg all forecast weights the same, equally weighted
+    # NOTE: This assumes we are equally weighted across spans
+    # eg all forecast weights the same, equally weighted
     all_forecasts_as_df = pd.concat(all_forecasts_as_list, axis=1)
     average_forecast = all_forecasts_as_df.mean(axis=1)
 
-    ## apply an FDM
+    # apply an FDM
     rule_count = len(carry_spans)
     FDM_DICT = {1: 1.0, 2: 1.02, 3: 1.03, 4: 1.04}
     fdm = FDM_DICT[rule_count]
@@ -132,6 +133,7 @@ def calculate_forecast_for_carry(
 
     return capped_carry
 
+
 def calculate_combined_forecast(
     stdev_ann_perc: standardDeviation,
     carry_price: pd.DataFrame,
@@ -149,18 +151,19 @@ def calculate_combined_forecast(
         for rule in rule_spec
     ]
 
-    ### NOTE: This assumes we are equally weighted across spans
-    ### eg all forecast weights the same, equally weighted
+    # NOTE: This assumes we are equally weighted across spans
+    # eg all forecast weights the same, equally weighted
     all_forecasts_as_df = pd.concat(all_forecasts_as_list, axis=1)
     average_forecast = all_forecasts_as_df.mean(axis=1)
 
-    ## apply an FDM
+    # apply an FDM
     rule_count = len(rule_spec)
     fdm = get_fdm(rule_count)
     scaled_forecast = average_forecast * fdm
     capped_forecast = scaled_forecast.clip(-20, 20)
 
     return capped_forecast
+
 
 def calculate_forecast(
     stdev_ann_perc: standardDeviation,
@@ -186,3 +189,79 @@ def calculate_forecast(
         raise Exception("Rule %s not recognised!" % rule["function"])
 
     return forecast
+
+
+def calculate_combined_ewmac_forecast_and_adjustment(
+    adjusted_price: pd.Series, stdev_ann_perc: standardDeviation, fast_spans: list
+) -> pd.Series:
+
+    all_forecasts_as_list = [
+        calculate_forecast_for_ewmac_and_adjustment(
+            adjusted_price=adjusted_price,
+            stdev_ann_perc=stdev_ann_perc,
+            fast_span=fast_span,
+        )
+        for fast_span in fast_spans
+    ]
+
+    # NOTE: This assumes we are equally weighted across spans
+    # eg all forecast weights the same, equally weighted
+    all_forecasts_as_df = pd.concat(all_forecasts_as_list, axis=1)
+    average_forecast = all_forecasts_as_df.mean(axis=1)
+
+    # apply an FDM
+    rule_count = len(fast_spans)
+    FDM_DICT = {1: 1.0, 2: 1.03, 3: 1.08, 4: 1.13, 5: 1.19, 6: 1.26}
+    fdm = FDM_DICT[rule_count]
+
+    scaled_forecast = average_forecast * fdm
+    capped_forecast = scaled_forecast.clip(-20, 20)
+
+    return capped_forecast
+
+
+def calculate_forecast_for_ewmac_and_adjustment(
+    adjusted_price: pd.Series, stdev_ann_perc: standardDeviation, fast_span: int = 64
+):
+
+    scalar_dict = {64: 1.91, 32: 2.79, 16: 4.1, 8: 5.95, 4: 8.53, 2: 12.1}
+    ewmac_values = ewmac(
+        adjusted_price, fast_span=fast_span, slow_span=fast_span * 4)
+    daily_price_vol = stdev_ann_perc.daily_risk_price_terms()
+    risk_adjusted_ewmac = ewmac_values / daily_price_vol
+    forecast_scalar = scalar_dict[fast_span]
+    scaled_ewmac = risk_adjusted_ewmac * forecast_scalar
+
+    if fast_span == 2:
+        capped_ewmac = double_v(scaled_ewmac)
+    elif fast_span == 4 or fast_span == 64:
+        capped_ewmac = scale_and_cap(scaled_ewmac)
+    else:
+        capped_ewmac = scaled_ewmac.clip(-20, 20)
+
+    return capped_ewmac
+
+
+def double_v(scaled_forecast: pd.Series) -> pd.Series:
+    new_forecast = copy(scaled_forecast)
+    new_forecast[scaled_forecast > 20] = 0
+    new_forecast[scaled_forecast < -20] = 0
+    new_forecast[(scaled_forecast >= -20) & (scaled_forecast < -10)] = (
+        new_forecast[(scaled_forecast >= -20) & (scaled_forecast < -10)] * -2
+    ) - 40
+    new_forecast[(scaled_forecast >= -10) & (scaled_forecast < 10)] = (
+        new_forecast[(scaled_forecast >= -10) & (scaled_forecast < +10)] * 2
+    )
+
+    new_forecast[(scaled_forecast >= 10) & (scaled_forecast < 20)] = (
+        new_forecast[(scaled_forecast >= 10) & (scaled_forecast < +20)] * -2
+    ) + 40
+
+    return new_forecast
+
+
+def scale_and_cap(scaled_forecast: pd.Series) -> pd.Series:
+    rescaled_forecast = 1.25 * scaled_forecast
+    capped_forecast = rescaled_forecast.clip(-1.25 * 15, 1.25 * 15)
+
+    return capped_forecast
