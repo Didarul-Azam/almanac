@@ -2,6 +2,8 @@ import pandas as pd
 from almanac.utils.standardDeviation import standardDeviation
 from almanac.utils.utils import _total_year_frac_from_contract_series, unique_years_in_index
 from almanac.config.configs import *
+from almanac.analysis.asset_class import get_asset_class_for_instrument,asset_class_groupings
+from almanac.analysis.forecasts import calculate_forecast_for_carry
 
 
 def calculate_smoothed_carry(
@@ -141,3 +143,69 @@ def reindex_seasonal_component_to_index(seasonal_component, index):
     aligned_seasonal = sequenced_data.reindex(index, method="ffill")
 
     return aligned_seasonal
+
+def relative_carry(
+    instrument_code: str,
+    adjusted_prices_dict: dict,  ## not used
+    std_dev_dict: dict,
+    carry_prices_dict: dict,
+    span: int = 90,
+) -> pd.Series:
+
+    carry_forecast = calculate_forecast_for_carry(
+        stdev_ann_perc=std_dev_dict[instrument_code],
+        carry_price=carry_prices_dict[instrument_code],
+        span=span,
+    )
+
+    median_forecast = median_carry_for_instrument_in_asset_class(
+        instrument_code=instrument_code,
+        std_dev_dict=std_dev_dict,
+        carry_prices_dict=carry_prices_dict,
+    )
+    median_forecast_indexed = median_forecast.reindex(carry_forecast.index).ffill()
+
+    relative_carry_forecast = carry_forecast - median_forecast_indexed
+    relative_carry_forecast[relative_carry_forecast == 0] = np.nan
+
+    return relative_carry_forecast
+
+def median_carry_for_instrument_in_asset_class(
+    instrument_code: str, std_dev_dict: dict, carry_prices_dict: dict, span: int = 90
+) -> pd.Series:
+
+    asset_class = get_asset_class_for_instrument(
+        instrument_code, asset_class_groupings=asset_class_groupings
+    )
+
+    median_carry = median_carry_for_asset_class(
+        asset_class,
+        std_dev_dict=std_dev_dict,
+        carry_prices_dict=carry_prices_dict,
+        asset_class_groupings=asset_class_groupings,
+        span=span,
+    )
+
+    return median_carry
+
+def median_carry_for_asset_class(
+    asset_class: str,
+    std_dev_dict: dict,
+    carry_prices_dict: dict,
+    asset_class_groupings: dict,
+    span: int = 90,
+) -> pd.Series:
+
+    list_of_instruments = asset_class_groupings[asset_class]
+    all_carry_forecasts = [
+        calculate_forecast_for_carry(
+            stdev_ann_perc=std_dev_dict[instrument_code],
+            carry_price=carry_prices_dict[instrument_code],
+            span=span,
+        )
+        for instrument_code in list_of_instruments
+    ]
+    all_carry_forecasts_pd = pd.concat(all_carry_forecasts, axis=1)
+    median_carry = all_carry_forecasts_pd.median(axis=1)
+
+    return median_carry
