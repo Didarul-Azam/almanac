@@ -1,9 +1,10 @@
-from almanac.config.configs import (DEFAULT_DATE_FORMAT, Frequency, NATURAL, YEAR, MONTH, WEEK, BUSINESS_DAYS_IN_YEAR, WEEKS_PER_YEAR, MONTHS_PER_YEAR, SECONDS_PER_YEAR, PERIODS_PER_YEAR
-                                    )
+from almanac.config.configs import *
 from scipy.stats import norm
 import pandas as pd
 import numpy as np
 from enum import Enum
+from copy import copy
+import datetime
 
 
 def periods_per_year(at_frequency: Frequency):
@@ -155,3 +156,57 @@ def get_annual_intervals_from_series(x: pd.Series):
     ]
 
     return diff_index_in_years
+
+
+def unique_years_in_index(index):
+    all_years = years_in_index(index)
+    unique_years = list(set(all_years))
+    unique_years.sort()
+    return unique_years
+
+
+def produce_list_from_x_for_year(x, year, notional_year=NOTIONAL_YEAR):
+    list_of_matching_points = index_matches_year(x.index, year)
+    matched_x = x[list_of_matching_points]
+    matched_x_notional_year = set_year_to_notional_year(
+        matched_x, notional_year=notional_year
+    )
+    return matched_x_notional_year
+
+
+def set_year_to_notional_year(x, notional_year=NOTIONAL_YEAR):
+    y = copy(x)
+    new_index = [
+        change_index_day_to_notional_year(index_item, notional_year)
+        for index_item in list(x.index)
+    ]
+    y.index = new_index
+    return y
+
+
+def change_index_day_to_notional_year(index_item, notional_year=NOTIONAL_YEAR):
+    return datetime.date(notional_year, index_item.month, index_item.day)
+
+
+def index_matches_year(index, year):
+
+    return [_index_matches_no_leap_days(index_value, year) for index_value in index]
+
+
+def _index_matches_no_leap_days(index_value, year_to_match):
+    if not (index_value.year == year_to_match):
+        return False
+
+    if not (index_value.month == 2):
+        return True
+
+    if index_value.day == 29:
+        return False
+
+    return True
+
+
+def years_in_index(index):
+    index_list = list(index)
+    all_years = [item.year for item in index_list]
+    return all_years
