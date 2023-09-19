@@ -382,3 +382,60 @@ def apply_vol_regime_to_forecast(
     from almanac.utils.utils import get_attenuation
     smoothed_vol_attenuation = get_attenuation(stdev_ann_perc)
     return scaled_forecast * smoothed_vol_attenuation
+
+
+def calculate_combined_forecast_from_functions(
+    instrument_code: str,
+    adjusted_prices_dict: dict,
+    std_dev_dict: dict,
+    carry_prices_dict: dict,
+    list_of_rules: list,
+) -> pd.Series:
+
+    all_forecasts_as_list = [
+        calculate_forecast_from_function(
+            instrument_code=instrument_code,
+            adjusted_prices_dict=adjusted_prices_dict,
+            std_dev_dict=std_dev_dict,
+            carry_prices_dict=carry_prices_dict,
+            rule=rule,
+        )
+        for rule in list_of_rules
+    ]
+
+    ### NOTE: This assumes we are equally weighted across spans
+    ### eg all forecast weights the same, equally weighted
+    all_forecasts_as_df = pd.concat(all_forecasts_as_list, axis=1)
+    average_forecast = all_forecasts_as_df.mean(axis=1)
+
+    ## apply an FDM
+    rule_count = len(list_of_rules)
+    fdm = get_fdm(rule_count)
+    scaled_forecast = average_forecast * fdm
+    capped_forecast = scaled_forecast.clip(-20, 20)
+
+    return capped_forecast
+
+
+def calculate_forecast_from_function(
+    instrument_code: str,
+    adjusted_prices_dict: dict,
+    std_dev_dict: dict,
+    carry_prices_dict: dict,
+    rule: dict,
+) -> pd.Series:
+
+    rule_copy = copy(rule)
+    rule_function = rule_copy.pop("function")
+    scalar = rule_copy.pop("scalar")
+    rule_args = rule_copy
+
+    forecast_value = rule_function(
+        instrument_code=instrument_code,
+        adjusted_prices_dict=adjusted_prices_dict,
+        std_dev_dict=std_dev_dict,
+        carry_prices_dict=carry_prices_dict,
+        **rule_args
+    )
+
+    return forecast_value * scalar

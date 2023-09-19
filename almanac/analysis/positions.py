@@ -4,7 +4,7 @@ from almanac.config.configs import *
 from almanac.analysis.forecasts import ewmac
 from copy import copy
 from scipy.interpolate import interp1d
-from almanac.analysis.forecasts import ewmac, calculate_combined_forecast
+from almanac.analysis.forecasts import ewmac, calculate_combined_forecast, calculate_combined_forecast_from_functions
 
 
 def calculate_position_series_given_fixed_risk(capital: float,
@@ -398,3 +398,51 @@ def calculate_position_with_forecast_and_vol_scalar_applied(
     )
 
     return forecast * average_position / 10
+
+def calculate_position_dict_with_forecast_from_function_applied(
+    adjusted_prices_dict: dict,
+    average_position_contracts_dict: dict,
+    std_dev_dict: dict,
+    carry_prices_dict: dict,
+    list_of_rules: list,
+) -> dict:
+
+    list_of_instruments = list(adjusted_prices_dict.keys())
+    position_dict_with_carry = dict(
+        [
+            (
+                instrument_code,
+                calculate_position_with_forecast_applied_from_function(
+                    instrument_code,
+                    average_position_contracts_dict=average_position_contracts_dict,
+                    adjusted_prices_dict=adjusted_prices_dict,
+                    std_dev_dict=std_dev_dict,
+                    carry_prices_dict=carry_prices_dict,
+                    list_of_rules=list_of_rules,
+                ),
+            )
+            for instrument_code in list_of_instruments
+        ]
+    )
+
+    return position_dict_with_carry
+
+
+def calculate_position_with_forecast_applied_from_function(
+    instrument_code: str,
+    adjusted_prices_dict: dict,
+    average_position_contracts_dict: dict,
+    std_dev_dict: dict,
+    carry_prices_dict: dict,
+    list_of_rules: list,
+) -> pd.Series:
+
+    forecast = calculate_combined_forecast_from_functions(
+        instrument_code=instrument_code,
+        adjusted_prices_dict=adjusted_prices_dict,
+        std_dev_dict=std_dev_dict,
+        carry_prices_dict=carry_prices_dict,
+        list_of_rules=list_of_rules,
+    )
+
+    return forecast * average_position_contracts_dict[instrument_code] / 10
