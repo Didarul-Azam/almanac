@@ -1,7 +1,6 @@
 from typing import Union
 from almanac.data.data import get_data_dict
 from almanac.analysis.positions import calculate_position_series_given_variable_risk_for_dict
-from almanac.analysis.calculate_returns import aggregate_returns, calculate_perc_returns_for_dict
 from almanac.strategy.baseStrategy import StrategyBase
 
 
@@ -51,10 +50,3 @@ class Strategy4(StrategyBase):
         )
         return position_contracts_dict
 
-    def run_strategy(self):
-        self.adjusted_prices, self.current_prices = self.get_data()
-        self.fx_series_dict = self.create_fx_series(self.adjusted_prices)
-        self.std_dev_dict = self.calculate_std_dev(
-            self.adjusted_prices, self.current_prices)
-        self.position_contracts_dict = self.calculate_positions()
-        self.calculate_quantstats()

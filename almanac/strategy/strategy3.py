@@ -1,8 +1,6 @@
 from almanac.data.data import pd_readcsv
-from almanac.analysis.positions import calculate_position_series_given_fixed_risk
-from almanac.analysis.std_for_risk import calculate_standard_deviation_for_risk_targeting
 from almanac.analysis.calculate_stats import Stats
-from almanac.analysis.calculate_returns import calculate_perc_returns, calculate_percentage_returns, calculate_daily_returns
+from almanac.analysis.calculate_returns import calculate_perc_returns
 from almanac.analysis.positions import calculate_position_series_given_variable_risk
 from almanac.utils.standardDeviation import standardDeviation
 from almanac.strategy.baseStrategy import StrategyBase

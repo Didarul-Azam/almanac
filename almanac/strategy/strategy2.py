@@ -6,7 +6,6 @@ from almanac.analysis.calculate_returns import calculate_perc_returns
 
 from typing import Union
 import pandas as pd
-import numpy as np
 import quantstats as qs
 
 

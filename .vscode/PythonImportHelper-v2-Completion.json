@@ -322,6 +322,38 @@
         "documentation": {}
     },
     {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "calculate_costs_deflated_for_vol",
         "importPath": "almanac.analysis.cost_calculation",
         "description": "almanac.analysis.cost_calculation",
@@ -458,6 +490,22 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "almanac.utils.utils",
+        "description": "almanac.utils.utils",
+        "isExtraImport": true,
+        "detail": "almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "almanac.utils.utils",
+        "description": "almanac.utils.utils",
+        "isExtraImport": true,
+        "detail": "almanac.utils.utils",
+        "documentation": {}
+    },
+    {
         "label": "periods_per_year",
         "importPath": "almanac.utils.utils",
         "description": "almanac.utils.utils",
@@ -475,6 +523,22 @@
     },
     {
         "label": "_total_year_frac_from_contract_series",
+        "importPath": "almanac.utils.utils",
+        "description": "almanac.utils.utils",
+        "isExtraImport": true,
+        "detail": "almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "almanac.utils.utils",
+        "description": "almanac.utils.utils",
+        "isExtraImport": true,
+        "detail": "almanac.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "*",
         "importPath": "almanac.utils.utils",
         "description": "almanac.utils.utils",
         "isExtraImport": true,
@@ -874,6 +938,22 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "almanac.config.instruments",
+        "description": "almanac.config.instruments",
+        "isExtraImport": true,
+        "detail": "almanac.config.instruments",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "almanac.config.instruments",
+        "description": "almanac.config.instruments",
+        "isExtraImport": true,
+        "detail": "almanac.config.instruments",
+        "documentation": {}
+    },
+    {
         "label": "cost_per_contract_dict",
         "importPath": "almanac.config.instruments",
         "description": "almanac.config.instruments",
@@ -986,6 +1066,22 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "almanac.config.instruments",
+        "description": "almanac.config.instruments",
+        "isExtraImport": true,
+        "detail": "almanac.config.instruments",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "almanac.config.instruments",
+        "description": "almanac.config.instruments",
+        "isExtraImport": true,
+        "detail": "almanac.config.instruments",
+        "documentation": {}
+    },
+    {
         "label": "cost_per_contract_dict",
         "importPath": "almanac.config.instruments",
         "description": "almanac.config.instruments",
@@ -1010,6 +1106,62 @@
         "documentation": {}
     },
     {
+        "label": "copy",
+        "importPath": "copy",
+        "description": "copy",
+        "isExtraImport": true,
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "copy",
+        "importPath": "copy",
+        "description": "copy",
+        "isExtraImport": true,
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "copy",
+        "importPath": "copy",
+        "description": "copy",
+        "isExtraImport": true,
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "copy",
+        "importPath": "copy",
+        "description": "copy",
+        "isExtraImport": true,
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "copy",
+        "importPath": "copy",
+        "description": "copy",
+        "isExtraImport": true,
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "copy",
+        "importPath": "copy",
+        "description": "copy",
+        "isExtraImport": true,
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "copy",
+        "importPath": "copy",
+        "description": "copy",
+        "isExtraImport": true,
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
         "label": "get_fdm",
         "importPath": "almanac.config.fdm_lst",
         "description": "almanac.config.fdm_lst",
@@ -1059,6 +1211,22 @@
     },
     {
         "label": "pd_readcsv",
+        "importPath": "almanac.data.data",
+        "description": "almanac.data.data",
+        "isExtraImport": true,
+        "detail": "almanac.data.data",
+        "documentation": {}
+    },
+    {
+        "label": "get_data_dict_with_carry",
+        "importPath": "almanac.data.data",
+        "description": "almanac.data.data",
+        "isExtraImport": true,
+        "detail": "almanac.data.data",
+        "documentation": {}
+    },
+    {
+        "label": "get_data_dict_with_carry",
         "importPath": "almanac.data.data",
         "description": "almanac.data.data",
         "isExtraImport": true,
@@ -1178,6 +1346,22 @@
         "documentation": {}
     },
     {
+        "label": "get_data_dict_with_carry",
+        "importPath": "almanac.data.data",
+        "description": "almanac.data.data",
+        "isExtraImport": true,
+        "detail": "almanac.data.data",
+        "documentation": {}
+    },
+    {
+        "label": "get_data_dict_with_carry",
+        "importPath": "almanac.data.data",
+        "description": "almanac.data.data",
+        "isExtraImport": true,
+        "detail": "almanac.data.data",
+        "documentation": {}
+    },
+    {
         "label": "pd_readcsv",
         "importPath": "almanac.data.data",
         "description": "almanac.data.data",
@@ -1274,78 +1458,6 @@
         "documentation": {}
     },
     {
-        "label": "calculate_forecast_for_ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_scaled_forecast_for_ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_risk_adjusted_forecast_for_ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_forecast_for_ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_scaled_forecast_for_ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_risk_adjusted_forecast_for_ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_forecast_for_ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_scaled_forecast_for_ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_risk_adjusted_forecast_for_ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
         "label": "ewmac",
         "importPath": "almanac.analysis.forecasts",
         "description": "almanac.analysis.forecasts",
@@ -1375,118 +1487,6 @@
         "description": "almanac.analysis.forecasts",
         "isExtraImport": true,
         "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_forecast_for_ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_scaled_forecast_for_ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_risk_adjusted_forecast_for_ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_forecast_for_ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_scaled_forecast_for_ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_risk_adjusted_forecast_for_ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_forecast_for_ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_scaled_forecast_for_ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_risk_adjusted_forecast_for_ewmac",
-        "importPath": "almanac.analysis.forecasts",
-        "description": "almanac.analysis.forecasts",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.forecasts",
-        "documentation": {}
-    },
-    {
-        "label": "copy",
-        "importPath": "copy",
-        "description": "copy",
-        "isExtraImport": true,
-        "detail": "copy",
-        "documentation": {}
-    },
-    {
-        "label": "copy",
-        "importPath": "copy",
-        "description": "copy",
-        "isExtraImport": true,
-        "detail": "copy",
-        "documentation": {}
-    },
-    {
-        "label": "copy",
-        "importPath": "copy",
-        "description": "copy",
-        "isExtraImport": true,
-        "detail": "copy",
-        "documentation": {}
-    },
-    {
-        "label": "copy",
-        "importPath": "copy",
-        "description": "copy",
-        "isExtraImport": true,
-        "detail": "copy",
-        "documentation": {}
-    },
-    {
-        "label": "copy",
-        "importPath": "copy",
-        "description": "copy",
-        "isExtraImport": true,
-        "detail": "copy",
         "documentation": {}
     },
     {
@@ -1594,14 +1594,6 @@
         "documentation": {}
     },
     {
-        "label": "calculate_standard_deviation_for_risk_targeting",
-        "importPath": "almanac.analysis.std_for_risk",
-        "description": "almanac.analysis.std_for_risk",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.std_for_risk",
-        "documentation": {}
-    },
-    {
         "label": "calculate_variable_standard_deviation_for_risk_targeting",
         "importPath": "almanac.analysis.std_for_risk",
         "description": "almanac.analysis.std_for_risk",
@@ -1626,14 +1618,6 @@
         "documentation": {}
     },
     {
-        "label": "calculate_standard_deviation_for_risk_targeting",
-        "importPath": "almanac.analysis.std_for_risk",
-        "description": "almanac.analysis.std_for_risk",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.std_for_risk",
-        "documentation": {}
-    },
-    {
         "label": "calculate_variable_standard_deviation_for_risk_targeting",
         "importPath": "almanac.analysis.std_for_risk",
         "description": "almanac.analysis.std_for_risk",
@@ -1674,7 +1658,31 @@
         "documentation": {}
     },
     {
-        "label": "calculate_position_series_given_fixed_risk",
+        "label": "calculate_position_series_given_variable_risk_for_dict",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_dict_with_forecast_applied",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_series_given_variable_risk_for_dict",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_dict_with_multiple_trend_forecast_applied_and_adjustment",
         "importPath": "almanac.analysis.positions",
         "description": "almanac.analysis.positions",
         "isExtraImport": true,
@@ -1754,14 +1762,6 @@
         "documentation": {}
     },
     {
-        "label": "calculate_position_with_trend_forecast_applied",
-        "importPath": "almanac.analysis.positions",
-        "description": "almanac.analysis.positions",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.positions",
-        "documentation": {}
-    },
-    {
         "label": "calculate_position_series_given_variable_risk_for_dict",
         "importPath": "almanac.analysis.positions",
         "description": "almanac.analysis.positions",
@@ -1778,23 +1778,7 @@
         "documentation": {}
     },
     {
-        "label": "calculate_position_with_trend_forecast_applied",
-        "importPath": "almanac.analysis.positions",
-        "description": "almanac.analysis.positions",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.positions",
-        "documentation": {}
-    },
-    {
         "label": "calculate_position_series_given_variable_risk_for_dict",
-        "importPath": "almanac.analysis.positions",
-        "description": "almanac.analysis.positions",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.positions",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_position_dict_with_trend_forecast_applied",
         "importPath": "almanac.analysis.positions",
         "description": "almanac.analysis.positions",
         "isExtraImport": true,
@@ -1842,7 +1826,31 @@
         "documentation": {}
     },
     {
-        "label": "calculate_position_series_given_fixed_risk",
+        "label": "calculate_position_series_given_variable_risk_for_dict",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_dict_with_forecast_applied",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_series_given_variable_risk_for_dict",
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "isExtraImport": true,
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_dict_with_multiple_trend_forecast_applied_and_adjustment",
         "importPath": "almanac.analysis.positions",
         "description": "almanac.analysis.positions",
         "isExtraImport": true,
@@ -1922,14 +1930,6 @@
         "documentation": {}
     },
     {
-        "label": "calculate_position_with_trend_forecast_applied",
-        "importPath": "almanac.analysis.positions",
-        "description": "almanac.analysis.positions",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.positions",
-        "documentation": {}
-    },
-    {
         "label": "calculate_position_series_given_variable_risk_for_dict",
         "importPath": "almanac.analysis.positions",
         "description": "almanac.analysis.positions",
@@ -1946,23 +1946,7 @@
         "documentation": {}
     },
     {
-        "label": "calculate_position_with_trend_forecast_applied",
-        "importPath": "almanac.analysis.positions",
-        "description": "almanac.analysis.positions",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.positions",
-        "documentation": {}
-    },
-    {
         "label": "calculate_position_series_given_variable_risk_for_dict",
-        "importPath": "almanac.analysis.positions",
-        "description": "almanac.analysis.positions",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.positions",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_position_dict_with_trend_forecast_applied",
         "importPath": "almanac.analysis.positions",
         "description": "almanac.analysis.positions",
         "isExtraImport": true,
@@ -2010,14 +1994,6 @@
         "documentation": {}
     },
     {
-        "label": "calculate_perc_returns_for_dict_with_costs",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
         "label": "calculate_perc_returns",
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
@@ -2027,118 +2003,6 @@
     },
     {
         "label": "calculate_perc_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_percentage_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_daily_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "aggregate_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_for_dict",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "aggregate_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_for_dict_with_costs",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "aggregate_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_for_dict_with_costs",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "aggregate_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_for_dict_with_costs",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "aggregate_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_for_dict_with_costs",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "aggregate_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_for_dict_with_costs",
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
         "isExtraImport": true,
@@ -2178,14 +2042,6 @@
         "documentation": {}
     },
     {
-        "label": "calculate_perc_returns_for_dict_with_costs",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
         "label": "calculate_perc_returns",
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
@@ -2195,118 +2051,6 @@
     },
     {
         "label": "calculate_perc_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_percentage_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_daily_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "aggregate_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_for_dict",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "aggregate_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_for_dict_with_costs",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "aggregate_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_for_dict_with_costs",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "aggregate_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_for_dict_with_costs",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "aggregate_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_for_dict_with_costs",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "aggregate_returns",
-        "importPath": "almanac.analysis.calculate_returns",
-        "description": "almanac.analysis.calculate_returns",
-        "isExtraImport": true,
-        "detail": "almanac.analysis.calculate_returns",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_perc_returns_for_dict_with_costs",
         "importPath": "almanac.analysis.calculate_returns",
         "description": "almanac.analysis.calculate_returns",
         "isExtraImport": true,
@@ -2384,6 +2128,38 @@
         "description": "almanac.analysis.calculate_stats",
         "isExtraImport": true,
         "detail": "almanac.analysis.calculate_stats",
+        "documentation": {}
+    },
+    {
+        "label": "StrategyBase",
+        "importPath": "almanac.strategy.baseStrategy",
+        "description": "almanac.strategy.baseStrategy",
+        "isExtraImport": true,
+        "detail": "almanac.strategy.baseStrategy",
+        "documentation": {}
+    },
+    {
+        "label": "StrategyBase",
+        "importPath": "almanac.strategy.baseStrategy",
+        "description": "almanac.strategy.baseStrategy",
+        "isExtraImport": true,
+        "detail": "almanac.strategy.baseStrategy",
+        "documentation": {}
+    },
+    {
+        "label": "StrategyBase",
+        "importPath": "almanac.strategy.baseStrategy",
+        "description": "almanac.strategy.baseStrategy",
+        "isExtraImport": true,
+        "detail": "almanac.strategy.baseStrategy",
+        "documentation": {}
+    },
+    {
+        "label": "StrategyBase",
+        "importPath": "almanac.strategy.baseStrategy",
+        "description": "almanac.strategy.baseStrategy",
+        "isExtraImport": true,
+        "detail": "almanac.strategy.baseStrategy",
         "documentation": {}
     },
     {
@@ -2842,6 +2618,42 @@
         "documentation": {}
     },
     {
+        "label": "calculate_combined_ewmac_forecast_and_adjustment",
+        "kind": 2,
+        "importPath": "almanac.analysis.forecasts",
+        "description": "almanac.analysis.forecasts",
+        "peekOfCode": "def calculate_combined_ewmac_forecast_and_adjustment(\n    adjusted_price: pd.Series, stdev_ann_perc: standardDeviation, fast_spans: list\n) -> pd.Series:\n    all_forecasts_as_list = [\n        calculate_forecast_for_ewmac_and_adjustment(\n            adjusted_price=adjusted_price,\n            stdev_ann_perc=stdev_ann_perc,\n            fast_span=fast_span,\n        )\n        for fast_span in fast_spans",
+        "detail": "almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_forecast_for_ewmac_and_adjustment",
+        "kind": 2,
+        "importPath": "almanac.analysis.forecasts",
+        "description": "almanac.analysis.forecasts",
+        "peekOfCode": "def calculate_forecast_for_ewmac_and_adjustment(\n    adjusted_price: pd.Series, stdev_ann_perc: standardDeviation, fast_span: int = 64\n):\n    scalar_dict = {64: 1.91, 32: 2.79, 16: 4.1, 8: 5.95, 4: 8.53, 2: 12.1}\n    ewmac_values = ewmac(\n        adjusted_price, fast_span=fast_span, slow_span=fast_span * 4)\n    daily_price_vol = stdev_ann_perc.daily_risk_price_terms()\n    risk_adjusted_ewmac = ewmac_values / daily_price_vol\n    forecast_scalar = scalar_dict[fast_span]\n    scaled_ewmac = risk_adjusted_ewmac * forecast_scalar",
+        "detail": "almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "double_v",
+        "kind": 2,
+        "importPath": "almanac.analysis.forecasts",
+        "description": "almanac.analysis.forecasts",
+        "peekOfCode": "def double_v(scaled_forecast: pd.Series) -> pd.Series:\n    new_forecast = copy(scaled_forecast)\n    new_forecast[scaled_forecast > 20] = 0\n    new_forecast[scaled_forecast < -20] = 0\n    new_forecast[(scaled_forecast >= -20) & (scaled_forecast < -10)] = (\n        new_forecast[(scaled_forecast >= -20) & (scaled_forecast < -10)] * -2\n    ) - 40\n    new_forecast[(scaled_forecast >= -10) & (scaled_forecast < 10)] = (\n        new_forecast[(scaled_forecast >= -10) & (scaled_forecast < +10)] * 2\n    )",
+        "detail": "almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "scale_and_cap",
+        "kind": 2,
+        "importPath": "almanac.analysis.forecasts",
+        "description": "almanac.analysis.forecasts",
+        "peekOfCode": "def scale_and_cap(scaled_forecast: pd.Series) -> pd.Series:\n    rescaled_forecast = 1.25 * scaled_forecast\n    capped_forecast = rescaled_forecast.clip(-1.25 * 15, 1.25 * 15)\n    return capped_forecast",
+        "detail": "almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
         "label": "correlationEstimate",
         "kind": 6,
         "importPath": "almanac.analysis.handcrafting",
@@ -3135,6 +2947,24 @@
         "importPath": "almanac.analysis.positions",
         "description": "almanac.analysis.positions",
         "peekOfCode": "def calculate_position_with_forecast_applied(\n    average_position: pd.Series,\n    stdev_ann_perc: standardDeviation,\n    carry_price: pd.DataFrame,\n    adjusted_price: pd.Series,\n    rule_spec: list,\n) -> pd.Series:\n    forecast = calculate_combined_forecast(\n        adjusted_price=adjusted_price,\n        stdev_ann_perc=stdev_ann_perc,",
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_dict_with_multiple_trend_forecast_applied_and_adjustment",
+        "kind": 2,
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "peekOfCode": "def calculate_position_dict_with_multiple_trend_forecast_applied_and_adjustment(\n    adjusted_prices_dict: dict,\n    average_position_contracts_dict: dict,\n    std_dev_dict: dict,\n    fast_spans: list,\n) -> dict:\n    list_of_instruments = list(adjusted_prices_dict.keys())\n    position_dict_with_trend_filter = dict(\n        [\n            (",
+        "detail": "almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_with_multiple_trend_forecast_applied_and_adjustment",
+        "kind": 2,
+        "importPath": "almanac.analysis.positions",
+        "description": "almanac.analysis.positions",
+        "peekOfCode": "def calculate_position_with_multiple_trend_forecast_applied_and_adjustment(\n    adjusted_price: pd.Series,\n    average_position: pd.Series,\n    stdev_ann_perc: standardDeviation,\n    fast_spans: list,\n) -> pd.Series:\n    from almanac.analysis.forecasts import calculate_combined_ewmac_forecast_and_adjustment\n    forecast = calculate_combined_ewmac_forecast_and_adjustment(\n        adjusted_price=adjusted_price,\n        stdev_ann_perc=stdev_ann_perc,",
         "detail": "almanac.analysis.positions",
         "documentation": {}
     },
@@ -3460,6 +3290,24 @@
         "description": "almanac.strategy.strategy10",
         "peekOfCode": "class Strategy10(StrategyBase):\n    def __init__(\n        self,\n        data_path: str,\n        carry_path: str,\n        fx_path: str,\n        instrument_list: list,\n        instrument_weights: dict,\n        multipliers: dict,\n        idm: Union[int, float],",
         "detail": "almanac.strategy.strategy10",
+        "documentation": {}
+    },
+    {
+        "label": "Strategy11",
+        "kind": 6,
+        "importPath": "almanac.strategy.strategy11",
+        "description": "almanac.strategy.strategy11",
+        "peekOfCode": "class Strategy11(StrategyBase):\n    def __init__(\n        self,\n        data_path: str,\n        carry_path: str,\n        fx_path: str,\n        instrument_list: list,\n        instrument_weights: dict,\n        multipliers: dict,\n        idm: Union[int, float],",
+        "detail": "almanac.strategy.strategy11",
+        "documentation": {}
+    },
+    {
+        "label": "Strategy12",
+        "kind": 6,
+        "importPath": "almanac.strategy.strategy12",
+        "description": "almanac.strategy.strategy12",
+        "peekOfCode": "class Strategy12(StrategyBase):\n    def __init__(\n        self,\n        data_path: str,\n        carry_path: str,\n        fx_path: str,\n        instrument_list: list,\n        instrument_weights: dict,\n        multipliers: dict,\n        idm: Union[int, float],",
+        "detail": "almanac.strategy.strategy12",
         "documentation": {}
     },
     {
@@ -3922,6 +3770,42 @@
         "documentation": {}
     },
     {
+        "label": "calculate_combined_ewmac_forecast_and_adjustment",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.forecasts",
+        "description": "build.lib.almanac.analysis.forecasts",
+        "peekOfCode": "def calculate_combined_ewmac_forecast_and_adjustment(\n    adjusted_price: pd.Series, stdev_ann_perc: standardDeviation, fast_spans: list\n) -> pd.Series:\n    all_forecasts_as_list = [\n        calculate_forecast_for_ewmac_and_adjustment(\n            adjusted_price=adjusted_price,\n            stdev_ann_perc=stdev_ann_perc,\n            fast_span=fast_span,\n        )\n        for fast_span in fast_spans",
+        "detail": "build.lib.almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_forecast_for_ewmac_and_adjustment",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.forecasts",
+        "description": "build.lib.almanac.analysis.forecasts",
+        "peekOfCode": "def calculate_forecast_for_ewmac_and_adjustment(\n    adjusted_price: pd.Series, stdev_ann_perc: standardDeviation, fast_span: int = 64\n):\n    scalar_dict = {64: 1.91, 32: 2.79, 16: 4.1, 8: 5.95, 4: 8.53, 2: 12.1}\n    ewmac_values = ewmac(\n        adjusted_price, fast_span=fast_span, slow_span=fast_span * 4)\n    daily_price_vol = stdev_ann_perc.daily_risk_price_terms()\n    risk_adjusted_ewmac = ewmac_values / daily_price_vol\n    forecast_scalar = scalar_dict[fast_span]\n    scaled_ewmac = risk_adjusted_ewmac * forecast_scalar",
+        "detail": "build.lib.almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "double_v",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.forecasts",
+        "description": "build.lib.almanac.analysis.forecasts",
+        "peekOfCode": "def double_v(scaled_forecast: pd.Series) -> pd.Series:\n    new_forecast = copy(scaled_forecast)\n    new_forecast[scaled_forecast > 20] = 0\n    new_forecast[scaled_forecast < -20] = 0\n    new_forecast[(scaled_forecast >= -20) & (scaled_forecast < -10)] = (\n        new_forecast[(scaled_forecast >= -20) & (scaled_forecast < -10)] * -2\n    ) - 40\n    new_forecast[(scaled_forecast >= -10) & (scaled_forecast < 10)] = (\n        new_forecast[(scaled_forecast >= -10) & (scaled_forecast < +10)] * 2\n    )",
+        "detail": "build.lib.almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
+        "label": "scale_and_cap",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.forecasts",
+        "description": "build.lib.almanac.analysis.forecasts",
+        "peekOfCode": "def scale_and_cap(scaled_forecast: pd.Series) -> pd.Series:\n    rescaled_forecast = 1.25 * scaled_forecast\n    capped_forecast = rescaled_forecast.clip(-1.25 * 15, 1.25 * 15)\n    return capped_forecast",
+        "detail": "build.lib.almanac.analysis.forecasts",
+        "documentation": {}
+    },
+    {
         "label": "ewmac",
         "kind": 2,
         "importPath": "build.lib.almanac.analysis.forecasts_9",
@@ -4260,6 +4144,24 @@
         "importPath": "build.lib.almanac.analysis.positions",
         "description": "build.lib.almanac.analysis.positions",
         "peekOfCode": "def calculate_position_with_forecast_applied(\n    average_position: pd.Series,\n    stdev_ann_perc: standardDeviation,\n    carry_price: pd.DataFrame,\n    adjusted_price: pd.Series,\n    rule_spec: list,\n) -> pd.Series:\n    forecast = calculate_combined_forecast(\n        adjusted_price=adjusted_price,\n        stdev_ann_perc=stdev_ann_perc,",
+        "detail": "build.lib.almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_dict_with_multiple_trend_forecast_applied_and_adjustment",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.positions",
+        "description": "build.lib.almanac.analysis.positions",
+        "peekOfCode": "def calculate_position_dict_with_multiple_trend_forecast_applied_and_adjustment(\n    adjusted_prices_dict: dict,\n    average_position_contracts_dict: dict,\n    std_dev_dict: dict,\n    fast_spans: list,\n) -> dict:\n    list_of_instruments = list(adjusted_prices_dict.keys())\n    position_dict_with_trend_filter = dict(\n        [\n            (",
+        "detail": "build.lib.almanac.analysis.positions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_position_with_multiple_trend_forecast_applied_and_adjustment",
+        "kind": 2,
+        "importPath": "build.lib.almanac.analysis.positions",
+        "description": "build.lib.almanac.analysis.positions",
+        "peekOfCode": "def calculate_position_with_multiple_trend_forecast_applied_and_adjustment(\n    adjusted_price: pd.Series,\n    average_position: pd.Series,\n    stdev_ann_perc: standardDeviation,\n    fast_spans: list,\n) -> pd.Series:\n    from almanac.analysis.forecasts import calculate_combined_ewmac_forecast_and_adjustment\n    forecast = calculate_combined_ewmac_forecast_and_adjustment(\n        adjusted_price=adjusted_price,\n        stdev_ann_perc=stdev_ann_perc,",
         "detail": "build.lib.almanac.analysis.positions",
         "documentation": {}
     },
@@ -4684,6 +4586,24 @@
         "description": "build.lib.almanac.strategy.strategy10",
         "peekOfCode": "class Strategy10(StrategyBase):\n    def __init__(\n        self,\n        data_path: str,\n        carry_path: str,\n        fx_path: str,\n        instrument_list: list,\n        instrument_weights: dict,\n        multipliers: dict,\n        idm: Union[int, float],",
         "detail": "build.lib.almanac.strategy.strategy10",
+        "documentation": {}
+    },
+    {
+        "label": "Strategy11",
+        "kind": 6,
+        "importPath": "build.lib.almanac.strategy.strategy11",
+        "description": "build.lib.almanac.strategy.strategy11",
+        "peekOfCode": "class Strategy11(StrategyBase):\n    def __init__(\n        self,\n        data_path: str,\n        carry_path: str,\n        fx_path: str,\n        instrument_list: list,\n        instrument_weights: dict,\n        multipliers: dict,\n        idm: Union[int, float],",
+        "detail": "build.lib.almanac.strategy.strategy11",
+        "documentation": {}
+    },
+    {
+        "label": "Strategy12",
+        "kind": 6,
+        "importPath": "build.lib.almanac.strategy.strategy12",
+        "description": "build.lib.almanac.strategy.strategy12",
+        "peekOfCode": "class Strategy12(StrategyBase):\n    def __init__(\n        self,\n        data_path: str,\n        carry_path: str,\n        fx_path: str,\n        instrument_list: list,\n        instrument_weights: dict,\n        multipliers: dict,\n        idm: Union[int, float],",
+        "detail": "build.lib.almanac.strategy.strategy12",
         "documentation": {}
     },
     {
