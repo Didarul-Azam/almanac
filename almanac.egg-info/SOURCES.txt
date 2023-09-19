@@ -5,6 +5,7 @@ almanac.egg-info/SOURCES.txt
 almanac.egg-info/dependency_links.txt
 almanac.egg-info/top_level.txt
 almanac/analysis/__init__.py
+almanac/analysis/accel.py
 almanac/analysis/asset_class.py
 almanac/analysis/buffering.py
 almanac/analysis/calculate_returns.py
