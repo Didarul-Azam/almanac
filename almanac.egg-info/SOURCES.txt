@@ -7,6 +7,7 @@ almanac.egg-info/top_level.txt
 almanac/analysis/__init__.py
 almanac/analysis/accel.py
 almanac/analysis/asset_class.py
+almanac/analysis/breakout.py
 almanac/analysis/buffering.py
 almanac/analysis/calculate_returns.py
 almanac/analysis/calculate_stats.py
@@ -15,8 +16,10 @@ almanac/analysis/cost_calculation.py
 almanac/analysis/forecasts.py
 almanac/analysis/handcrafting.py
 almanac/analysis/positions.py
+almanac/analysis/skew.py
 almanac/analysis/std_for_risk.py
 almanac/analysis/turnover.py
+almanac/analysis/value.py
 almanac/config/__init__.py
 almanac/config/configs.py
 almanac/config/fdm_lst.py
@@ -25,6 +28,7 @@ almanac/config/instruments.py
 almanac/data/__init__.py
 almanac/data/data.py
 almanac/data/normalised_price.py
+almanac/data/relative_price.py
 almanac/deployment/__init__.py
 almanac/strategy/__init__.py
 almanac/strategy/baseStrategy.py
@@ -37,7 +41,11 @@ almanac/strategy/strategy14.py
 almanac/strategy/strategy15.py
 almanac/strategy/strategy16.py
 almanac/strategy/strategy17.py
+almanac/strategy/strategy18.py
+almanac/strategy/strategy19.py
 almanac/strategy/strategy2.py
+almanac/strategy/strategy21.py
+almanac/strategy/strategy22.py
 almanac/strategy/strategy3.py
 almanac/strategy/strategy4.py
 almanac/strategy/strategy4_handcrafting.py
