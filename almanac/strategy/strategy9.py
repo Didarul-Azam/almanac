@@ -52,10 +52,9 @@ class Strategy9(StrategyBase):
             fx_series_dict=self.fx_series_dict,
             multipliers=self.multipliers,)
 
-        position_contracts_dict = calculate_position_dict_with_multiple_trend_forecast_applied(
+        self.position_contracts_dict = calculate_position_dict_with_multiple_trend_forecast_applied(
             adjusted_prices_dict=self.adjusted_prices,
             average_position_contracts_dict=self.average_position_contracts_dict,
             std_dev_dict=self.std_dev_dict,
             fast_spans=self.fast_spans,)
-        return position_contracts_dict
-
+        return self.position_contracts_dict

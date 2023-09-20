@@ -84,7 +84,7 @@ class StrategyBase:
         qs.reports.full(precost_returns=self.pre_cost_portfolio_returns,
                         postcost_returns=self.post_cost_portfoilio_returns, benchmark='^GSPC')
 
-    def run_strategy(self):
+    def run_strategy(self, show_stats=True, return_positions=True):
         if self.use_buffer:
             self.adjusted_prices, self.current_prices, self.carry_prices = self.get_data()
         else:
@@ -93,4 +93,8 @@ class StrategyBase:
         self.std_dev_dict = self.calculate_std_dev(
             self.adjusted_prices, self.current_prices)
         self.position_contracts_dict = self.calculate_positions()
-        self.calculate_quantstats()
+
+        if show_stats:
+            self.calculate_quantstats()
+        if return_positions:
+            return self.position_contracts_dict

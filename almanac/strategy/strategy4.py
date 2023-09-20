@@ -39,7 +39,7 @@ class Strategy4(StrategyBase):
         return adjusted_prices, current_prices
 
     def calculate_positions(self):
-        position_contracts_dict = calculate_position_series_given_variable_risk_for_dict(
+        self.position_contracts_dict = calculate_position_series_given_variable_risk_for_dict(
             capital=self.capital,
             risk_target_tau=self.risk_target,
             idm=self.idm,
@@ -48,5 +48,4 @@ class Strategy4(StrategyBase):
             fx_series_dict=self.fx_series_dict,
             multipliers=self.multipliers,
         )
-        return position_contracts_dict
-
+        return self.position_contracts_dict

@@ -48,8 +48,8 @@ class Strategy5(StrategyBase):
             multipliers=self.multipliers,
         )
 
-        position_contracts_dict = calculate_position_dict_with_trend_filter_applied(
+        self.position_contracts_dict = calculate_position_dict_with_trend_filter_applied(
             adjusted_prices_dict=self.adjusted_prices,
             average_position_contracts_dict=self.average_position_contracts_dict,
         )
-        return position_contracts_dict
+        return self.position_contracts_dict
