@@ -439,3 +439,20 @@ def calculate_forecast_from_function(
     )
 
     return forecast_value * scalar
+
+
+def calculate_forecast_for_skew(
+    adjusted_price: pd.Series,
+    instrument_risk: standardDeviation,
+    scalar: float,
+    horizon: int = 60,
+) -> pd.Series:
+
+    current_price = instrument_risk.current_price
+    perc_returns = adjusted_price.diff() / current_price.shift(1)
+    raw_forecast = -perc_returns.rolling(horizon).skew()
+    smoothed_forecast = raw_forecast.ewm(span=int(horizon / 4), min_periods=1).mean()
+    scaled_forecast = smoothed_forecast * scalar
+    capped_forecast = scaled_forecast.clip(-20, 20)
+
+    return capped_forecast
