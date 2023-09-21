@@ -24,6 +24,7 @@ class Strategy13(StrategyBase):
         APPLY_VOL_REGIME_TO_EWMAC: bool,
         APPLY_VOL_REGIME_TO_CARRY: bool,
         use_buffer=True,
+        get_carry=True
 
     ):
         super().__init__(
@@ -36,18 +37,13 @@ class Strategy13(StrategyBase):
             risk_target=risk_target,
             capital=capital,
             cost_per_contract_dict=cost_per_contract_dict,
-            use_buffer=use_buffer
+            use_buffer=use_buffer,
+            get_carry=get_carry
         )
         self.rule_spec = rules_spec
         self.carry_path = carry_path
         self.APPLY_VOL_REGIME_TO_EWMAC = APPLY_VOL_REGIME_TO_EWMAC
         self.APPLY_VOL_REGIME_TO_CARRY = APPLY_VOL_REGIME_TO_CARRY
-
-    def get_data(self):
-        self.adjusted_prices, self.current_prices, self.carry_prices = get_data_dict_with_carry(
-            self.data_path, self.carry_path, self.instrument_list
-        )
-        return self.adjusted_prices, self.current_prices, self.carry_prices
 
     def calculate_positions(self):
         self.average_position_contracts_dict = calculate_position_series_given_variable_risk_for_dict(
