@@ -47,12 +47,6 @@ class Strategy25(StrategyBase):
         self.algo_to_use = algo_to_use
         self.unrounded_position_contracts_dict = unrounded_position_contracts_dict
 
-    def get_data(self):
-        self.adjusted_prices, self.current_prices, self.carry_prices = get_data_dict_with_carry(
-            self.data_path, self.carry_path, self.instrument_list
-        )
-        return self.adjusted_prices, self.current_prices, self.carry_prices
-
     def calculate_positions(self):
         self.position_contracts_dict = dynamically_optimise_positions(
             capital=self.capital,
@@ -67,7 +61,7 @@ class Strategy25(StrategyBase):
         )
         return self.position_contracts_dict
 
-    def run_strategy(self):
+    def run_strategy(self, return_position: bool = False):
         if self.get_carry:
             self.adjusted_prices, self.current_prices, self.carry_prices = self.get_data()
         else:
@@ -77,3 +71,5 @@ class Strategy25(StrategyBase):
             self.adjusted_prices, self.current_prices)
         self.position_contracts_dict = self.calculate_positions()
         self.calculate_quantstats()
+        if return_position:
+            return self.position_contracts_dict

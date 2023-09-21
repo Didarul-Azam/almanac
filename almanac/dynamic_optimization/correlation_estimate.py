@@ -4,7 +4,7 @@ from datetime import datetime
 import numpy as np
 import pandas as pd
 
-DATA_START = datetime(2000, 1, 1)
+DATA_START = datetime(1970, 1, 1)
 
 
 class stdevEstimate(dict):
