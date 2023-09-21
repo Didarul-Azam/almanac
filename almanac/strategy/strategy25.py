@@ -27,6 +27,7 @@ class Strategy25(StrategyBase):
         algo_to_use,
         unrounded_position_contracts_dict,
         use_buffer=False,
+        get_carry=True
 
     ):
         super().__init__(
@@ -39,7 +40,8 @@ class Strategy25(StrategyBase):
             risk_target=risk_target,
             capital=capital,
             cost_per_contract_dict=cost_per_contract_dict,
-            use_buffer=use_buffer
+            use_buffer=use_buffer,
+            get_carry=get_carry
         )
         self.carry_path = carry_path
         self.algo_to_use = algo_to_use
@@ -66,7 +68,7 @@ class Strategy25(StrategyBase):
         return self.position_contracts_dict
 
     def run_strategy(self):
-        if self.use_buffer:
+        if self.get_carry:
             self.adjusted_prices, self.current_prices, self.carry_prices = self.get_data()
         else:
             self.adjusted_prices, self.current_prices = self.get_data()

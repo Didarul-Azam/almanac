@@ -1,5 +1,5 @@
 from almanac.config.instruments import INSTRUMENT_LIST, instrument_weights, multipliers, cost_per_contract_dict
-from almanac.data.data import get_data_dict
+from almanac.data.data import get_data_dict, get_data_dict_with_carry
 from almanac.utils.fx_series import create_fx_series_given_adjusted_prices_dict
 from almanac.analysis.std_for_risk import calculate_variable_standard_deviation_for_risk_targeting_from_dict
 from almanac.analysis.positions import calculate_position_series_given_variable_risk_for_dict, calculate_position_dict_with_trend_filter_applied
@@ -16,6 +16,7 @@ class StrategyBase:
     def __init__(self, data_path: str, fx_path: str, instrument_list: list,
                  instrument_weights: dict, multipliers: dict, idm: Union[int, float],
                  risk_target: Union[int, float], capital: int, cost_per_contract_dict: dict,
+                 get_carry=True,
                  use_buffer=False):
         self.data_path = data_path
         self.fx_path = fx_path
@@ -27,6 +28,17 @@ class StrategyBase:
         self.cost_per_contract_dict = cost_per_contract_dict
         self.capital = capital
         self.use_buffer = use_buffer
+        self.get_carry = get_carry
+
+    def get_data(self):
+        if self.get_carry:
+            self.adjusted_prices, self.current_prices, self.carry_prices = get_data_dict_with_carry(
+                self.data_path, self.carry_path, self.instrument_list)
+            return self.adjusted_prices, self.current_prices, self.carry_prices
+        else:
+            adjusted_prices, current_prices = get_data_dict(
+                self.data_path, self.instrument_list)
+            return adjusted_prices, current_prices
 
     def create_fx_series(self, adjusted_prices):
         fx_series_dict = create_fx_series_given_adjusted_prices_dict(
@@ -84,8 +96,8 @@ class StrategyBase:
         qs.reports.full(precost_returns=self.pre_cost_portfolio_returns,
                         postcost_returns=self.post_cost_portfoilio_returns, benchmark='^GSPC')
 
-    def run_strategy(self, show_stats=True, return_positions=True):
-        if self.use_buffer:
+    def run_strategy(self, show_stats=True, return_positions=False):
+        if self.get_carry:
             self.adjusted_prices, self.current_prices, self.carry_prices = self.get_data()
         else:
             self.adjusted_prices, self.current_prices = self.get_data()
