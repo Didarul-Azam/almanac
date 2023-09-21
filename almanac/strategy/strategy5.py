@@ -18,6 +18,7 @@ class Strategy5(StrategyBase):
         capital: int,
         cost_per_contract_dict: dict,
         use_buffer=False,
+        get_carry = False
     ):
         super().__init__(
             data_path=data_path,
@@ -29,7 +30,8 @@ class Strategy5(StrategyBase):
             risk_target=risk_target,
             capital=capital,
             cost_per_contract_dict=cost_per_contract_dict,
-            use_buffer=use_buffer
+            use_buffer=use_buffer,
+            get_carry = get_carry
         )
 
     def get_data(self):
@@ -48,8 +50,8 @@ class Strategy5(StrategyBase):
             multipliers=self.multipliers,
         )
 
-        position_contracts_dict = calculate_position_dict_with_trend_filter_applied(
+        self.position_contracts_dict = calculate_position_dict_with_trend_filter_applied(
             adjusted_prices_dict=self.adjusted_prices,
             average_position_contracts_dict=self.average_position_contracts_dict,
         )
-        return position_contracts_dict
+        return self.position_contracts_dict

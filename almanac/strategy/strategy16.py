@@ -27,7 +27,8 @@ class Strategy16(StrategyBase):
         rules_spec_carry: list,
         carry_weight: int,
         ewmac_weight: int,
-        use_buffer=True
+        use_buffer=True,
+        get_carry=True
     ):
         super().__init__(
             data_path=data_path,
@@ -39,19 +40,14 @@ class Strategy16(StrategyBase):
             risk_target=risk_target,
             capital=capital,
             cost_per_contract_dict=cost_per_contract_dict,
-            use_buffer=use_buffer
+            use_buffer=use_buffer,
+            get_carry=get_carry
         )
         self.rules_spec_ewmac = rules_spec_ewmac
         self.rules_spec_carry = rules_spec_carry
         self.carry_path = carry_path
         self.carry_weight = carry_weight
         self.ewmac_weight = ewmac_weight
-
-    def get_data(self):
-        self.adjusted_prices, self.current_prices, self.carry_prices = get_data_dict_with_carry(
-            self.data_path, self.carry_path, self.instrument_list
-        )
-        return self.adjusted_prices, self.current_prices, self.carry_prices
 
     def calculate_positions(self):
         self.average_position_contracts_dict = calculate_position_series_given_variable_risk_for_dict(
