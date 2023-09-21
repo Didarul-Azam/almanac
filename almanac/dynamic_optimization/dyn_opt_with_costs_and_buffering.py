@@ -26,8 +26,8 @@ def evaluate_tracking_error_for_weights(
     solution_gap = weights - other_weights
     track_error_var = solution_gap.dot(covariance).dot(solution_gap)
 
-    if track_error_var < 0:
-        raise Exception("Negative covariance when optimising!")
+    # if track_error_var < 0:
+    #     raise Exception("Negative covariance when optimising!")
 
     track_error_std = track_error_var**0.5
 
