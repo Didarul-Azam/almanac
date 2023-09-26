@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 from scipy.cluster import hierarchy as sch
 from almanac.data.data import pd_readcsv
+import os
 
 PRINT_TRACE = False
 
@@ -305,6 +306,30 @@ def aggregate_risk_weights_over_sub_portfolios(
     )
 
     return aggregate_weights
+
+
+def calculate_return_from_price(tickers: list, csv_path: str):
+    dataframe_dict = {}
+    for ticker in tickers:
+        csv_dir = os.path.join(csv_path, f"{ticker}.csv")
+        df = pd.read_csv(csv_dir)
+        returns = df['adjusted'].pct_change() * 100
+        dataframe_dict[ticker] = returns
+
+    return_df = pd.DataFrame(dataframe_dict)
+    # return_df.index.name = 'index'
+    # return_df.reset_index(inplace=True)
+    return return_df
+
+
+def handcrafting_algo_from_returns(tickers: list, csv_path: str):
+    all_returns = calculate_return_from_price(
+        tickers=tickers, csv_path=csv_path)
+    corr_matrix = correlationEstimate(all_returns.corr())
+    handcraft_portfolio = handcraftPortfolio(corr_matrix)
+    PRINT_TRACE = True
+    portfolio_weights = handcraft_portfolio.weights()
+    return portfolio_weights
 
 
 def handcrafting_algo(instument_returns):
