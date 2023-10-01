@@ -30,6 +30,11 @@ almanac/data/data.py
 almanac/data/normalised_price.py
 almanac/data/relative_price.py
 almanac/deployment/__init__.py
+almanac/dynamic_optimization/__init__.py
+almanac/dynamic_optimization/correlation_estimate.py
+almanac/dynamic_optimization/dyn_opt.py
+almanac/dynamic_optimization/dyn_opt_objects_and_functions.py
+almanac/dynamic_optimization/dyn_opt_with_costs_and_buffering.py
 almanac/strategy/__init__.py
 almanac/strategy/baseStrategy.py
 almanac/strategy/strategy1.py
@@ -44,8 +49,12 @@ almanac/strategy/strategy17.py
 almanac/strategy/strategy18.py
 almanac/strategy/strategy19.py
 almanac/strategy/strategy2.py
+almanac/strategy/strategy20.py
 almanac/strategy/strategy21.py
 almanac/strategy/strategy22.py
+almanac/strategy/strategy23.py
+almanac/strategy/strategy24.py
+almanac/strategy/strategy25.py
 almanac/strategy/strategy3.py
 almanac/strategy/strategy4.py
 almanac/strategy/strategy4_handcrafting.py
