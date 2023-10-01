@@ -309,17 +309,20 @@ def aggregate_risk_weights_over_sub_portfolios(
 
 
 def calculate_return_from_price(tickers: list, csv_path: str):
-    dataframe_dict = {}
+    dataframes = {}
     for ticker in tickers:
-        csv_dir = os.path.join(csv_path, f"{ticker}.csv")
-        df = pd.read_csv(csv_dir)
-        returns = df['adjusted'].pct_change() * 100
-        dataframe_dict[ticker] = returns
-
-    return_df = pd.DataFrame(dataframe_dict)
-    # return_df.index.name = 'index'
-    # return_df.reset_index(inplace=True)
-    return return_df
+        adjusted_csv_path = os.path.join(csv_path, f"{ticker}.csv")
+        adjusted_df = pd.read_csv(adjusted_csv_path, parse_dates=['DATETIME'])
+        adjusted_df['DATETIME'] = adjusted_df['DATETIME'].dt.date
+        adjusted_df = adjusted_df.groupby('DATETIME')['price'].last()
+        returns = adjusted_df.pct_change() * 100
+        dataframes[ticker] = returns
+    df = pd.DataFrame(dataframes)
+    df.index.name = 'index'  # Set the index name
+    df.reset_index(inplace=True)
+    df.drop(columns=['index'], inplace=True)
+    df = df.fillna(0)
+    return df
 
 
 def handcrafting_algo_from_returns(tickers: list, csv_path: str):
@@ -339,3 +342,12 @@ def handcrafting_algo(instument_returns):
     PRINT_TRACE = True
     portfolio_weights = handcraft_portfolio.weights()
     return portfolio_weights
+
+
+# def handcrafting_algo_from_df(df):
+#     # df.drop(columns=['index'], inplace=True)
+#     corr_matrix = correlationEstimate(df.corr())
+#     handcraft_portfolio = handcraftPortfolio(corr_matrix)
+#     PRINT_TRACE = True
+#     portfolio_weights = handcraft_portfolio.weights()
+#     return portfolio_weights
