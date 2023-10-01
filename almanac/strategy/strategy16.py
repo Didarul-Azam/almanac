@@ -3,6 +3,7 @@ from almanac.utils.utils import *
 from almanac.analysis.positions import calculate_position_series_given_variable_risk_for_dict, calculate_position_dict_with_forecast_applied
 from almanac.analysis.calculate_returns import calculate_returns, calculate_perc_returns_for_dict_with_costs, aggregate_returns
 from almanac.analysis.buffering import apply_buffering_to_position_dict
+from almanac.analysis.turnover import turnover
 
 from almanac.strategy.baseStrategy import StrategyBase
 from almanac.data.data import get_data_dict_with_carry
@@ -95,7 +96,13 @@ class Strategy16(StrategyBase):
                                                                                                           std_dev=self.std_dev_dict,
                                                                                                           aggregate=True)
 
-    def run_strategy(self):
+    def calculate_turnover(self):
+        if not self.instrument_weights:
+            self.instrument_weights = 1
+        return turnover(position=self.position_contracts_dict,
+                        weightage_dict=self.instrument_weights)
+
+    def run_strategy(self, show_stats=True, return_positions=False):
         self.adjusted_prices, self.current_prices, self.carry_prices = self.get_data()
         self.fx_series_dict = self.create_fx_series(self.adjusted_prices)
         self.std_dev_dict = self.calculate_std_dev(
@@ -139,5 +146,8 @@ class Strategy16(StrategyBase):
         self.weighted_portfolio_post_cost = (self.post_cost_portfolio_returns_ewmac * self.ewmac_weight * self.smoothed_weight_post_cost
                                              + self.post_cost_portfolio_returns_carry * self.carry_weight * (1 - self.smoothed_weight_post_cost))
 
-        qs.reports.full(precost_returns=self.weighted_portfolio_pre_cost,
-                        postcost_returns=self.weighted_portfolio_post_cost, benchmark='^GSPC')
+        if show_stats:
+            qs.reports.full(precost_returns=self.weighted_portfolio_pre_cost,
+                            postcost_returns=self.weighted_portfolio_post_cost, benchmark='^GSPC')
+        if return_positions:
+            return self.weighted_portfolio_pre_cost, self.weighted_portfolio_post_cost
