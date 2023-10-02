@@ -5,6 +5,7 @@ class ArgumentError(Exception):
     pass
 
 def calculate_turnover(position):
+    position = position.fillna(0)
     number_of_trades = position.diff()
     number_of_trades = number_of_trades.abs()
     daily_trades = number_of_trades.groupby(pd.Grouper(freq='D')).sum()
@@ -13,6 +14,7 @@ def calculate_turnover(position):
     rolling_mean_300_days = rolling_mean_300_days.replace({0: np.nan}).fillna(method='bfill')
 
     as_proportion_of_average = daily_trades / rolling_mean_300_days.abs().shift(1)
+    as_proportion_of_average = as_proportion_of_average.fillna(0)
     average_daily = as_proportion_of_average.mean()
     annualised_turnover = average_daily * 256
     
