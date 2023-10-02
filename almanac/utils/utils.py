@@ -248,3 +248,28 @@ def get_attenuation(stdev_ann_perc: standardDeviation) -> pd.Series:
     smoothed_vol_attenuation = vol_attenuation.ewm(span=10).mean()
 
     return smoothed_vol_attenuation
+
+def mean_active_return(returns: pd.Series,
+                       benchmark: pd.Series):
+    returns = returns.fillna(0)
+    # reindex benchmark according to returns
+    benchmark = benchmark.fillna(0).reindex(returns.index)
+    # keep the values of returns series for which benchmark is not nan
+    returns = returns[~benchmark.isna()]
+    #match the index of benchmark according to returns series
+    benchmark = benchmark[~benchmark.isna()]
+
+    active_returns = returns - benchmark
+    return active_returns.mean()
+    
+def information_ratio(returns: pd.Series,
+                      benchmark: pd.Series):
+    returns = returns.fillna(0)
+    # reindex benchmark according to returns
+    benchmark = benchmark.fillna(0).reindex(returns.index)
+    # keep the values of returns series for which benchmark is not nan
+    returns = returns[~benchmark.isna()]
+    #match the index of benchmark according to returns series
+    benchmark = benchmark[~benchmark.isna()]
+    active_returns = returns - benchmark
+    return active_returns.mean()/active_returns.std()
